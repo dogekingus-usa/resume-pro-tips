@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>ResumeProTips</title>
+    <link>https://resumeprotips.com</link>
+    <description>Expert resume writing tips, ATS-friendly formats, LinkedIn optimization, and career advice.</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Jun 2026 21:37:00 +0700</lastBuildDate>
+    <atom:link href="https://resumeprotips.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <generator>ResumeProTips RSS Generator</generator>
+    <docs>https://www.rssboard.org/rss-specification</docs>
+    <image>
+      <url>https://resumeprotips.com/og-image.png</url>
+      <title>ResumeProTips</title>
+      <link>https://resumeprotips.com</link>
+    </image>
+
+    <item>
+      <title><![CDATA[Video Interview Tips: How to Ace Virtual Interviews]]></title>
+      <link>https://resumeprotips.com/articles/video-interview-tips-ace-virtual.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/video-interview-tips-ace-virtual.html</guid>
+      <description><![CDATA[Video interviews are now standard. Learn how to master camera presence, lighting, audio, and virtual interview etiquette.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>interview</category>
+    </item>
+
+    <item>
+      <title><![CDATA[The Ultimate Resume Checklist for 2026]]></title>
+      <link>https://resumeprotips.com/articles/ultimate-resume-checklist-2026.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/ultimate-resume-checklist-2026.html</guid>
+      <description><![CDATA[The complete resume checklist for 2026. Covering ATS optimization, formatting, keywords, action verbs, and 30+ items to verify before submitting your next job application.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>resume</category>
+    </item>
+
+    <item>
+      <title><![CDATA[How to Write a Two-Page Resume (Without Fluff)]]></title>
+      <link>https://resumeprotips.com/articles/two-page-resume-without-fluff.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/two-page-resume-without-fluff.html</guid>
+      <description><![CDATA[Two-page resumes can work if done right. Learn when a longer resume is appropriate and how to fill that second page with value.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>resume</category>
+    </item>
+
+    <item>
+      <title><![CDATA[Technical Resume Tips for Software Engineers]]></title>
+      <link>https://resumeprotips.com/articles/technical-resume-tips-software-engineers.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/technical-resume-tips-software-engineers.html</guid>
+      <description><![CDATA[Tech resumes need a different approach. Learn how software engineers can showcase projects, skills, and impact effectively.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>resume</category>
+    </item>
+
+    <item>
+      <title><![CDATA[Skills-Based Resume: The Modern Alternative]]></title>
+      <link>https://resumeprotips.com/articles/skills-based-resume-modern-alternative.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/skills-based-resume-modern-alternative.html</guid>
+      <description><![CDATA[Skills-based resumes are gaining popularity in 2026. Learn when to use this format and how to structure it effectively.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>resume</category>
+    </item>
+
+    <item>
+      <title><![CDATA[Second Interview: What to Expect and How to Prepare]]></title>
+      <link>https://resumeprotips.com/articles/second-interview-expect-prepare.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/second-interview-expect-prepare.html</guid>
+      <description><![CDATA[The second interview goes deeper. Learn what to expect, how to prepare, and what questions to ask your potential team.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>interview</category>
+    </item>
+
+    <item>
+      <title><![CDATA[Salary Research: How to Know What You're Worth]]></title>
+      <link>https://resumeprotips.com/articles/salary-research-know-what-youre-worth.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/salary-research-know-what-youre-worth.html</guid>
+      <description><![CDATA[Knowing your market value is essential for negotiation. Learn how to research salaries accurately for any role and location.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>career</category>
+    </item>
+
+    <item>
+      <title><![CDATA[10 Resume Writing Tips That Will Get You Hired in 2026]]></title>
+      <link>https://resumeprotips.com/articles/resume-writing-tips-2026.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/resume-writing-tips-2026.html</guid>
+      <description><![CDATA[Stand out in 2026's competitive job market with these 10 proven resume writing tips. From AI-friendly formatting to skills optimization, get hired faster.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>resume</category>
+    </item>
+
+    <item>
+      <title><![CDATA[Resume Keywords That Beat AI Screeners in 2026]]></title>
+      <link>https://resumeprotips.com/articles/resume-keywords-beat-ai-screeners.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/resume-keywords-beat-ai-screeners.html</guid>
+      <description><![CDATA[Master the resume keywords that get past AI screening systems in 2026. Industry-specific keyword lists, ATS optimization strategies, and expert tips to double your interview rate.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>ats</category>
+    </item>
+
+    <item>
+      <title><![CDATA[Resume File Format: PDF vs Word Doc in 2026]]></title>
+      <link>https://resumeprotips.com/articles/resume-file-format-pdf-vs-word.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/resume-file-format-pdf-vs-word.html</guid>
+      <description><![CDATA[PDF vs Word document - which resume format should you use Learn the pros and cons for ATS and recruiter review.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>resume</category>
+    </item>
+
+    <item>
+      <title><![CDATA[Resume Design Trends 2026: What's In and What's Out]]></title>
+      <link>https://resumeprotips.com/articles/resume-design-trends-2026.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/resume-design-trends-2026.html</guid>
+      <description><![CDATA[Resume design evolves every year. Learn which design trends are hot in 2026 and which ones will get your resume rejected.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>resume</category>
+    </item>
+
+    <item>
+      <title><![CDATA[Resume for Creative Roles: Designers, Writers, and Content Professionals]]></title>
+      <link>https://resumeprotips.com/articles/resume-creative-roles-designers-writers.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/resume-creative-roles-designers-writers.html</guid>
+      <description><![CDATA[How to write a resume for creative roles. Balance portfolio and resume, showcase visual work, and demonstrate creative impact.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>resume</category>
+    </item>
+
+    <item>
+      <title><![CDATA[Resume Action Verbs: The Ultimate List]]></title>
+      <link>https://resumeprotips.com/articles/resume-action-verbs-ultimate-list.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/resume-action-verbs-ultimate-list.html</guid>
+      <description><![CDATA[Strong action verbs make your resume stand out. Browse categorized lists of powerful verbs to replace weak phrasing.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>resume</category>
+    </item>
+
+    <item>
+      <title><![CDATA[Remote Job Resume Tips: What Employers Look For]]></title>
+      <link>https://resumeprotips.com/articles/remote-job-resume-tips-employers.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/remote-job-resume-tips-employers.html</guid>
+      <description><![CDATA[Remote job resumes need a different approach. Learn what hiring managers at remote companies look for in candidates.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>career</category>
+    </item>
+
+    <item>
+      <title><![CDATA[The Power of Quantified Achievements on Your Resume]]></title>
+      <link>https://resumeprotips.com/articles/quantified-achievements-resume-power.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/quantified-achievements-resume-power.html</guid>
+      <description><![CDATA[Numbers on your resume increase callback rates by 40%. Learn how to quantify your achievements effectively to stand out.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>resume</category>
+    </item>
+
+    <item>
+      <title><![CDATA[How to Write a Professional Summary That Opens Doors]]></title>
+      <link>https://resumeprotips.com/articles/professional-summary-opens-doors.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/professional-summary-opens-doors.html</guid>
+      <description><![CDATA[Your professional summary is your resume's headline. Learn how to write a powerful summary that makes recruiters want to read more.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>resume</category>
+    </item>
+
+    <item>
+      <title><![CDATA[How to Prepare for a Case Interview Consulting]]></title>
+      <link>https://resumeprotips.com/articles/prepare-case-interview-consulting.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/prepare-case-interview-consulting.html</guid>
+      <description><![CDATA[Case interviews are the gatekeeper for consulting jobs. Learn frameworks techniques and mental models you need.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>interview</category>
+    </item>
+
+    <item>
+      <title><![CDATA[Personal Branding for Job Seekers: Stand Out Before You Apply]]></title>
+      <link>https://resumeprotips.com/articles/personal-branding-job-seekers-guide.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/personal-branding-job-seekers-guide.html</guid>
+      <description><![CDATA[Build a personal brand that makes recruiters come to you. LinkedIn strategy, content creation, portfolio building, and thought leadership for job seekers.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>career</category>
+    </item>
+
+    <item>
+      <title><![CDATA[Panel Interview Tips: How to Impress Multiple Interviewers]]></title>
+      <link>https://resumeprotips.com/articles/panel-interview-tips-impress-multiple.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/panel-interview-tips-impress-multiple.html</guid>
+      <description><![CDATA[Panel interviews are high-pressure but manageable. Learn how to engage multiple interviewers effectively.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>interview</category>
+    </item>
+
+    <item>
+      <title><![CDATA[One-Page Resume Rules: When and How to Stick to One Page]]></title>
+      <link>https://resumeprotips.com/articles/one-page-resume-rules-stick-to-one.html</link>
+      <guid isPermaLink="true">https://resumeprotips.com/articles/one-page-resume-rules-stick-to-one.html</guid>
+      <description><![CDATA[The one-page resume rule is changing. Learn when one page is essential and when it's okay to go longer.]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <dc:creator>ResumeProTips</dc:creator>
+      <category>resume</category>
+    </item>
+  </channel>
+</rss>
