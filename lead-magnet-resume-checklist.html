@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATS Resume Checklist · ResumeProTips</title>
+  <link rel="canonical" href="https://resumeprotips.com/lead-magnet-resume-checklist">
+  
+  <style>
+    @page { size: A4; margin: 12mm; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: #1a1a2e;
+      background: #f0f2f5;
+      padding: 24px;
+      line-height: 1.5;
+    }
+    .page {
+      max-width: 210mm; min-height: 297mm;
+      margin: 0 auto; background: #fff;
+      border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,.08);
+      padding: 32px 36px;
+      display: flex; flex-direction: column;
+    }
+    .header { text-align: center; margin-bottom: 20px; }
+    .header .badge {
+      display: inline-block; background: #e8f0fe; color: #1a73e8;
+      font-size: 11px; font-weight: 700; letter-spacing: 1.2px;
+      text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 8px;
+    }
+    .header h1 { font-size: 26px; font-weight: 800; letter-spacing: -0.5px; }
+    .header h1 span { color: #1a73e8; }
+    .header p { font-size: 14px; color: #555; margin-top: 4px; }
+    .subtitle { font-size: 12px; color: #888; border-bottom: 2px solid #eef; padding-bottom: 10px; margin-bottom: 16px; text-align: center; }
+    .checklist { flex: 1; }
+    .section { margin-bottom: 14px; }
+    .section-title {
+      font-size: 14px; font-weight: 700; color: #1a73e8;
+      border-left: 4px solid #1a73e8; padding-left: 10px; margin-bottom: 8px;
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .item {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 5px 0 5px 8px;
+      border-bottom: 1px solid #f0f0f5;
+      font-size: 13px;
+    }
+    .item:last-child { border-bottom: none; }
+    .item .box {
+      min-width: 16px; height: 16px; border: 2px solid #bbb;
+      border-radius: 3px; margin-top: 3px; flex-shrink: 0;
+    }
+    .item .box.done { background: #1a73e8; border-color: #1a73e8; position: relative; }
+    .item .box.done::after {
+      content: '✓'; position: absolute; top: -2px; left: 2px;
+      color: #fff; font-size: 11px; font-weight: 700;
+    }
+    .item .label { color: #666; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; min-width: 60px; }
+    .item .text { flex: 1; }
+    .item .text strong { font-weight: 600; }
+    .urgent { color: #d93025; font-weight: 600; }
+    .tip {
+      background: #f8f9ff; border-left: 3px solid #1a73e8;
+      padding: 8px 12px; margin: 12px 0; font-size: 12px; color: #444;
+      border-radius: 0 6px 6px 0;
+    }
+    .tip strong { color: #1a73e8; }
+    .footer-form {
+      margin-top: 16px; padding-top: 14px;
+      border-top: 2px dashed #dde;
+      text-align: center;
+    }
+    .footer-form h3 { font-size: 15px; font-weight: 700; color: #1a1a2e; margin-bottom: 4px; }
+    .footer-form p { font-size: 12px; color: #666; margin-bottom: 10px; }
+    .form-placeholder {
+      background: #f5f7fb; border: 2px dashed #c5cde0;
+      border-radius: 8px; padding: 14px 20px;
+      font-size: 12px; color: #888;
+    }
+    .form-placeholder .kit-code {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      background: #fff; border: 1px solid #e0e4ee;
+      border-radius: 4px; padding: 4px 8px; font-size: 11px;
+      display: inline-block; margin: 4px 2px;
+    }
+    .footer-meta { margin-top: 10px; font-size: 10px; color: #aaa; text-align: center; }
+    @media print {
+      body { background: #fff; padding: 0; }
+      .page { box-shadow: none; border-radius: 0; padding: 24px 28px; }
+      .form-placeholder { border: 1px solid #ccc; }
+    }
+  
+    /* ===== SITE-WIDE NAV & FOOTER COMPONENTS ===== */
+    :root {
+      --nav-height: 64px;
+      --nav-bg: rgba(11, 15, 26, 0.88);
+      --footer-bg: #0a0d16;
+      --footer-border: rgba(255,255,255,0.06);
+    }
+    nav#site-nav {
+      position: fixed; top: 0; left: 0; right: 0; height: var(--nav-height); z-index: 1000;
+      background: var(--nav-bg);
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--glass-border, rgba(79,70,229,0.15));
+      animation: navSlideDown 0.5s ease-out;
+    }
+    @keyframes navSlideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .nav-inner {
+      max-width: var(--container-max, 1280px); margin: 0 auto; padding: 0 var(--container-padding, 1rem);
+      height: 100%; display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-weight: 700; font-size: 1.2rem; color: var(--color-text, #f1f5f9); text-decoration: none;
+    }
+    .nav-logo span { background: linear-gradient(135deg, var(--color-primary, #4f46e5), var(--color-primary-light, #6366f1)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .nav-logo .gold { background: none; -webkit-text-fill-color: var(--gold, #d4a017); }
+    .nav-links { display: flex; align-items: center; gap: 1.5rem; }
+    .nav-links a { color: #94a3b8; font-size: 0.875rem; font-weight: 500; text-decoration: none; transition: color 0.3s; position: relative; }
+    .nav-links a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: linear-gradient(90deg, var(--color-primary, #4f46e5), var(--color-primary-light, #6366f1)); transition: width 0.3s; }
+    .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+    .nav-links a:hover, .nav-links a.active { color: #e2e8f0; }
+    .hamburger { display: none; background: none; border: 1px solid rgba(255,255,255,0.15); color: #94a3b8; width: 36px; height: 36px; border-radius: 8px; cursor: pointer; flex-direction: column; align-items: center; justify-content: center; gap: 4px; transition: all 0.3s; }
+    .hamburger:hover { border-color: var(--color-primary, #4f46e5); }
+    .hamburger span { display: block; width: 18px; height: 2px; background: #94a3b8; border-radius: 2px; transition: all 0.3s; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      padding: 3rem 0 1.5rem;
+      border-top: 1px solid var(--footer-border);
+      background: var(--footer-bg);
+    }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+    .footer-brand h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--color-text, #f1f5f9); }
+    .footer-brand h3 span { background: linear-gradient(135deg, var(--color-primary, #4f46e5), var(--color-primary-light, #6366f1)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .footer-brand .gold { background: none; -webkit-text-fill-color: var(--gold, #d4a017); }
+    .footer-brand p { font-size: 0.813rem; color: #64748b; line-height: 1.6; }
+    .footer-col h4 { font-size: 0.813rem; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; }
+    .footer-col a { display: block; font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem; transition: color 0.3s; text-decoration: none; }
+    .footer-col a:hover { color: var(--color-primary-light, #6366f1); }
+    .footer-bottom { border-top: 1px solid var(--footer-border); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+    .footer-bottom p { font-size: 0.75rem; color: #475569; }
+
+    /* ===== MOBILE NAV ===== */
+    @media (max-width: 768px) {
+      .nav-links { display: none; position: fixed; top: var(--nav-height); left: 0; right: 0; background: rgba(11,15,26,0.98); backdrop-filter: blur(20px); flex-direction: column; padding: 1rem; gap: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
+      .nav-links.mobile-open { display: flex; }
+      .nav-links a { padding: 0.75rem 1rem; border-radius: 8px; width: 100%; }
+      .nav-links a:hover { background: rgba(255,255,255,0.05); }
+      .hamburger { display: flex; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-grid > :first-child { grid-column: 1 / -1; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+
+    /* SPACING FOR ARTICLES (offset for fixed nav) */
+    body { padding-top: var(--nav-height); }
+</style>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%231e3a5f%22/><text x=%2216%22 y=%2222%22 text-anchor=%22middle%22 fill=%22%23d4a017%22 font-family=%22Inter,sans-serif%22 font-weight=%22700%22 font-size=%2215%22>RP</text></svg>">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="site-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#d4a017"/><path d="M8 10h12M8 14h12M8 18h8" stroke="#0f0f23" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>Resume<span class="gold">Pro</span>Tips</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="/">Home</a>
+        <a href="/#articles">Articles</a>
+        <a href="/store.html">Store</a>
+        <a href="/services.html">Services</a>
+        <a href="/tools-comparison.html">Tools</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+<div class="page">
+  <div class="header">
+    <div class="badge">Free Download · ResumeProTips.com</div>
+    <h1>📄 The <span>ATS Resume</span> Checklist</h1>
+    <p>20 proven checks to get your resume past robot screeners — and into human hands</p>
+  </div>
+  <div class="subtitle">☐ Check each box. Miss 3+ and your resume gets auto-rejected by most ATS.</div>
+
+  <div class="checklist">
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <div class="section-title">⚡ Format & File Type</div>
+      <div class="item"><span class="box"></span><span class="text"><strong>☐ .docx or PDF</strong> — ATS-friendly. Never .png/.jpg (zero parsability).</span></div>
+      <div class="item"><span class="box"></span><span class="text"><strong>☐ Standard fonts</strong> — Arial, Calibri, Roboto. Fancy fonts = unreadable scan artifacts.</span></div>
+      <div class="item"><span class="box"></span><span class="text"><strong>☐ No columns or tables</strong> — ATS reads left→right, top→bottom. Multi-column = scrambled.</span></div>
+      <div class="item"><span class="box"></span><span class="text"><strong>☐ No headers/footers</strong> — Text in them is invisible to 90% of ATS engines. Put contact info in body.</span></div>
+      <div class="item"><span class="box"></span><span class="text"><strong>☐ Single-column layout</strong> — One continuous vertical flow. Sidebars get ignored.</span></div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section">
+      <div class="section-title">🎯 Keywords & Content</div>
+      <div class="item"><span class="box"></span><span class="text"><strong>☐ Job description keywords</strong> — Mirror the JD's top 10 skills & tools <em>verbatim</em>.</span></div>
+      <div class="item"><span class="box"></span><span class="text"><strong>☐ Standard section headers</strong> — "Experience", "Education", "Skills". No "My Journey" — ATS won't find it.</span></div>
+      <div class="item"><span class="box"></span><span class="text"><strong>☐ Action verbs</strong> — Led, Built, Optimized, Designed, Negotiated. (not: "Was responsible for")</span></div>
+      <div class="item"><span class="box"></span><span class="text"><strong>☐ Quantified results</strong> — "Increased sales 34%", not "Increased sales". Numbers boost ranking.</span></div>
+      <div class="item"><span class="box"></span><span class="text"><strong>☐ Industry acronyms</strong> — Include full + acronym: "Search Engine Optimization (SEO)". Both get matched.</span></div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section">
+      <div class="section-title">🧹 Clean Up</div>
+      <div class="item"><span class="box"></span><span class="text"><strong>☐ No graphics/logos</strong> — Icons, progress bars, headshots confuse parsers → auto-reject.</span></div>
+      <div class="item"><span class="box"></span><span class="text"><strong>☐ 10–15 pt font</strong> — Smaller = unreadable scan. Larger = artifacting.</span></div>
+      <div class="item"><span class="box"></span><span class="text"><strong>☐ No text boxes or WordArt</strong> — ATS can't extract text from embedded objects.</span></div>
+      <div class="item"><span class="box"></span><span class="text"><strong>☐ Consistent date format</strong> — "Jan 2020 – Mar 2023" throughout. Mixed formats confuse parsers.</span></div>
+      <div class="item"><span class="box"></span><span class="text"><strong>☐ Contact info in body</strong> — No header/footer. Name, phone, email, LinkedIn, location — top of page.</span></div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="section">
+      <div class="section-title">✅ Final Sanity Checks</div>
+      <div class="item"><span class="box"></span><span class="text"><strong>☐ 1 page (or 2 max)</strong> — 10+ years exp = 2 pages. No more. ATS truncates past ~2.5.</span></div>
+      <div class="item"><span class="box"></span><span class="text"><strong>☐ Run through Jobscan / Skillroads</strong> — Match rate should be ≥80%. If not, rework.</span></div>
+      <div class="item"><span class="box"></span><span class="text"><strong>☐ Plain-text test</strong> — Paste your resume into Notepad. Anything garbled? Fix it in the original.</span></div>
+      <div class="item"><span class="box"></span><span class="text"><strong>☐ No personal photos</strong> — Bias liability. Most ATS auto-strip them; some reject.</span></div>
+      <div class="item"><span class="box"></span><span class="text"><span class="urgent">⛔ EXTRA CRITICAL:</span> Save as <strong>"FirstName_LastName_Resume.pdf"</strong> — never "Resume_FINAL_v3(2).pdf".</span></div>
+    </div>
+
+    <div class="tip">
+      <strong>💡 Pro Tip:</strong> Submit your resume as plain .docx (~20% higher ATS passthrough than PDF). But if the JD says "PDF only" — always follow the instruction.
+    </div>
+  </div>
+
+  <!-- KIT FORM PLACEHOLDER -->
+  <div class="footer-form">
+    <h3>📬 Get the Editable Spreadsheet Version</h3>
+    <p>Track every application with our Google Sheets template + ATS keyword optimizer tool — free.</p>
+    <div class="form-placeholder">
+      ⬇️ <strong>Kit (ConvertKit) Embed:</strong><br>
+      <span class="kit-code">&lt;script src="https://assets.kit.com/forms/YOUR_FORM_ID/index.js" async&gt;&lt;/script&gt;</span>
+      <br><span style="font-size:11px;color:#999;">→ Replace <code>YOUR_FORM_ID</code> with your Kit form ID. Place this script here.</span>
+    </div>
+  </div>
+  <div class="footer-meta">ResumeProTips.com · © 2025 · ATS Resume Checklist v2.1</div>
+</div>
+<div style="margin-top:40px;padding:20px;background:linear-gradient(135deg,#667eea,#764ba2);border-radius:12px;text-align:center;color:white">
+<h3>Get the Full Guide</h3>
+<p>Turn this knowledge into action. Download the complete PDF guide with templates, worksheets, and step-by-step checklists.</p>
+<a href="https://dogeking0.gumroad.com/l/gkwuee" style="display:inline-block;padding:14px 35px;background:#fff;color:#667eea;border-radius:8px;font-weight:bold;text-decoration:none;font-size:18px">Buy Now - $9.99</a>
+</div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Resume<span class="gold">Pro</span>Tips</h3>
+          <p>Expert resume writing tips, ATS-friendly formats, LinkedIn optimization, and career advice to help you land your dream job.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="/">Home</a>
+          <a href="/#articles">Articles</a>
+          <a href="/store.html">Store</a>
+          <a href="/services.html">Services</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="/tools-comparison.html">Tools</a>
+          <a href="/ultimate-guide.html">Ultimate Guide</a>
+          <a href="/checklist.html">Checklist</a>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <a href="/#articles">Resume Tips</a>
+          <a href="/#articles">LinkedIn</a>
+          <a href="/#articles">Interviews</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ResumeProTips. All rights reserved.</p>
+        <p>Resumes that get you hired</p>
+      </div>
+    </div>
+  
+<div class="kit-subscribe-wrapper" style="max-width:500px;margin:2rem auto;">
+  <form action="https://app.kit.com/forms/360a328d7e/subscribe" method="POST" class="kit-subscribe" style="background:#1e3a5f;padding:2rem;border-radius:8px;color:white;max-width:500px;margin:2rem auto;">
+    <h3 style="margin:0 0 0.5rem;font-size:1.25rem;color:#d4a017;">Get the Free Resume Action Verbs Cheat Sheet</h3>
+    <p style="margin:0 0 1rem;font-size:0.9rem;opacity:0.9;">200+ power verbs to make your resume stand out.</p>
+    <input type="email" name="email" placeholder="Your email address" required style="width:100%;padding:0.75rem;border:1px solid #d4a017;border-radius:4px;margin-bottom:0.75rem;box-sizing:border-box;">
+    <input type="text" name="first_name" placeholder="First name" style="width:100%;padding:0.75rem;border:1px solid #d4a017;border-radius:4px;margin-bottom:0.75rem;box-sizing:border-box;">
+    <button type="submit" style="background:#d4a017;color:#fff;padding:0.75rem 2rem;border:none;border-radius:4px;font-weight:bold;cursor:pointer;width:100%;font-size:1rem;">Send My Free Cheat Sheet</button>
+    <p style="font-size:0.75rem;opacity:0.7;margin:0.5rem 0 0;">No spam. Unsubscribe anytime.</p>
+  </form>
+</div></footer>
+
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var hamburger = document.getElementById('hamburger');
+    var navLinks = document.getElementById('navLinks');
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('mobile-open');
+      });
+    }
+  });
+  </script>
+
+
+    <div class="highlight-box" style="margin:30px 0">
+      <p><strong>Recommended Resource:</strong> Get the complete system with our proven <a href="https://www.amazon.com/dp/1250075934?tag=dogeking03-20" target="_blank" rel="nofollow sponsored">job search guide</a> and <a href="https://www.amazon.com/dp/1453639322?tag=dogeking03-20" target="_blank" rel="nofollow sponsored">resume writing playbook</a>. These resources complement our free templates perfectly.</p>
+    </div>
+
+<script src="/scripts/related-articles.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8CVE2X8R5L"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-8CVE2X8R5L');</script>
+
+
+<script src="/scripts/affiliate-banner.js"></script>
+</body>
+</html>
