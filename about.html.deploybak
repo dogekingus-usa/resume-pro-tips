@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ResumeProTips ” Resumes That Get You Hired in 2026</title>
+  <meta name="description" content="Expert resume writing tips, ATS-friendly formats, LinkedIn optimization, and career advice. 60+ articles to help you land your dream job in 2026.">
+  <meta name="keywords" content="resume tips, resume writing, LinkedIn optimization, ATS resume, career advice, job search, interview tips, 2026">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ResumeProTips ” Resumes That Get You Hired in 2026">
+  <meta property="og:description" content="Expert resume writing tips, ATS-friendly formats, LinkedIn optimization, and career advice. Get hired faster with professional strategies.">
+  <meta property="og:url" content="https://resumeprotips.com">
+  <meta property="og:image" content="https://resumeprotips.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ResumeProTips ” Resumes That Get You Hired">
+  <meta name="twitter:description" content="Expert resume tips, career advice, and job search strategies for 2026.">
+  <link rel="canonical" href="https://resumeprotips.com">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231e3a5f'/><text x='16' y='22' text-anchor='middle' fill='%23d4a017' font-family='Inter,sans-serif' font-weight='700' font-size='15'>RP</text></svg>">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://resumeprotips.com/",
+    "name": "ResumeProTips",
+    "description": "Expert resume writing tips, ATS-friendly formats, LinkedIn optimization, and career advice.",
+    "potentialAction": { "@type": "SearchAction", "target": "https://resumeprotips.com/?q={search_term_string}", "query-input": "required name=search_term_string" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "url": "https://resumeprotips.com/",
+    "name": "ResumeProTips Articles",
+    "description": "Expert articles about resume writing, job search strategies, and career development.",
+    "mainEntity": { "@type": "ItemList", "itemListElement": [
+      {"@type":"Article","position":1,"url":"https://resumeprotips.com/articles/resume-writing-tips-2026.html","headline":"Resume Writing Tips 2026"},
+      {"@type":"Article","position":2,"url":"https://resumeprotips.com/articles/how-to-write-resume-that-gets-interviews.html","headline":"How to Write a Resume That Gets Interviews"}
+    ]}
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    :root{
+      --navy:#1e3a5f;--navy-dark:#15294a;--navy-light:#25508a;
+      --gold:#d4a017;--gold-light:#e2b84d;
+      --accent:#e94560;--accent-light:#ff6b81;
+      --bg:#0f0f23;--surface:#1a1a3e;--surface2:#2a2a5e;
+      --text:#f1f5f9;--muted:#94a3b8;--border:rgba(30,58,95,.2);
+      --glass-bg:rgba(15,15,35,0.7);--glass-blur:blur(20px);
+      --glass-border:1px solid rgba(30,58,95,.15);
+      --glass-shadow:0 8px 32px rgba(0,0,0,.35);
+      --container:1280px;--pad:1rem;--radius:14px;--nav-h:64px
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh;overflow-x:hidden}
+    a{color:var(--gold);text-decoration:none;transition:color .3s}
+    a:hover{color:var(--gold-light)}
+    .container{max-width:var(--container);margin:0 auto;padding:0 var(--pad)}
+    .glass{background:var(--glass-bg);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);border:var(--glass-border);box-shadow:var(--glass-shadow)}
+
+    /* NAVIGATION */
+    nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:1000;background:rgba(15,15,35,.88);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);border-bottom:1px solid rgba(30,58,95,.15);animation:navIn .5s ease-out}
+    @keyframes navIn{from{transform:translateY(-100%);opacity:0}to{transform:translateY(0);opacity:1}}
+    .nav-inner{max-width:var(--container);margin:0 auto;padding:0 var(--pad);height:100%;display:flex;align-items:center;justify-content:space-between}
+    .nav-brand{display:flex;align-items:center;gap:.5rem;color:var(--text);font-size:1.2rem;font-weight:700;text-decoration:none}
+    .nav-brand .gold{color:var(--gold)}
+    .nav-links{display:flex;align-items:center;gap:1.75rem;list-style:none}
+    .nav-links a{color:#94a3b8;font-size:.875rem;font-weight:500;transition:color .3s;position:relative}
+    .nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-light));transition:width .3s}
+    .nav-links a:hover::after,.nav-links a.active::after{width:100%}
+    .nav-links a:hover,.nav-links a.active{color:var(--gold)}
+    .nav-cta{padding:.5rem 1.25rem;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:#0f0f23!important;border-radius:8px;font-weight:600!important;font-size:.813rem!important}
+    .nav-cta::after{display:none!important}
+    .nav-cta:hover{box-shadow:0 4px 15px rgba(212,160,23,.3)!important}
+    .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:1px solid rgba(212,160,23,.3);border-radius:8px;padding:8px 10px;cursor:pointer}
+    .hamburger span{display:block;width:20px;height:2px;background:#94a3b8;border-radius:2px;transition:all .3s}
+
+    /* HERO */
+    .hero{padding:8rem 0 4rem;background:linear-gradient(135deg,#0f0f23 0%,#1a1a3e 40%,rgba(30,58,95,.2) 100%);text-align:center;position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 50%,rgba(212,160,23,.04) 0%,transparent 50%);animation:heroGlow 10s ease-in-out infinite;pointer-events:none}
+    @keyframes heroGlow{0%,100%{opacity:.4;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+    .hero-content{position:relative;z-index:1;max-width:800px;margin:0 auto}
+    .hero-badge{display:inline-flex;align-items:center;gap:.5rem;padding:.35rem 1rem;border-radius:999px;font-size:.75rem;font-weight:600;background:rgba(30,58,95,.4);border:1px solid rgba(212,160,23,.2);color:var(--gold);margin-bottom:1.5rem}
+    .hero h1{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;line-height:1.15;margin-bottom:1rem}
+    .hero h1 .gradient{background:linear-gradient(135deg,var(--gold),var(--gold-light),var(--accent),var(--accent-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .hero h1 .navy-highlight{color:var(--navy-light)}
+    .hero p{font-size:1.125rem;color:var(--muted);max-width:640px;margin:0 auto 2rem}
+    .hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+    .btn-primary{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 2rem;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:#0f0f23;border:none;border-radius:12px;font-weight:700;font-size:.938rem;cursor:pointer;transition:all .3s;text-decoration:none}
+    .btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(212,160,23,.35)}
+    .btn-secondary{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 2rem;background:rgba(30,58,95,.3);backdrop-filter:blur(8px);border:1px solid rgba(212,160,23,.25);color:#cbd5e1;border-radius:12px;font-weight:600;font-size:.938rem;cursor:pointer;transition:all .3s;text-decoration:none}
+    .btn-secondary:hover{transform:translateY(-3px);border-color:var(--gold);color:var(--gold);box-shadow:0 8px 25px rgba(212,160,23,.15)}
+
+    /* STATS BAR */
+    .stats-bar{padding:2.5rem 0;border-top:1px solid rgba(30,58,95,.15);border-bottom:1px solid rgba(30,58,95,.15)}
+    .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+    .stat-item{text-align:center;padding:1rem}
+    .stat-num{font-family:'JetBrains Mono',monospace;font-size:1.75rem;font-weight:500;color:var(--gold)}
+    .stat-lbl{font-size:.8rem;color:var(--muted);margin-top:.25rem}
+
+    /* FEATURES */
+    .features{padding:4rem 0}
+    .features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+    .feature-card{background:rgba(26,26,62,.55);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);border:var(--glass-border);border-radius:var(--radius);padding:2rem;transition:all .3s;text-align:center}
+    .feature-card:hover{transform:translateY(-4px);border-color:rgba(212,160,23,.2);box-shadow:0 10px 35px rgba(212,160,23,.08)}
+    .feature-icon{font-size:2.2rem;margin-bottom:.75rem}
+    .feature-card h3{font-size:1.05rem;font-weight:600;margin-bottom:.5rem}
+    .feature-card p{color:var(--muted);font-size:.85rem;line-height:1.6}
+
+    /* ARTICLES */
+    .articles-wrap{padding:4rem 0}
+    .section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:2rem;flex-wrap:wrap;gap:1rem}
+    .section-head h2{font-size:1.5rem;font-weight:700}
+    .section-head .count{color:var(--muted);font-size:.875rem;font-family:'JetBrains Mono',monospace}
+    .cats-scroll{display:flex;gap:.5rem;overflow-x:auto;padding:.5rem 0;margin-bottom:2rem;-ms-overflow-style:none;scrollbar-width:none}
+    .cats-scroll::-webkit-scrollbar{display:none}
+    .cat-chip{flex-shrink:0;padding:.5rem 1.125rem;border-radius:999px;font-size:.8rem;font-weight:500;background:rgba(30,58,95,.2);border:1px solid rgba(30,58,95,.2);color:var(--muted);cursor:pointer;transition:all .3s;white-space:nowrap;font-family:'Inter',sans-serif}
+    .cat-chip:hover{border-color:var(--gold);color:var(--gold)}
+    .cat-chip.active{background:rgba(212,160,23,.15);border-color:var(--gold);color:var(--gold)}
+    .articles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.25rem}
+    .article-card{background:rgba(26,26,62,.55);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);border:var(--glass-border);border-radius:var(--radius);padding:1.5rem;transition:all .3s;cursor:pointer;position:relative;overflow:hidden;opacity:0;transform:translateY(20px)}
+    .article-card.visible{opacity:1;transform:translateY(0)}
+    .article-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--navy),var(--gold));opacity:0;transition:opacity .3s}
+    .article-card:hover{transform:translateY(-5px);border-color:rgba(212,160,23,.25);box-shadow:0 12px 40px rgba(212,160,23,.1)}
+    .article-card:hover::before{opacity:1}
+    .article-card .cat-badge{display:inline-block;padding:.25rem .625rem;border-radius:999px;font-size:.675rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.75rem}
+    .article-card .meta{display:flex;align-items:center;gap:.75rem;font-size:.75rem;color:#64748b;margin-bottom:.625rem}
+    .article-card .meta .dot{width:3px;height:3px;border-radius:50%;background:#475569}
+    .article-card h3{font-size:1.05rem;font-weight:600;line-height:1.4;margin-bottom:.5rem;color:var(--text);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .article-card .excerpt{font-size:.85rem;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:.75rem}
+    .article-card .tags{display:flex;flex-wrap:wrap;gap:.3rem}
+    .article-card .tag{font-size:.675rem;padding:.15rem .45rem;border-radius:4px;background:rgba(30,58,95,.2);color:#93c5fd}
+    .cat-resume{background:rgba(233,69,96,.15);color:#fda4af}
+    .cat-linkedin{background:rgba(30,58,95,.3);color:#93c5fd}
+    .cat-interview{background:rgba(212,160,23,.15);color:#fcd34d}
+    .cat-career{background:rgba(16,185,129,.15);color:#6ee7b7}
+    .cat-ats{background:rgba(168,85,247,.15);color:#d8b4fe}
+    .cat-general{background:rgba(148,163,184,.15);color:#cbd5e1}
+
+    /* SERVICES SECTION */
+    .services-section{padding:4rem 0;background:linear-gradient(180deg,#0f0f23 0%,rgba(30,58,95,.08) 100%);border-top:1px solid rgba(30,58,95,.15);border-bottom:1px solid rgba(30,58,95,.15)}
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem}
+    .service-card{background:rgba(26,26,62,.65);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);border:var(--glass-border);border-radius:var(--radius);padding:1.75rem;transition:all .3s;position:relative;overflow:hidden}
+    .service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--navy),var(--gold));opacity:0;transition:opacity .3s}
+    .service-card:hover{transform:translateY(-4px);border-color:rgba(212,160,23,.2);box-shadow:0 10px 35px rgba(212,160,23,.08)}
+    .service-card:hover::before{opacity:1}
+    .service-badge{display:inline-block;padding:.2rem .6rem;border-radius:999px;font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.75rem;background:rgba(30,58,95,.3);color:#93c5fd}
+    .service-card h3{font-size:1.1rem;font-weight:600;margin-bottom:.35rem}
+    .service-price{font-size:1.4rem;font-weight:700;color:var(--gold);margin:.5rem 0}
+    .service-desc{color:var(--muted);font-size:.85rem;margin-bottom:.75rem;line-height:1.5}
+    .service-features{list-style:none;margin-bottom:1rem}
+    .service-features li{padding:.3rem 0 .3rem 1.4rem;position:relative;font-size:.8rem;color:#cbd5e1}
+    .service-features li::before{content:'\2713';position:absolute;left:0;color:var(--gold);font-weight:700}
+    .service-btn{display:inline-flex;align-items:center;gap:.4rem;padding:.65rem 1.35rem;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:#0f0f23;border:none;border-radius:10px;font-weight:600;font-size:.813rem;cursor:pointer;text-decoration:none;transition:all .3s}
+    .service-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(212,160,23,.3)}
+
+    /* NEWSLETTER */
+    .newsletter{padding:4rem 0;text-align:center;background:linear-gradient(135deg,#0f0f23,#1a1a3e)}
+    .newsletter-box{max-width:520px;margin:0 auto}
+    .newsletter-box h2{font-size:1.4rem;font-weight:700;margin-bottom:.75rem}
+    .newsletter-box p{color:var(--muted);font-size:.938rem;margin-bottom:1.5rem}
+    .newsletter-form{display:flex;gap:.75rem;max-width:440px;margin:0 auto}
+    .newsletter-form input{flex:1;padding:.75rem 1rem;background:rgba(30,58,95,.2);border:1px solid rgba(212,160,23,.2);border-radius:10px;color:var(--text);font-size:.938rem;outline:none;transition:border-color .3s;font-family:'Inter',sans-serif}
+    .newsletter-form input:focus{border-color:var(--gold)}
+    .newsletter-form input::placeholder{color:#64748b}
+    .newsletter-form button{padding:.75rem 1.5rem;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:#0f0f23;border:none;border-radius:10px;font-weight:600;font-size:.875rem;cursor:pointer;transition:all .3s;white-space:nowrap;font-family:'Inter',sans-serif}
+    .newsletter-form button:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(212,160,23,.3)}
+    .newsletter-proof{font-size:.75rem;color:#475569;margin-top:.75rem}
+
+    /* FOOTER */
+    footer{padding:3rem 0 1.5rem;border-top:1px solid rgba(30,58,95,.15)}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2rem;margin-bottom:2rem}
+    .footer-brand h3{font-size:1.1rem;font-weight:700;margin-bottom:.75rem}
+    .footer-brand h3 .gold{color:var(--gold)}
+    .footer-brand p{font-size:.813rem;color:#64748b;line-height:1.6}
+    .footer-col h4{font-size:.8rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:1rem}
+    .footer-col a{display:block;font-size:.875rem;color:#64748b;margin-bottom:.5rem;transition:color .3s}
+    .footer-col a:hover{color:var(--gold)}
+    .footer-bottom{border-top:1px solid rgba(30,58,95,.15);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+    .footer-bottom p{font-size:.75rem;color:#475569}
+
+    /* RESPONSIVE */
+    @media(max-width:768px){
+      .nav-links{display:none}
+      .hamburger{display:flex}
+      .nav-links.mobile-open{display:flex;flex-direction:column;position:fixed;top:var(--nav-h);left:0;right:0;background:rgba(15,15,35,.98);backdrop-filter:var(--glass-blur);padding:1.5rem;gap:1rem;border-bottom:1px solid rgba(30,58,95,.15);z-index:999}
+      .stats-grid{grid-template-columns:repeat(2,1fr)}
+      .features-grid{grid-template-columns:1fr}
+      .articles-grid{grid-template-columns:1fr}
+      .services-grid{grid-template-columns:1fr}
+      .newsletter-form{flex-direction:column}
+      .footer-grid{grid-template-columns:1fr 1fr}
+      .footer-grid>:first-child{grid-column:1/-1}
+      .hero{padding:6rem 0 3rem}
+      .footer-bottom{flex-direction:column;text-align:center}
+    }
+    @media(max-width:480px){
+      .stat-num{font-size:1.4rem}
+      .hero h1{font-size:1.75rem}
+      .hero p{font-size:1rem}
+    }
+    @media(min-width:769px)and(max-width:1024px){
+      .articles-grid{grid-template-columns:repeat(2,1fr)}
+      .features-grid{grid-template-columns:repeat(2,1fr)}
+      .services-grid{grid-template-columns:repeat(2,1fr)}
+      .footer-grid{grid-template-columns:1fr 1fr 1fr}
+    }
+
+    /* SCROLL ANIMATIONS */
+    .reveal{opacity:0;transform:translateY(30px);transition:opacity .6s ease-out,transform .6s ease-out}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    @media(prefers-reduced-motion:reduce){
+      *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+      .article-card,.reveal{opacity:1;transform:none}
+    }
+
+    /* SCROLLBAR */
+    ::-webkit-scrollbar{width:8px}
+    ::-webkit-scrollbar-track{background:#0f0f23}
+    ::-webkit-scrollbar-thumb{background:var(--surface);border-radius:4px}
+    ::-webkit-scrollbar-thumb:hover{background:var(--surface2)}
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#1e3a5f"/><text x="14" y="19" text-anchor="middle" fill="#d4a017" font-family="Inter,sans-serif" font-weight="700" font-size="13">RP</text></svg>
+        Resume<span class="gold">Pro</span>Tips
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+        <li><a href="services.html" class="nav-cta">Get Your Resume ��™</a></li>
+      </ul>
+      <button class="hamburger" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-badge reveal">✦ Trusted by 10,000+ Job Seekers</div>
+      <h1 class="reveal">Resumes That <span class="gradient">Get You Hired</span> in 2026</h1>
+      <p class="reveal">Professional resume strategies, ATS optimization, LinkedIn tips, and interview techniques from career experts who have helped thousands land their dream jobs.</p>
+      <div class="hero-btns reveal">
+        <a href="#articles" class="btn-primary">Browse Articles ��™</a>
+        <a href="#services" class="btn-secondary">View Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-bar reveal">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item"><div class="stat-num">60+</div><div class="stat-lbl">Expert Articles</div></div>
+        <div class="stat-item"><div class="stat-num">95%</div><div class="stat-lbl">Interview Rate</div></div>
+        <div class="stat-item"><div class="stat-num">10K+</div><div class="stat-lbl">Resumes Optimized</div></div>
+        <div class="stat-item"><div class="stat-num">6</div><div class="stat-lbl">Career Categories</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="container">
+      <div class="section-head reveal"><h2>Why ResumeProTips</h2></div>
+      <div class="features-grid">
+        <div class="feature-card reveal"><div class="feature-icon">��œ�ž</div><h3>Expert Resume Writing</h3><p>Professionally crafted resumes with ATS-friendly formatting, keyword optimization, and proven strategies that land interviews.</p></div>
+        <div class="feature-card reveal"><div class="feature-icon">��™�</div><h3>LinkedIn Mastery</h3><p>Optimize every section of your LinkedIn profile to attract recruiters, build your personal brand, and get discovered.</p></div>
+        <div class="feature-card reveal"><div class="feature-icon">�Ž�</div><h3>Interview Prep</h3><p>Master behavioral interviews, technical questions, and salary negotiations with our proven frameworks and scripts.</p></div>
+        <div class="feature-card reveal"><div class="feature-icon">��“</div><h3>ATS Optimization</h3><p>Beat AI screeners with strategic keyword placement, proper formatting, and industry-specific optimization techniques.</p></div>
+        <div class="feature-card reveal"><div class="feature-icon">�š€</div><h3>Career Strategy</h3><p>Strategic job search planning, networking techniques, and career change guidance from experienced professionals.</p></div>
+        <div class="feature-card reveal"><div class="feature-icon">�</div><h3>Proven Results</h3><p>95% of our clients receive interview callbacks within 30 days. Our strategies are tested and proven in 2026 market.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES -->
+  <section class="articles-wrap" id="articles">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>��œš Latest Articles</h2>
+        <span class="count" id="articleCount">Loading...</span>
+      </div>
+      <div class="cats-scroll reveal" id="catsScroll">
+        <button class="cat-chip active" data-cat="all" onclick="filterCat('all',this)">All</button>
+        <button class="cat-chip" data-cat="resume" onclick="filterCat('resume',this)">��œ�ž Resume Tips</button>
+        <button class="cat-chip" data-cat="linkedin" onclick="filterCat('linkedin',this)">��™� LinkedIn</button>
+        <button class="cat-chip" data-cat="interview" onclick="filterCat('interview',this)">�Ž� Interviews</button>
+        <button class="cat-chip" data-cat="career" onclick="filterCat('career',this)">�š€ Career</button>
+        <button class="cat-chip" data-cat="ats" onclick="filterCat('ats',this)">��“ ATS/AI</button>
+        <button class="cat-chip" data-cat="general" onclick="filterCat('general',this)">��œ General</button>
+      </div>
+      <div class="articles-grid" id="articlesGrid"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-head reveal"><h2>�›�™ Resume Writing Services</h2><a href="services.html" style="font-size:.875rem;color:var(--gold)">View All ��™</a></div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <span class="service-badge">Best Seller</span>
+          <h3>Professional Resume Rewrite</h3>
+          <div class="service-price">$49.99</div>
+          <p class="service-desc">Complete resume rewrite with ATS optimization, keyword targeting, and a tailored layout that gets results.</p>
+          <ul class="service-features"><li>Full resume rewrite</li><li>ATS-friendly keywords</li><li>Quantified achievements</li><li>2 rounds of revisions</li></ul>
+          <a href="https://resumeprotips.gumroad.com/l/resume-rewrite" class="service-btn" target="_blank">Buy on Gumroad ��™</a>
+        </div>
+        <div class="service-card reveal">
+          <span class="service-badge">Popular</span>
+          <h3>LinkedIn Profile Overhaul</h3>
+          <div class="service-price">$34.99</div>
+          <p class="service-desc">Transform your LinkedIn into a recruiter magnet. Headline, About, experience bullets, and featured section.</p>
+          <ul class="service-features"><li>Headline & About rewrite</li><li>Experience optimization</li><li>Keyword optimization</li><li>Profile photo guidance</li></ul>
+          <a href="https://resumeprotips.gumroad.com/l/linkedin-overhaul" class="service-btn" target="_blank">Buy on Gumroad ��™</a>
+        </div>
+        <div class="service-card reveal">
+          <span class="service-badge">� Best Value</span>
+          <h3>Complete Career Package</h3>
+          <div class="service-price">$79.99</div>
+          <p class="service-desc">Resume rewrite + LinkedIn overhaul + cover letters + 30-min career strategy call. Everything in one package.</p>
+          <ul class="service-features"><li>Full resume rewrite</li><li>LinkedIn overhaul</li><li>ATS audit included</li><li>30-min strategy call</li></ul>
+          <a href="https://resumeprotips.gumroad.com/l/career-package" class="service-btn" target="_blank">Buy on Gumroad ��™</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter" id="newsletter">
+    <div class="container">
+      <div class="newsletter-box reveal">
+        <h2>Get <span style="color:var(--gold)">Career-Changing</span> Insights Weekly</h2>
+        <p>Join 8,000+ job seekers who receive actionable resume tips, LinkedIn strategies, and interview advice every Tuesday.</p>
+        <form class="newsletter-form" action="#" method="post" onsubmit="return handleNewsletter(event)">
+          <input type="email" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit">Subscribe Free ��™</button>
+        </form>
+        <div class="newsletter-proof">� Join 8,000+ subscribers • Free • Unsubscribe anytime</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Resume<span class="gold">Pro</span>Tips</h3>
+          <p>We help job seekers write resumes that get noticed, optimize LinkedIn profiles that attract recruiters, and ace interviews that land offers.</p>
+        </div>
+        <div class="footer-col"><h4>Explore</h4><a href="#articles">All Articles</a><a href="#services">Services</a><a href="#newsletter">Newsletter</a><a href="services.html">Pricing</a></div>
+        <div class="footer-col"><h4>Topics</h4><a href="#articles">Resume Tips</a><a href="#articles">LinkedIn</a><a href="#articles">Interview Prep</a><a href="#articles">Career Change</a></div>
+        <div class="footer-col"><h4>Resources</h4><a href="/sitemap.xml">Sitemap</a><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Contact</a></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 ResumeProTips. All rights reserved.</p>
+        <p>Helping you land your dream job</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  const articles = [
+    {title:"Resume Writing Tips 2026: The Ultimate Guide",slug:"resume-writing-tips-2026",category:"resume",date:"May 2026",readTime:"12 min",excerpt:"The definitive guide to resume writing in 2026. Learn what recruiters actually look for, the formats that work, and the mistakes to avoid.",tags:["resume","writing","guide","2026"]},{title:"How to Write a Resume That Gets Interviews",slug:"how-to-write-resume-that-gets-interviews",category:"resume",date:"May 2026",readTime:"10 min",excerpt:"Your resume has 6 seconds to make an impression. Learn the exact formula for writing a resume that lands interviews consistently.",tags:["resume","interviews","formula","format"]},{title:"AI-Friendly Resume Format for 2026",slug:"ai-friendly-resume-format-2026",category:"ats",date:"May 2026",readTime:"8 min",excerpt:"ATS systems are using AI to screen resumes. Learn how to format your resume for AI parsing while keeping it human-readable.",tags:["AI","ATS","format","screening"]},{title:"Career Change Resume Guide 2026",slug:"career-change-resume-guide-2026",category:"career",date:"May 2026",readTime:"9 min",excerpt:"Switching careers? Learn how to write a resume that highlights transferable skills and convinces hiring managers.",tags:["career","change","transferable","skills"]},{title:"How to Explain Employment Gaps on Your Resume",slug:"explain-employment-gaps-resume",category:"resume",date:"May 2026",readTime:"7 min",excerpt:"Employment gaps don't have to hurt your job search. Learn how to explain gaps confidently.",tags:["gaps","employment","explain","honest"]},{title:"Resume Keywords That Beat AI Screeners in 2026",slug:"resume-keywords-beat-ai-screeners",category:"ats",date:"May 2026",readTime:"8 min",excerpt:"AI screeners look for specific keywords. Learn which keywords matter most for your industry.",tags:["keywords","AI","ATS","screening"]},{title:"LinkedIn Profile Optimization Tips 2026",slug:"linkedin-profile-optimization-tips-2026",category:"linkedin",date:"May 2026",readTime:"10 min",excerpt:"Your LinkedIn profile is your digital storefront. Learn how to optimize every section for recruiter visibility.",tags:["linkedin","profile","optimization","recruiters"]},{title:"How to Write a Cover Letter That Gets Read",slug:"how-to-write-cover-letter-that-gets-read",category:"resume",date:"May 2026",readTime:"7 min",excerpt:"Most cover letters go unread. Learn the formula for writing cover letters that hiring managers actually finish.",tags:["cover letter","writing","formula","attention"]},{title:"How to Negotiate Salary After a Job Offer",slug:"how-to-negotiate-salary-after-job-offer",category:"career",date:"May 2026",readTime:"8 min",excerpt:"Salary negotiation is the most profitable conversation you'll ever have. Learn scripts and strategies.",tags:["salary","negotiation","offer","strategies"]},{title:"Ultimate Resume Checklist 2026",slug:"ultimate-resume-checklist-2026",category:"resume",date:"May 2026",readTime:"6 min",excerpt:"The complete resume checklist for 2026. Run through this 30-point checklist before sending your next application.",tags:["checklist","resume","review","quality"]},{title:"How to Write a LinkedIn Headline That Gets Noticed",slug:"linkedin-headline-gets-noticed",category:"linkedin",date:"May 2026",readTime:"6 min",excerpt:"Your LinkedIn headline is prime real estate. Learn how to craft a headline that makes recruiters stop scrolling.",tags:["linkedin","headline","recruiters","optimization"]},{title:"Common Resume Mistakes That Cost You Interviews",slug:"common-resume-mistakes-cost-interviews",category:"resume",date:"May 2026",readTime:"8 min",excerpt:"These 15 resume mistakes silently kill your chances. Learn what they are and how to fix them.",tags:["mistakes","resume","common","fixes"]},{title:"Best Resume Format: Chronological vs Functional vs Hybrid",slug:"best-resume-format-chronological-functional-hybrid",category:"resume",date:"May 2026",readTime:"9 min",excerpt:"Which resume format is best for 2026? Compare chronological, functional, and hybrid formats.",tags:["format","chronological","functional","hybrid"]},{title:"How to Ace a Behavioral Interview (STAR Method)",slug:"ace-behavioral-interview-star-method",category:"interview",date:"May 2026",readTime:"8 min",excerpt:"Behavioral interviews use the STAR method. Learn how to structure answers for maximum impact.",tags:["STAR","behavioral","interview","method"]},{title:"LinkedIn Profile Picture Guide 2026",slug:"linkedin-profile-picture-guide-2026",category:"linkedin",date:"May 2026",readTime:"5 min",excerpt:"Your profile picture is the first thing recruiters see. Learn the photography tips that work.",tags:["linkedin","photo","picture","guide"]},{title:"How to Get a Resume Review",slug:"get-resume-review-free-paid-options",category:"resume",date:"May 2026",readTime:"6 min",excerpt:"A professional resume review can double your interview rate. Compare free and paid options.",tags:["review","resume","feedback","professional"]},{title:"Job Search Strategy: The 5-Step System",slug:"job-search-strategy-5-step-system",category:"career",date:"May 2026",readTime:"9 min",excerpt:"Stop applying randomly. A 5-step job search system that maximizes your chances.",tags:["job search","strategy","system","steps"]},{title:"Customize Your Resume for Each Job",slug:"customize-resume-each-job-application",category:"resume",date:"May 2026",readTime:"7 min",excerpt:"Generic resumes get rejected. Learn how to tailor your resume for specific job descriptions.",tags:["customize","tailor","application","job"]},{title:"Best LinkedIn Summary Examples",slug:"linkedin-summary-examples-attract-recruiters",category:"linkedin",date:"May 2026",readTime:"7 min",excerpt:"Your LinkedIn summary is your elevator pitch. Learn from examples that attract recruiters.",tags:["linkedin","summary","examples","recruiters"]},{title:"How to Handle Tough Interview Questions",slug:"handle-tough-interview-questions",category:"interview",date:"May 2026",readTime:"9 min",excerpt:"Learn frameworks for answering any tough interview question with confidence.",tags:["interview","questions","tough","frameworks"]},{title:"Quantified Achievements on Your Resume",slug:"quantified-achievements-resume-power",category:"resume",date:"May 2026",readTime:"6 min",excerpt:"Numbers increase callback rates by 40%. Learn how to quantify your achievements.",tags:["achievements","quantified","numbers","results"]},{title:"LinkedIn Endorsements & Recommendations",slug:"linkedin-endorsements-recommendations-guide",category:"linkedin",date:"May 2026",readTime:"6 min",excerpt:"Endorsements boost your LinkedIn credibility. Learn how to get them strategically.",tags:["linkedin","endorsements","recommendations","credibility"]},{title:"How to Write a Federal Resume (USAJobs)",slug:"federal-resume-usajobs-guide",category:"resume",date:"May 2026",readTime:"10 min",excerpt:"Federal resumes follow different rules. Learn the format and strategies for USAJobs.",tags:["federal","USAJobs","government","format"]},{title:"Interview Thank You Email That Lands Offers",slug:"interview-follow-up-thank-you-email",category:"interview",date:"May 2026",readTime:"5 min",excerpt:"A well-crafted thank you email can tip the scales. Learn the timing and structure.",tags:["follow-up","thank you","email","offer"]},{title:"Skills-Based Resume: Modern Alternative",slug:"skills-based-resume-modern-alternative",category:"resume",date:"May 2026",readTime:"7 min",excerpt:"Skills-based resumes are gaining popularity. Learn when to use this format.",tags:["skills","based","resume","modern"]},{title:"LinkedIn Networking Without Being Annoying",slug:"linkedin-networking-without-being-annoying",category:"linkedin",date:"May 2026",readTime:"8 min",excerpt:"Build genuine professional relationships on LinkedIn without feeling transactional.",tags:["linkedin","networking","genuine","relationships"]},{title:"Remote Job Resume Tips",slug:"remote-job-resume-tips-employers",category:"career",date:"May 2026",readTime:"7 min",excerpt:"Remote resumes need a different approach. Learn what remote employers look for.",tags:["remote","resume","employers","tips"]},{title:"How to Explain a Layoff",slug:"explain-layoff-resume-interview",category:"career",date:"May 2026",readTime:"6 min",excerpt:"Layoffs are common. Learn how to address them honestly and strategically.",tags:["layoff","explain","resume","honest"]},{title:"Resume Design Trends 2026",slug:"resume-design-trends-2026",category:"resume",date:"May 2026",readTime:"7 min",excerpt:"Resume design evolves yearly. Learn which trends work and which get you rejected.",tags:["design","trends","2026","visual"]},{title:"Video Interview Tips",slug:"video-interview-tips-ace-virtual",category:"interview",date:"May 2026",readTime:"8 min",excerpt:"Master camera presence, lighting, audio, and virtual interview etiquette.",tags:["video","interview","virtual","tips"]},{title:"Entry-Level Resume With No Experience",slug:"entry-level-resume-no-experience",category:"resume",date:"May 2026",readTime:"8 min",excerpt:"Writing a resume with no experience is challenging. Learn how to highlight your strengths.",tags:["entry-level","no experience","resume","guide"]},{title:"LinkedIn Content Strategy",slug:"linkedin-content-strategy-personal-brand",category:"linkedin",date:"May 2026",readTime:"9 min",excerpt:"Build your personal brand on LinkedIn with a content strategy that works.",tags:["linkedin","content","personal brand","strategy"]},{title:"Salary Research: Know Your Worth",slug:"salary-research-know-what-youre-worth",category:"career",date:"May 2026",readTime:"6 min",excerpt:"Know your market value for negotiation. Learn how to research salaries accurately.",tags:["salary","research","worth","market"]},{title:"Executive Resume Writing Tips",slug:"executive-resume-writing-senior-leaders",category:"resume",date:"May 2026",readTime:"9 min",excerpt:"Executive resumes showcase leadership. Learn how to write for senior roles.",tags:["executive","senior","leadership","resume"]},{title:"How to Handle Illegal Interview Questions",slug:"handle-illegal-interview-questions",category:"interview",date:"May 2026",readTime:"6 min",excerpt:"Know your rights and learn graceful ways to redirect illegal interview questions.",tags:["illegal","questions","rights","interview"]},{title:"30-60-90 Day Plan for New Hires",slug:"30-60-90-day-plan-new-hires",category:"career",date:"May 2026",readTime:"7 min",excerpt:"Show you are strategic with a 30-60-90 day plan. Learn how to create one.",tags:["30-60-90","plan","new hire","strategic"]},{title:"Two-Page Resume Without Fluff",slug:"two-page-resume-without-fluff",category:"resume",date:"May 2026",readTime:"6 min",excerpt:"Two-page resumes can work. Learn when and how to use them effectively.",tags:["two-page","length","resume","value"]},{title:"LinkedIn About Section Templates",slug:"linkedin-about-section-templates",category:"linkedin",date:"May 2026",readTime:"7 min",excerpt:"Use proven templates to write a compelling LinkedIn About section.",tags:["linkedin","about","section","templates"]},{title:"Technical Resume Tips for Engineers",slug:"technical-resume-tips-software-engineers",category:"resume",date:"May 2026",readTime:"8 min",excerpt:"Software engineers need a different resume approach. Learn how to showcase your work.",tags:["technical","software","engineer","resume"]},{title:"Answer 'Tell Me About Yourself'",slug:"answer-tell-me-about-yourself-scripts",category:"interview",date:"May 2026",readTime:"7 min",excerpt:"The most common interview question. Learn the framework for a memorable answer.",tags:["tell me","about you","interview","scripts"]},{title:"Academic CV vs Professional Resume",slug:"academic-cv-vs-professional-resume",category:"resume",date:"May 2026",readTime:"7 min",excerpt:"Academic CVs and professional resumes serve different purposes. Learn the differences.",tags:["academic","CV","professional","differences"]},{title:"Network Your Way Into a Job",slug:"network-your-way-into-job",category:"career",date:"May 2026",readTime:"8 min",excerpt:"Networking is the #1 way to land a job. Learn a systematic approach.",tags:["networking","job","relationships","system"]},{title:"Resume Action Verbs: Ultimate List",slug:"resume-action-verbs-ultimate-list",category:"resume",date:"May 2026",readTime:"6 min",excerpt:"Strong action verbs make your resume stand out. Browse categorized lists.",tags:["action","verbs","resume","strong"]},{title:"LinkedIn Open to Work Feature",slug:"linkedin-open-to-work-should-you-use",category:"linkedin",date:"May 2026",readTime:"5 min",excerpt:"The Open to Work feature has pros and cons. Learn when to use it strategically.",tags:["linkedin","open to work","feature","strategy"]},{title:"Second Interview: What to Expect",slug:"second-interview-expect-prepare",category:"interview",date:"May 2026",readTime:"7 min",excerpt:"The second interview goes deeper. Learn how to prepare for the next round.",tags:["second","interview","prepare","deep"]},{title:"Get a Job at a Startup",slug:"get-job-startup-resume-tips",category:"career",date:"May 2026",readTime:"7 min",excerpt:"Startups hire differently. Learn how to position yourself as the ideal startup hire.",tags:["startup","job","resume","tips"]},{title:"One-Page Resume Rules",slug:"one-page-resume-rules-stick-to-one",category:"resume",date:"May 2026",readTime:"6 min",excerpt:"The one-page rule is changing. Learn when one page is essential.",tags:["one-page","rules","length","guidelines"]},{title:"Professional Summary That Opens Doors",slug:"professional-summary-opens-doors",category:"resume",date:"May 2026",readTime:"7 min",excerpt:"Your professional summary is your resume headline. Learn how to write a powerful one.",tags:["summary","professional","headline","resume"]},{title:"Informational Interviews Guide",slug:"informational-interviews-request-conduct",category:"career",date:"May 2026",readTime:"7 min",excerpt:"Informational interviews are powerful networking tools. Learn how to conduct them.",tags:["informational","interviews","networking","career"]},{title:"LinkedIn Profile Checklist (25-Point)",slug:"linkedin-profile-checklist-optimization",category:"linkedin",date:"May 2026",readTime:"8 min",excerpt:"Run through this 25-point checklist to fully optimize your LinkedIn profile.",tags:["linkedin","checklist","optimization","guide"]},{title:"Panel Interview Tips",slug:"panel-interview-tips-impress-multiple",category:"interview",date:"May 2026",readTime:"7 min",excerpt:"Engage multiple interviewers and make each one a champion for you.",tags:["panel","interview","multiple","tips"]},{title:"Functional Resume for Career Changers",slug:"functional-resume-career-changers",category:"resume",date:"May 2026",readTime:"7 min",excerpt:"A functional resume emphasizes skills. Learn how career changers should use it.",tags:["functional","career","change","format"]},{title:"LinkedIn Featured Section Guide",slug:"linkedin-featured-section-showcase",category:"linkedin",date:"May 2026",readTime:"6 min",excerpt:"Showcase your best work in the LinkedIn Featured section.",tags:["linkedin","featured","section","showcase"]},{title:"Answer 'Why Do You Want to Work Here?'",slug:"answer-why-do-you-want-to-work-here",category:"interview",date:"May 2026",readTime:"6 min",excerpt:"Craft an authentic compelling answer to this common interview question.",tags:["why","work","here","interview"]},{title:"Ghosting After Interview",slug:"ghosting-after-interview-follow-up",category:"career",date:"May 2026",readTime:"5 min",excerpt:"Get ghosted after an interview? Learn professional follow-up strategies.",tags:["ghosting","follow-up","interview","strategies"]},{title:"Resume File Format: PDF vs Word",slug:"resume-file-format-pdf-vs-word",category:"resume",date:"May 2026",readTime:"5 min",excerpt:"PDF vs Word - which resume format to use for ATS and recruiter review.",tags:["PDF","Word","format","file"]},{title:"Career Portfolio That Lands Jobs",slug:"career-portfolio-lands-jobs",category:"career",date:"May 2026",readTime:"8 min",excerpt:"Showcase your work beyond a resume. Learn what to include in a career portfolio.",tags:["portfolio","career","showcase","work"]},{title:"LinkedIn Activity Strategy",slug:"linkedin-activity-like-comment-share",category:"linkedin",date:"May 2026",readTime:"6 min",excerpt:"Your LinkedIn activity shapes your brand. Learn strategic engagement approaches.",tags:["linkedin","activity","engagement","brand"]},{title:"Case Interview Prep (Consulting)",slug:"prepare-case-interview-consulting",category:"interview",date:"May 2026",readTime:"10 min",excerpt:"Case interviews are the gatekeeper for consulting jobs. Learn the frameworks.",tags:["case","interview","consulting","frameworks"]},{title:"Highlighting Soft Skills on Resume",slug:"highlighting-soft-skills-resume",category:"resume",date:"May 2026",readTime:"7 min",excerpt:"Soft skills matter more than ever. Learn how to showcase them effectively.",tags:["soft skills","resume","communication","leadership"]}
+  ];
+
+  const cats = {resume:{label:"Resume Tips",cls:"cat-resume",emoji:"��œ�ž"},linkedin:{label:"LinkedIn",cls:"cat-linkedin",emoji:"��™�"},interview:{label:"Interviews",cls:"cat-interview",emoji:"�Ž�"},career:{label:"Career",cls:"cat-career",emoji:"�š€"},ats:{label:"ATS/AI",cls:"cat-ats",emoji:"��“"},general:{label:"General",cls:"cat-general",emoji:"��œ"}};
+  let currentCat='all';
+
+  function renderArticles(filtered){
+    const grid=document.getElementById('articlesGrid');
+    grid.innerHTML='';
+    filtered.forEach((a,i)=>{
+      const c=cats[a.category]||cats.general;
+      const card=document.createElement('a');
+      card.href=`/articles/${a.slug}.html`;
+      card.className='article-card';
+      card.style.transitionDelay=`${(i%9)*50}ms`;
+      card.innerHTML=`<span class="cat-badge ${c.cls}">${c.emoji} ${c.label}</span><div class="meta"><span>${a.date}</span><span class="dot"></span><span>${a.readTime} read</span></div><h3>${a.title}</h3><p class="excerpt">${a.excerpt}</p><div class="tags">${a.tags.slice(0,3).map(t=>`<span class="tag">${t}</span>`).join('')}</div>`;
+      grid.appendChild(card);
+    });
+    requestAnimationFrame(()=>{document.querySelectorAll('.article-card').forEach((el,i)=>{setTimeout(()=>el.classList.add('visible'),i*50)})});
+    document.getElementById('articleCount').textContent=`${filtered.length} article${filtered.length!==1?'s':''}`;
+  }
+
+  function filterCat(cat,btn){
+    currentCat=cat;
+    document.querySelectorAll('.cat-chip').forEach(c=>c.classList.remove('active'));
+    if(btn)btn.classList.add('active');
+    renderArticles(cat==='all'?articles:articles.filter(a=>a.category===cat));
+  }
+
+  function toggleNav(){document.getElementById('navLinks').classList.toggle('mobile-open')}
+
+  function handleNewsletter(e){
+    e.preventDefault();
+    const btn=e.target.querySelector('button');
+    btn.textContent='��œ Subscribed!';
+    btn.style.background='linear-gradient(135deg, #059669, #10b981)';
+    setTimeout(()=>{btn.textContent='Subscribe Free ��™';btn.style.background=''},2000);
+    return false;
+  }
+
+  document.addEventListener('keydown',(e)=>{if(e.key==='Escape'){document.getElementById('navLinks').classList.remove('mobile-open')}});
+
+  const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible')})},{threshold:0.1});
+
+  document.addEventListener('DOMContentLoaded',()=>{
+    renderArticles(articles);
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  });
+  </script>
+</body>
+</html>
