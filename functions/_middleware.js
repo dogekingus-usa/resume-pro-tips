@@ -1,5 +1,5 @@
-// Cloudflare Pages Function ‚Äù Domain Redirect Middleware
-// Redirects pages.dev and www subdomains ‚Ü‚Ä‚Ñ¢ primary custom domain
+// Cloudflare Pages Function  Domain Redirect Middleware
+// Redirects pages.dev and www subdomains  primary custom domain
 
 const PRIMARY_DOMAIN = 'resumeprotips.com';
 const ALIAS_DOMAINS = ['www.resumeprotips.com', 'resume-pro-tips.pages.dev'];

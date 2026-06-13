@@ -292,7 +292,7 @@
         <input type="email" name="email_address" placeholder="Your email address" required style="flex:1;min-width:200px;padding:12px 16px;border:none;border-radius:6px;font-size:14px">
         <button type="submit" style="padding:12px 24px;background:#ff6b6b;color:white;border:none;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer">Subscribe Free</button>
     </form>
-    <div class="lead-capture-success" style="display:none;padding:10px;background:rgba(255,255,255,0.2);border-radius:6px;text-align:center">✓ Thanks for subscribing!</div>
+    <div class="lead-capture-success" style="display:none;padding:10px;background:rgba(255,255,255,0.2);border-radius:6px;text-align:center"> Thanks for subscribing!</div>
 </div>
 <script>document.querySelectorAll('.kit-form').forEach(function(f){f.addEventListener('submit',function(j){j.preventDefault();var d=new FormData(f);d.append('api_key','kit_11be4d08d2104a86679213894e47541c');fetch(f.action,{method:'POST',body:d,headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(){f.style.display='none';var s=f.closest('[class*="lead-capture"]').querySelector('.lead-capture-success');if(s)s.style.display='block'}).catch(function(e){console.error(e)})})});</script>
 
