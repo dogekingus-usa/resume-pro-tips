@@ -18,3 +18,4 @@ jobs:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy . --project-name ${{ vars.CF_PAGES_PROJECT }} --branch main
+# push trigger re-arm: 2026-06-24 13:56
