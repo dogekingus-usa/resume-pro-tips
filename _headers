@@ -1,6 +1,7 @@
-/*
+﻿/*
   Cache-Control: public, max-age=300, s-maxage=1800
   X-Content-Type-Options: nosniff
+  X-Robots-Tag: index, follow
 
 /*.html
   Cache-Control: public, max-age=300, s-maxage=1800
