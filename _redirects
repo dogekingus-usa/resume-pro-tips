@@ -1,13 +1,12 @@
-﻿# ResumeProTips.com Redirect Rules
-# Cloudflare Pages _redirects - first match wins
+﻿# www -> non-www redirect
+https://www.resumeprotips.com/* https://resumeprotips.com/:splat 301
 
-# Block sensitive/leaked files
+# ResumeProTips.com - Cloudflare Pages Redirect Rules
+# Security - block leaked files
 /*.py /404 404
 /*.bat /404 404
 /*.sh /404 404
 /*.ps1 /404 404
-/*.cred 404
 /*.key 404
 /*.pem 404
 
-# 404 fallback handled by 404.html
