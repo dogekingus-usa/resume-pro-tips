@@ -1,7 +1,9 @@
 /**
  * Cloudflare Pages Function - Injects Kit subscribe form into HTML pages
+ * Also strips any rogue x-robots-tag: noindex injected by Cloudflare edge
  * Site: ResumeProTips.com
  * Form: Resume Action Verbs Cheat Sheet (Kit UID: 360a328d7e)
+ * Updated: 2026-07-05 — Added x-robots-tag purge to fix search indexing
  */
 
 const FORM_CONFIG = {
@@ -39,6 +41,7 @@ export async function onRequest(context) {
   const response = await next();
   const contentType = response.headers.get('content-type') || '';
   if (!contentType.includes('text/html')) return response;
+  
   const html = await response.text();
   const formHTML = buildFormHTML();
   let modified;
@@ -47,8 +50,15 @@ export async function onRequest(context) {
   } else {
     modified = html.replace('</body>', `${formHTML}</body>`);
   }
-  return new Response(modified, {
+  
+  // Strip any x-robots-tag: noindex that might be set by Cloudflare edge
+  const newResponse = new Response(modified, {
     status: response.status,
     headers: response.headers
   });
+  newResponse.headers.delete('x-robots-tag');
+  // Explicitly allow indexing
+  newResponse.headers.set('X-Robots-Tag', 'index, follow');
+  
+  return newResponse;
 }
