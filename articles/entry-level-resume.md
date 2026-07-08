@@ -1,3 +1,11 @@
+---
+title: "Entry Level Resume"
+slug: "entry-level-resume"
+site: "resumeprotips.com"
+source: "original"
+description: "Article about Entry Level Resume"
+---
+
 # Entry Level Resume: No Experience? Here's What to Do (2026 Guide)
 
 ## Introduction

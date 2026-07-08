@@ -1,3 +1,11 @@
+---
+title: "Resume vs Cover Letter"
+slug: "resume-vs-cover-letter"
+site: "resumeprotips.com"
+source: "original"
+description: "Article about Resume vs Cover Letter"
+---
+
 # Resume vs Cover Letter: When to Use Each
 
 In the competitive job market today, knowing when and how to use a resume versus a cover letter is crucial for making a strong impression on potential employers. Both documents serve different purposes in the application process, but many candidates get them confused or misuse one for the other. This article will guide you through understanding the differences between resumes, CVs, and cover letters, providing examples and tips to help you craft effective applications.

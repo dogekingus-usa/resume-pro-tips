@@ -1,3 +1,11 @@
+---
+title: "ATS Resume Tips 2026"
+slug: "ats-resume-tips-2026"
+site: "resumeprotips.com"
+source: "original"
+description: "Article about ATS Resume Tips 2026"
+---
+
 # 10 ATS Resume Tips That Get Your Application Past the Robots in 2026
 
 Applicant Tracking Systems (ATS) are becoming increasingly sophisticated, and job seekers need to adapt their resumes accordingly. In this blog post, we'll dive into what ATS is, why it matters, and provide you with ten essential tips to optimize your resume for ATS in 2026.

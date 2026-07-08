@@ -1,3 +1,11 @@
+---
+title: "Best Resume Format"
+slug: "best-resume-format"
+site: "resumeprotips.com"
+source: "original"
+description: "Article about Best Resume Format"
+---
+
 # The Best Resume Format for 2026: Navigating ATS Systems Efficiently
 
 ## Introduction to the Resume Formats of 2026

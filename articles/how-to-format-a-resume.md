@@ -1,3 +1,11 @@
+---
+title: "How to Format a Resume"
+slug: "how-to-format-a-resume"
+site: "resumeprotips.com"
+source: "original"
+description: "Article about How to Format a Resume"
+---
+
 # How to Format a Resume in 2026: The Complete Step-by-Step Guide
 
 ## Introduction

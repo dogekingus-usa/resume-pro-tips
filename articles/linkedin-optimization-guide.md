@@ -1,3 +1,11 @@
+---
+title: "LinkedIn Optimization Guide"
+slug: "linkedin-optimization-guide"
+site: "resumeprotips.com"
+source: "original"
+description: "Article about LinkedIn Optimization Guide"
+---
+
 # The Complete Guide to LinkedIn Optimization for Job Seekers in 2026
 
 ## Introduction

@@ -1,3 +1,11 @@
+---
+title: "Resume Summary Examples"
+slug: "resume-summary-examples"
+site: "resumeprotips.com"
+source: "original"
+description: "Article about Resume Summary Examples"
+---
+
 # How to Write a Professional Resume Summary: Expert Tips and Examples
 
 ## Introduction Crafting an effective professional resume summary is crucial for making a strong first impression on hiring managers and recruiters. This section of your resume should capture the essence of who you are, what skills and experience you bring to the table, and why you're the ideal candidate for the job. A well-written summary can set you apart from other applicants by showcasing your unique value proposition.
