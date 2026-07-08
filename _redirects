@@ -1,0 +1,26 @@
+﻿# ResumeProTips.com Redirect Rules
+# Cloudflare Pages _redirects - first match wins
+# Format: [source] [target] [status]
+
+# --- ARTICLES paths -> root level ---
+# Sitemap was generated with /articles/ prefix but files are at root
+# These redirects fix the ~330 broken article URLs
+/articles/* /:splat 301
+/articles/ /all-articles 301
+
+# --- SECURITY RULES ---
+# Block leaked credential/config files
+/*.py /404 404
+/*.bat /404 404
+/*.sh /404 404
+/*.ps1 /404 404
+/cf_* /404 404
+/pw_* /404 404
+/uc_* /404 404
+/deploy* /404 404
+/multi_deploy* /404 404
+/dns_fix* /404 404
+/camoufox* /404 404
+
+# --- FALLBACK ---
+# 404.html handles missing pages with navigation
