@@ -23,13 +23,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: List files (debug)
-        run: |
-          find . -name "*.html" -maxdepth 2 | head -20
-          echo "---"
-          ls -la *.html 2>/dev/null | head -10
-          echo "---TOTAL HTML:"
-          find . -name "*.html" -maxdepth 2 | wc -l
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
