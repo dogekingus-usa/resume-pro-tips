@@ -1,7 +1,10 @@
 ﻿# www -> non-www redirect
 https://www.resumeprotips.com/* https://resumeprotips.com/:splat 301
 
-# ResumeProTips.com - Cloudflare Pages Redirect Rules
+# Article routing — serve root .html files at URL-friendly paths
+# Cloudflare Pages serves flat .html files from root
+/articles/* /:splat 200
+
 # Security - block leaked files
 /*.py /404 404
 /*.bat /404 404
@@ -9,4 +12,3 @@ https://www.resumeprotips.com/* https://resumeprotips.com/:splat 301
 /*.ps1 /404 404
 /*.key 404
 /*.pem 404
-
