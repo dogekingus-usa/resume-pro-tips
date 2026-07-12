@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="theme-resumeprotips">
 <head>
   <meta charset="UTF-8">
@@ -57,13 +57,13 @@
     .nav-logo span { background: linear-gradient(135deg, var(--color-primary, #4f46e5), var(--color-primary-light, #6366f1)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .nav-logo .gold { background: none; -webkit-text-fill-color: var(--gold, #d4a017); }
     .nav-links { display: flex; align-items: center; gap: 1.5rem; }
-    .nav-links a { color: #94a3b8; font-size: 0.875rem; font-weight: 500; text-decoration: none; transition: color 0.3s; position: relative; }
+    .nav-links a { color: #cbd5e1; font-size: 0.875rem; font-weight: 500; text-decoration: none; transition: color 0.3s; position: relative; }
     .nav-links a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: linear-gradient(90deg, var(--color-primary, #4f46e5), var(--color-primary-light, #6366f1)); transition: width 0.3s; }
     .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
     .nav-links a:hover, .nav-links a.active { color: #e2e8f0; }
-    .hamburger { display: none; background: none; border: 1px solid rgba(255,255,255,0.15); color: #94a3b8; width: 36px; height: 36px; border-radius: 8px; cursor: pointer; flex-direction: column; align-items: center; justify-content: center; gap: 4px; transition: all 0.3s; }
+    .hamburger { display: none; background: none; border: 1px solid rgba(255,255,255,0.15); color: #cbd5e1; width: 36px; height: 36px; border-radius: 8px; cursor: pointer; flex-direction: column; align-items: center; justify-content: center; gap: 4px; transition: all 0.3s; }
     .hamburger:hover { border-color: var(--color-primary, #4f46e5); }
-    .hamburger span { display: block; width: 18px; height: 2px; background: #94a3b8; border-radius: 2px; transition: all 0.3s; }
+    .hamburger span { display: block; width: 18px; height: 2px; background: #cbd5e1; border-radius: 2px; transition: all 0.3s; }
 
     /* ===== FOOTER ===== */
     footer {
@@ -75,12 +75,12 @@
     .footer-brand h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--color-text, #f1f5f9); }
     .footer-brand h3 span { background: linear-gradient(135deg, var(--color-primary, #4f46e5), var(--color-primary-light, #6366f1)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .footer-brand .gold { background: none; -webkit-text-fill-color: var(--gold, #d4a017); }
-    .footer-brand p { font-size: 0.813rem; color: #64748b; line-height: 1.6; }
-    .footer-col h4 { font-size: 0.813rem; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; }
-    .footer-col a { display: block; font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem; transition: color 0.3s; text-decoration: none; }
+    .footer-brand p { font-size: 0.813rem; color: #cbd5e1; line-height: 1.6; }
+    .footer-col h4 { font-size: 0.813rem; font-weight: 600; color: #cbd5e1; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; }
+    .footer-col a { display: block; font-size: 0.875rem; color: #cbd5e1; margin-bottom: 0.5rem; transition: color 0.3s; text-decoration: none; }
     .footer-col a:hover { color: var(--color-primary-light, #6366f1); }
     .footer-bottom { border-top: 1px solid var(--footer-border); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-    .footer-bottom p { font-size: 0.75rem; color: #475569; }
+    .footer-bottom p { font-size: 0.75rem; color: #cbd5e1; }
 
     /* ===== MOBILE NAV ===== */
     @media (max-width: 768px) {
@@ -102,8 +102,27 @@
 </style>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%231e3a5f%22/><text x=%2216%22 y=%2222%22 text-anchor=%22middle%22 fill=%22%23d4a017%22 font-family=%22Inter,sans-serif%22 font-weight=%22700%22 font-size=%2215%22>RP</text></svg>">
   <link rel="stylesheet" href="crown-design-system.css">
+<style>
+
+/* === A11Y: TOUCH TARGETS === */
+@media (max-width: 768px) {
+  .nav-links a { min-height: 44px; padding: 12px 16px; display: flex; align-items: center; }
+  .hamburger, button.hamburger { min-width: 44px; min-height: 44px; }
+}
+.buy-btn, .bundle-btn, .cta, .btn-primary, button {
+  min-height: 44px; padding: 12px 24px; display: inline-flex; align-items: center; justify-content: center;
+}
+footer a { display: inline-block; min-height: 44px; padding: 8px 0; line-height: 1.4; }
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid #818cf8; outline-offset: 2px; border-radius: 4px;
+}
+.skip-nav { position: absolute; top: -9999px; left: 0; z-index: 10000; padding: 12px 16px; background: #1e293b; color: #f1f5f9; font-size: 0.875rem; font-weight: 600; text-decoration: none; min-height: 44px; }
+.skip-nav:focus { top: 0; }
+
+</style>
 </head>
 <body>
+<a href="#main-content" class="skip-nav">Skip to main content</a>
 
   <!-- ===== NAVIGATION ===== -->
   <nav id="site-nav">
@@ -127,46 +146,46 @@
 
   <div class="container">
     <h1>5 Resume Mistakes Costing You Jobs</h1>
-    <div class="meta">3 min read â€¢ Short Form â€¢ Updated May 2026</div>
+    <div class="meta">3 min read * Short Form * Updated May 2026</div>
 
-    <p>Your resume has about <strong>7 seconds</strong> to make an impression. Recruiters and applicant tracking systems (ATS) are ruthless with bad formatting, weak language, and missing keywords. Here are the five most expensive mistakes â€” and exactly how to fix them.</p>
+    <p>Your resume has about <strong>7 seconds</strong> to make an impression. Recruiters and applicant tracking systems (ATS) are ruthless with bad formatting, weak language, and missing keywords. Here are the five most expensive mistakes -- and exactly how to fix them.</p>
 
     <h2><span class="mistake-num">Mistake #1:</span> The "List of Duties" Trap</h2>
-    <p><strong>The problem:</strong> Your resume reads like a job description â€” "Responsible for managing social media" â€” telling recruiters <em>what</em> you were asked to do, not <em>what you accomplished</em>.</p>
+    <p><strong>The problem:</strong> Your resume reads like a job description -- "Responsible for managing social media" -- telling recruiters <em>what</em> you were asked to do, not <em>what you accomplished</em>.</p>
     <div class="fix-box">
-      <p><strong>âœ“ Fix:</strong> Replace every duty with a result. Use <strong>Action + Metric + Outcome</strong>.<br>
+      <p><strong>✓ Fix:</strong> Replace every duty with a result. Use <strong>Action + Metric + Outcome</strong>.<br>
       <em>Instead of:</em> "Managed social media accounts"<br>
       <em>Write:</em> "Grew Instagram following 340% in 6 months through daily content and influencer partnerships."</p>
     </div>
 
     <h2><span class="mistake-num">Mistake #2:</span> Generic Objective Statement</h2>
-    <p><strong>The problem:</strong> "Seeking a challenging position where I can utilize my skills" â€” this sentence is on 40% of resumes. It adds zero value.</p>
+    <p><strong>The problem:</strong> "Seeking a challenging position where I can utilize my skills" -- this sentence is on 40% of resumes. It adds zero value.</p>
     <div class="fix-box">
-      <p><strong>âœ“ Fix:</strong> Delete it. Replace with a 2-line professional summary: your title, years of experience, and one standout achievement. Example: "Marketing Manager with 8 years driving B2B growth. Generated $2.4M in pipeline in 2025."</p>
+      <p><strong>✓ Fix:</strong> Delete it. Replace with a 2-line professional summary: your title, years of experience, and one standout achievement. Example: "Marketing Manager with 8 years driving B2B growth. Generated $2.4M in pipeline in 2025."</p>
     </div>
 
     <h2><span class="mistake-num">Mistake #3:</span> Ignoring ATS Keywords</h2>
     <p><strong>The problem:</strong> Over 75% of companies use ATS software. If the job asks for "Salesforce" and your resume says "CRM," the system flags you as a mismatch.</p>
     <div class="fix-box">
-      <p><strong>âœ“ Fix:</strong> Copy the job description into a word cloud. Identify the top 15â€“20 keywords and mirror them naturally in your resume â€” only if they genuinely apply. Weave them into your bullet points.</p>
+      <p><strong>✓ Fix:</strong> Copy the job description into a word cloud. Identify the top 15-20 keywords and mirror them naturally in your resume -- only if they genuinely apply. Weave them into your bullet points.</p>
     </div>
 
     <h2><span class="mistake-num">Mistake #4:</span> Wall of Text Formatting</h2>
     <p><strong>The problem:</strong> Dense paragraphs with no bullet points or white space. Recruiters scan, they don't read.</p>
     <div class="fix-box">
-      <p><strong>âœ“ Fix:</strong> Use short bullet points (1-2 lines each), 0.5" margins, and a clean sans-serif font at 10-12pt. Your resume should be scannable in under 10 seconds.</p>
+      <p><strong>✓ Fix:</strong> Use short bullet points (1-2 lines each), 0.5" margins, and a clean sans-serif font at 10-12pt. Your resume should be scannable in under 10 seconds.</p>
     </div>
 
     <h2><span class="mistake-num">Mistake #5:</span> Including "References Available Upon Request"</h2>
     <p><strong>The problem:</strong> This outdated line takes up space. Every recruiter knows they can ask for references.</p>
     <div class="fix-box">
-      <p><strong>âœ“ Fix:</strong> Delete it. Use that space for one more bullet point of results. Only provide references on request.</p>
+      <p><strong>✓ Fix:</strong> Delete it. Use that space for one more bullet point of results. Only provide references on request.</p>
     </div>
 
     <p><strong>Bottom line:</strong> Your resume is a marketing document, not a biography. Every line should sell your ability to solve the employer's problems.</p>
 
     <div class="footer">
-      <p>ResumeProTips.com â€¢ Smarter resumes, better offers</p>
+      <p>ResumeProTips.com * Smarter resumes, better offers</p>
     </div>
   </div>
 <div style="margin-top:40px;padding:20px;background:linear-gradient(135deg,#667eea,#764ba2);border-radius:12px;text-align:center;color:white">
@@ -238,16 +257,28 @@
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8CVE2X8R5L"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-8CVE2X8R5L');</script>
+
 
 <!-- Amazon Affiliate Banner -->
 <div class="amazon-affiliate-banner" style="background:linear-gradient(135deg,#232f3e,#131921);color:white;padding:20px;margin:20px auto;max-width:800px;border-radius:10px;text-align:center;font-family:Arial,sans-serif;">
-  <p style="margin:0 0 10px;font-size:14px;opacity:0.9;">📦 <strong>Support Our Site — Shop on Amazon</strong></p>
+  <p style="margin:0 0 10px;font-size:14px;opacity:0.9;">?? <strong>Support Our Site ? Shop on Amazon</strong></p>
   <p style="margin:0 0 15px;font-size:13px;opacity:0.7;">We earn a small commission at no extra cost to you when you shop through our links.</p>
-  <a href="https://www.amazon.com/?tag=dogekingus20-20" target="_blank" rel="nofollow sponsored" style="display:inline-block;background:#ff9900;color:#232f3e;padding:12px 30px;border-radius:25px;font-weight:bold;font-size:15px;text-decoration:none;">🛒 Shop on Amazon →</a>
+  <a href="https://www.amazon.com/?tag=resumeprotips-20" target="_blank" rel="nofollow sponsored" style="display:inline-block;background:#ff9900;color:#232f3e;padding:12px 30px;border-radius:25px;font-weight:bold;font-size:15px;text-decoration:none;">?? Shop on Amazon ?</a>
   <p style="margin:10px 0 0;font-size:11px;opacity:0.5;">As an Amazon Associate we earn from qualifying purchases.</p>
 </div>
 <!-- Amazon Associates Tag -->
-<div style="display:none;"><img src="https://ir-na.amazon-adsystem.com/e/ir?t=dogekingus20-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" /></div>
+<div style="display:none;"><img src="https://ir-na.amazon-adsystem.com/e/ir?t=resumeprotips-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" /></div>
+
+
+<script>
+window.addEventListener('DOMContentLoaded',function(){
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-8CVE2X8R5L');
+document.addEventListener('click',function(e){
+var t=e.target.closest('a[href*="gumroad.com"],a[href*="kit.com/forms"]');if(!t)return;
+var label=t.href.includes('gumroad')?'Gumroad Product Click':'Kit Form Click';
+gtag('event','conversion',{send_to:'G-8CVE2X8R5L',event_category:'Outbound',event_label:label,value:1});});
+});
+</script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="theme-resumeprotips" lang="en">
 <head>
 <meta charset="UTF-8">
@@ -48,8 +48,27 @@ article a{color:var(--primary);text-decoration:underline}
 footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:1px solid #333;margin-top:40px}
 </style>
   <link rel="stylesheet" href="/crown-design-system.css">
+<style>
+
+/* === A11Y: TOUCH TARGETS === */
+@media (max-width: 768px) {
+  .nav-links a { min-height: 44px; padding: 12px 16px; display: flex; align-items: center; }
+  .hamburger, button.hamburger { min-width: 44px; min-height: 44px; }
+}
+.buy-btn, .bundle-btn, .cta, .btn-primary, button {
+  min-height: 44px; padding: 12px 24px; display: inline-flex; align-items: center; justify-content: center;
+}
+footer a { display: inline-block; min-height: 44px; padding: 8px 0; line-height: 1.4; }
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid #818cf8; outline-offset: 2px; border-radius: 4px;
+}
+.skip-nav { position: absolute; top: -9999px; left: 0; z-index: 10000; padding: 12px 16px; background: #1e293b; color: #f1f5f9; font-size: 0.875rem; font-weight: 600; text-decoration: none; min-height: 44px; }
+.skip-nav:focus { top: 0; }
+
+</style>
 </head>
 <body>
+<a href="#main-content" class="skip-nav">Skip to main content</a>
 <nav>
   <a href="/" class="nav-logo">Resume Pro Tips</a>
   <button class="nav-hamburger" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('show')">
@@ -71,7 +90,7 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 <article>
 <h2>1. What Makes a Nonprofit Resume Different</h2>
 <p>Nonprofit hiring looks different from corporate hiring. While for-profit resumes emphasize revenue, profit margins, and market share, nonprofit resumes center on mission alignment, community impact, and resource stewardship.</p>
-<p>But here's a common misconception: <strong>nonprofit employers don't care less about results â€” they care about different types of results.</strong></p>
+<p>But here's a common misconception: <strong>nonprofit employers don't care less about results -- they care about different types of results.</strong></p>
 <p>A corporate resume might say "Increased revenue by $2M." A nonprofit resume says "Secured $2M in grant funding that provided 10,000 meals to food-insecure families." Both are quantitative achievements. The difference is the context and the mission.</p>
 <p><strong>The core rule of nonprofit resume writing:</strong> Every achievement should answer the question "How did this advance our mission?"</p>
 <h2>2. The Three Audiences of Your Nonprofit Resume</h2>
@@ -96,11 +115,11 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 <h3>Why Lead with Impact Highlights?</h3>
 <p>Nonprofit hiring managers often skim resumes looking for one thing: <strong>can this person deliver mission-aligned results?</strong> A boxed Impact Highlights section at the top answers that question immediately.</p>
 <pre><code>IMPACT HIGHLIGHTS
-â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
-â€¢ Secured $3.2M in grants over 3 years (150% of goal)
-â€¢ Expanded program reach from 500 to 3,500 beneficiaries
-â€¢ Reduced operational costs by 25% while maintaining service quality
-â€¢ Built coalition of 25 partner organizations across 3 states</code></pre>
+------------------------------------------
+* Secured $3.2M in grants over 3 years (150% of goal)
+* Expanded program reach from 500 to 3,500 beneficiaries
+* Reduced operational costs by 25% while maintaining service quality
+* Built coalition of 25 partner organizations across 3 states</code></pre>
 <h2>4. Translating Corporate Experience for Nonprofit Roles</h2>
 <p>One of the most common questions from career changers is: "How do I make my corporate experience relevant to nonprofits?"</p>
 <p>The answer is translation. Every corporate skill has a nonprofit equivalent.</p>
@@ -150,11 +169,11 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 <p><strong>Communications:</strong> Storytelling, donor communications, impact reports, social media for nonprofits, advocacy campaigns, public relations</p>
 <p><strong>Finance:</strong> Restricted vs unrestricted funds, grant budgeting, indirect costs, cost allocation, cash flow for nonprofits, fund accounting</p>
 <h2>7. Common Nonprofit Resume Mistakes</h2>
-<p><strong>âŒ Being too vague about impact</strong> â€” "Helped the community" is not an achievement. "Served 1,200 clients through expanded after-school programming" is.</p>
-<p><strong>âŒ Hiding your passion</strong> â€” Nonprofit employers want to see genuine commitment. A brief sentence about why you care about the mission in your summary is appropriate here in a way it isn't in corporate resumes.</p>
-<p><strong>âŒ Using corporate jargon</strong> â€” "Leveraged synergies across verticals" sounds out of place in a nonprofit resume. Use clear, mission-centered language.</p>
-<p><strong>âŒ Forgetting about grant compliance language</strong> â€” If the role involves grants, include words like "compliance," "reporting," "outcomes measurement," and "fidelity."</p>
-<p><strong>âŒ Overemphasizing salary or title progression</strong> â€” Nonprofit culture values mission over status. Focus on impact growth, not title growth.</p>
+<p><strong>❌ Being too vague about impact</strong> -- "Helped the community" is not an achievement. "Served 1,200 clients through expanded after-school programming" is.</p>
+<p><strong>❌ Hiding your passion</strong> -- Nonprofit employers want to see genuine commitment. A brief sentence about why you care about the mission in your summary is appropriate here in a way it isn't in corporate resumes.</p>
+<p><strong>❌ Using corporate jargon</strong> -- "Leveraged synergies across verticals" sounds out of place in a nonprofit resume. Use clear, mission-centered language.</p>
+<p><strong>❌ Forgetting about grant compliance language</strong> -- If the role involves grants, include words like "compliance," "reporting," "outcomes measurement," and "fidelity."</p>
+<p><strong>❌ Overemphasizing salary or title progression</strong> -- Nonprofit culture values mission over status. Focus on impact growth, not title growth.</p>
 <h2>8. Nonprofit Resume Samples by Role</h2>
 <h3>Development Director</h3>
 <p>> "Results-driven fundraising professional with 8 years of experience in grant writing, major gifts, and capital campaigns. Secured $8M+ in funding for organizations serving youth and families in underserved communities."</p>
@@ -179,15 +198,15 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 <h2>10. Cover Letter Tips for Nonprofit Applications</h2>
 <p>Your nonprofit cover letter should do three things:</p>
 <ul>
-<li><strong>Show mission alignment</strong> â€” Why this specific organization? Reference a program, initiative, or value they've published.</li>
-<li><strong>Bridge your experience</strong> â€” Connect your background directly to their posted needs.</li>
-<li><strong>Demonstrate sector knowledge</strong> â€” Mention challenges or trends in their specific nonprofit space.</li>
+<li><strong>Show mission alignment</strong> -- Why this specific organization? Reference a program, initiative, or value they've published.</li>
+<li><strong>Bridge your experience</strong> -- Connect your background directly to their posted needs.</li>
+<li><strong>Demonstrate sector knowledge</strong> -- Mention challenges or trends in their specific nonprofit space.</li>
 </ul>
-<p>> <em>"I've followed [Organization]'s work in food justice for several years and was particularly inspired by your mobile market program. My background in grant-funded program management â€” combined with my personal commitment to food equity â€” makes me excited to contribute to your mission."</em></p>
+<p>> <em>"I've followed [Organization]'s work in food justice for several years and was particularly inspired by your mobile market program. My background in grant-funded program management -- combined with my personal commitment to food equity -- makes me excited to contribute to your mission."</em></p>
 <h2>Conclusion</h2>
 <p>Nonprofit resume writing isn't about dumbing down corporate achievements. It's about reframing results in mission-centered language that resonates with nonprofit hiring decision-makers.</p>
 <p>Your ability to raise funds, manage programs, mobilize volunteers, and steward resources all matter. The key is showing <em>who benefited</em> from your work, not just <em>what</em> you accomplished.</p>
-<p><strong>When you reframe your resume around impact instead of activity, you don't just get hired â€” you get mission-aligned.</strong></p>
+<p><strong>When you reframe your resume around impact instead of activity, you don't just get hired -- you get mission-aligned.</strong></p>
 <p><em>Related reading on Resume Pro Tips:</em> <a href="/how-to-write-a-r-sum-with-no-experience.html">How to Write a Resume With No Experience</a> | <a href="/resume-skills-section.html">Resume Skills Section: 50+ Skills</a> | <a href="/articles/top-skills-to-put-on-resume-2026.html">Top Skills to Put on Your Resume in 2026</a></p>
 
 <div class="cta-box">
@@ -212,17 +231,29 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 </div>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8CVE2X8R5L"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-8CVE2X8R5L");</script>
+
 
 <script src="/scripts/related-articles.js"></script>
 <!-- Amazon Affiliate Banner -->
 <div class="amazon-affiliate-banner" style="background:linear-gradient(135deg,#232f3e,#131921);color:white;padding:20px;margin:20px auto;max-width:800px;border-radius:10px;text-align:center;font-family:Arial,sans-serif;">
-  <p style="margin:0 0 10px;font-size:14px;opacity:0.9;">📦 <strong>Support Our Site — Shop on Amazon</strong></p>
+  <p style="margin:0 0 10px;font-size:14px;opacity:0.9;">?? <strong>Support Our Site ? Shop on Amazon</strong></p>
   <p style="margin:0 0 15px;font-size:13px;opacity:0.7;">We earn a small commission at no extra cost to you when you shop through our links.</p>
-  <a href="https://www.amazon.com/?tag=dogekingus20-20" target="_blank" rel="nofollow sponsored" style="display:inline-block;background:#ff9900;color:#232f3e;padding:12px 30px;border-radius:25px;font-weight:bold;font-size:15px;text-decoration:none;">🛒 Shop on Amazon →</a>
+  <a href="https://www.amazon.com/?tag=resumeprotips-20" target="_blank" rel="nofollow sponsored" style="display:inline-block;background:#ff9900;color:#232f3e;padding:12px 30px;border-radius:25px;font-weight:bold;font-size:15px;text-decoration:none;">?? Shop on Amazon ?</a>
   <p style="margin:10px 0 0;font-size:11px;opacity:0.5;">As an Amazon Associate we earn from qualifying purchases.</p>
 </div>
 <!-- Amazon Associates Tag -->
-<div style="display:none;"><img src="https://ir-na.amazon-adsystem.com/e/ir?t=dogekingus20-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" /></div>
+<div style="display:none;"><img src="https://ir-na.amazon-adsystem.com/e/ir?t=resumeprotips-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" /></div>
+
+
+<script>
+window.addEventListener('DOMContentLoaded',function(){
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-8CVE2X8R5L');
+document.addEventListener('click',function(e){
+var t=e.target.closest('a[href*="gumroad.com"],a[href*="kit.com/forms"]');if(!t)return;
+var label=t.href.includes('gumroad')?'Gumroad Product Click':'Kit Form Click';
+gtag('event','conversion',{send_to:'G-8CVE2X8R5L',event_category:'Outbound',event_label:label,value:1});});
+});
+</script>
 </body>
 </html>

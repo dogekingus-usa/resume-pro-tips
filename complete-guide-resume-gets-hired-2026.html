@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="theme-resumeprotips" lang="en">
 <head>
 <meta charset="UTF-8">
@@ -65,7 +65,7 @@ blockquote strong{color:var(--primary)}
 .toc a{color:var(--text);text-decoration:none}
 .toc a:hover{color:var(--primary)}
 .checklist-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px}
-.checklist-item::before{content:"âœ“";color:var(--primary);font-weight:700;font-size:1.1em}
+.checklist-item::before{content:"✓";color:var(--primary);font-weight:700;font-size:1.1em}
 .tip-box{background:var(--card);border-left:3px solid #f59e0b;border-radius:4px;padding:16px 20px;margin:16px 0}
 .tip-box strong{color:#f59e0b}
 .warning-box{background:var(--card);border-left:3px solid #ef4444;border-radius:4px;padding:16px 20px;margin:16px 0}
@@ -78,8 +78,27 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 @media(max-width:600px){header h1{font-size:1.5em}article h2{font-size:1.3em}article table{font-size:0.85em}}
 </style>
   <link rel="stylesheet" href="/crown-design-system.css">
+<style>
+
+/* === A11Y: TOUCH TARGETS === */
+@media (max-width: 768px) {
+  .nav-links a { min-height: 44px; padding: 12px 16px; display: flex; align-items: center; }
+  .hamburger, button.hamburger { min-width: 44px; min-height: 44px; }
+}
+.buy-btn, .bundle-btn, .cta, .btn-primary, button {
+  min-height: 44px; padding: 12px 24px; display: inline-flex; align-items: center; justify-content: center;
+}
+footer a { display: inline-block; min-height: 44px; padding: 8px 0; line-height: 1.4; }
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid #818cf8; outline-offset: 2px; border-radius: 4px;
+}
+.skip-nav { position: absolute; top: -9999px; left: 0; z-index: 10000; padding: 12px 16px; background: #1e293b; color: #f1f5f9; font-size: 0.875rem; font-weight: 600; text-decoration: none; min-height: 44px; }
+.skip-nav:focus { top: 0; }
+
+</style>
 </head>
 <body>
+<a href="#main-content" class="skip-nav">Skip to main content</a>
 <nav>
   <a href="/" class="nav-logo">Resume Pro Tips</a>
   <button class="nav-hamburger" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('show')">
@@ -101,11 +120,11 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 </header>
 <article>
 
-<p>The 2026 job market is more competitive â€” and more automated â€” than ever before. With an average of <strong>250 applications per corporate job opening</strong> and over 75% of resumes rejected by Applicant Tracking Systems (ATS) before a human ever sees them, you cannot afford to rely on guesswork.</p>
+<p>The 2026 job market is more competitive -- and more automated -- than ever before. With an average of <strong>250 applications per corporate job opening</strong> and over 75% of resumes rejected by Applicant Tracking Systems (ATS) before a human ever sees them, you cannot afford to rely on guesswork.</p>
 
 <p>This comprehensive guide covers every element of modern resume writing: which format to choose, how to structure each section, how to optimize for ATS screening, which action verbs recruiters actually respond to, how to align your resume with your LinkedIn profile, and how your cover letter fits into the bigger strategy.</p>
 
-<p>Whether you are a recent graduate writing your first resume, a mid-career professional seeking advancement, or an executive targeting C-suite roles â€” this guide gives you the exact framework you need to get noticed, get shortlisted, and get hired.</p>
+<p>Whether you are a recent graduate writing your first resume, a mid-career professional seeking advancement, or an executive targeting C-suite roles -- this guide gives you the exact framework you need to get noticed, get shortlisted, and get hired.</p>
 
 <div class="toc">
 <h3>Table of Contents</h3>
@@ -132,9 +151,9 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 <p>Every resume now passes through three distinct filters before reaching a decision-maker:</p>
 
 <ol>
-<li><strong>The ATS (Applicant Tracking System)</strong> â€” Automated software that scans, parses, and ranks your resume based on keyword relevance, formatting compatibility, and role fit. If your resume isn't ATS-friendly, it never reaches step 2.</li>
-<li><strong>The Recruiter (5-7 second scan)</strong> â€” Human recruiters spend an average of 5-7 seconds on their initial scan. They look for role title alignment, years of relevant experience, key skills, and measurable achievements.</li>
-<li><strong>The Hiring Manager (60-second deep read)</strong> â€” The person who actually understands the role reads for impact, cultural fit signals, and evidence that you can solve their specific problems.</li>
+<li><strong>The ATS (Applicant Tracking System)</strong> -- Automated software that scans, parses, and ranks your resume based on keyword relevance, formatting compatibility, and role fit. If your resume isn't ATS-friendly, it never reaches step 2.</li>
+<li><strong>The Recruiter (5-7 second scan)</strong> -- Human recruiters spend an average of 5-7 seconds on their initial scan. They look for role title alignment, years of relevant experience, key skills, and measurable achievements.</li>
+<li><strong>The Hiring Manager (60-second deep read)</strong> -- The person who actually understands the role reads for impact, cultural fit signals, and evidence that you can solve their specific problems.</li>
 </ol>
 
 <div class="tip-box">
@@ -152,7 +171,7 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 
 <h2 id="section2">2. Choosing the Right Resume Format</h2>
 
-<p>Your resume format is the structural foundation of your entire application. Choose wisely â€” the wrong format can hide your strongest qualifications.</p>
+<p>Your resume format is the structural foundation of your entire application. Choose wisely -- the wrong format can hide your strongest qualifications.</p>
 
 <h3>The Three Standard Formats</h3>
 
@@ -162,7 +181,7 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 </thead>
 <tbody>
 <tr><td><strong>Chronological</strong></td><td>Steady career progression, same industry</td><td>Excellent</td><td>Shows gaps clearly</td></tr>
-<tr><td><strong>Functional (Skills-Based)</strong></td><td>Career changers, gaps, freelancers</td><td>Poor â€” many ATS systems struggle</td><td>Recruiters often distrust it</td></tr>
+<tr><td><strong>Functional (Skills-Based)</strong></td><td>Career changers, gaps, freelancers</td><td>Poor -- many ATS systems struggle</td><td>Recruiters often distrust it</td></tr>
 <tr><td><strong>Combination (Hybrid)</strong></td><td>Most job seekers in 2026</td><td>Good (when done right)</td><td>Can become too long</td></tr>
 </tbody>
 </table>
@@ -175,13 +194,13 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 </div>
 
 <h3>Functional (Skills-Based) Resume</h3>
-<p>The functional resume organizes your experience around skill clusters rather than job titles. While this format can mask employment gaps or career transitions, many recruiters view it with suspicion â€” it can appear evasive. ATS systems also struggle with functional formats because they expect the standard reverse-chronological structure to extract dates, titles, and employers.</p>
+<p>The functional resume organizes your experience around skill clusters rather than job titles. While this format can mask employment gaps or career transitions, many recruiters view it with suspicion -- it can appear evasive. ATS systems also struggle with functional formats because they expect the standard reverse-chronological structure to extract dates, titles, and employers.</p>
 
 <div class="warning-box">
 <strong>Warning:</strong> Do not use a purely functional resume if you can avoid it. A 2026 survey of HR professionals found that 68% view functional resumes negatively. If gaps or career changes are a concern, use the combination format instead.
 </div>
 
-<h3>Combination (Hybrid) Resume â€” Recommended for 2026</h3>
+<h3>Combination (Hybrid) Resume -- Recommended for 2026</h3>
 <p>The combination format leads with a strong professional summary and a skills showcase section, then follows with a condensed chronological work history. This gives you the best of both worlds: you highlight your most relevant skills first (satisfying the ATS keyword scan) while still providing the chronological context that recruiters and hiring managers expect.</p>
 
 <p>This is the format <strong>we recommend for most job seekers in 2026</strong>. It is ATS-friendly when properly structured, shows recruiters exactly what they need in the first 5 seconds, and provides flexibility for career transitions, gaps, or non-traditional paths.</p>
@@ -195,10 +214,10 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 <p>Every section of your resume serves a specific purpose. Here is exactly how to optimize each one for maximum impact.</p>
 
 <h3>3.1 Contact Information</h3>
-<p>Keep it simple. Include your full name, phone number, professional email address, LinkedIn profile URL, and optionally your location (city and state â€” never your full street address). For remote roles, add "Open to Remote" after your location.</p>
+<p>Keep it simple. Include your full name, phone number, professional email address, LinkedIn profile URL, and optionally your location (city and state -- never your full street address). For remote roles, add "Open to Remote" after your location.</p>
 
 <div class="tip-box">
-<strong>Check:</strong> Make sure your email address is professional â€” ideally firstname.lastname@gmail.com. Remove outdated email providers or nicknames. Your voicemail greeting should also be professional.
+<strong>Check:</strong> Make sure your email address is professional -- ideally firstname.lastname@gmail.com. Remove outdated email providers or nicknames. Your voicemail greeting should also be professional.
 </div>
 
 <h3>3.2 Professional Summary (4-6 Lines)</h3>
@@ -206,7 +225,7 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 
 <p>A strong summary includes: your job title/seniority level, years of relevant experience, 2-3 core professional strengths with metrics, and what you are seeking next.</p>
 
-<p><strong>Example â€” Mid-Career Professional:</strong><br>
+<p><strong>Example -- Mid-Career Professional:</strong><br>
 <em>"Results-driven Senior Marketing Manager with 8+ years of experience driving B2B demand generation and pipeline growth. Consistently exceed lead generation targets by 35%+ year-over-year through data-driven campaign optimization. Seeking to leverage expertise in marketing automation and revenue operations at a high-growth SaaS company."</em></p>
 
 <h3>3.3 Core Competencies / Skills Section</h3>
@@ -218,9 +237,9 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 <h3>3.4 Professional Experience</h3>
 <p>This is the core of your resume. Each role should include:</p>
 <ul>
-<li><strong>Company name, location, dates</strong> â€” Standard format: Company, City, State | Month Year â€“ Month Year</li>
-<li><strong>Job title</strong> â€” Ensure it matches industry standards (use the title a recruiter would search for)</li>
-<li><strong>3-5 bullet points</strong> â€” Each bullet should follow the CAR format: Challenge, Action, Result</li>
+<li><strong>Company name, location, dates</strong> -- Standard format: Company, City, State | Month Year - Month Year</li>
+<li><strong>Job title</strong> -- Ensure it matches industry standards (use the title a recruiter would search for)</li>
+<li><strong>3-5 bullet points</strong> -- Each bullet should follow the CAR format: Challenge, Action, Result</li>
 </ul>
 
 <p>Every bullet point should start with a strong action verb and include a measurable result whenever possible. Quantify your impact with numbers, percentages, dollar amounts, or timeframes.</p>
@@ -242,11 +261,11 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 
 <h3>3.7 Optional Sections</h3>
 <ul>
-<li><strong>Languages</strong> â€” Include only if relevant to the role or if you are bilingual</li>
-<li><strong>Publications / Speaking Engagements</strong> â€” Strong differentiator for thought leadership roles</li>
-<li><strong>Volunteer Work</strong> â€” Shows character and community involvement</li>
-<li><strong>Projects</strong> â€” Vital for technical roles, portfolio-based positions</li>
-<li><strong>Professional Affiliations</strong> â€” Relevant memberships in industry organizations</li>
+<li><strong>Languages</strong> -- Include only if relevant to the role or if you are bilingual</li>
+<li><strong>Publications / Speaking Engagements</strong> -- Strong differentiator for thought leadership roles</li>
+<li><strong>Volunteer Work</strong> -- Shows character and community involvement</li>
+<li><strong>Projects</strong> -- Vital for technical roles, portfolio-based positions</li>
+<li><strong>Professional Affiliations</strong> -- Relevant memberships in industry organizations</li>
 </ul>
 
 <h2 id="section4">4. ATS Optimization: How to Pass the Robots</h2>
@@ -259,33 +278,33 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 <h3>The 10 ATS Optimization Rules</h3>
 
 <ol>
-<li><strong>Use standard section headings</strong> â€” "Professional Experience," "Education," "Skills," "Summary." Avoid creative headings like "Where I've Worked" or "My Toolbox."</li>
-<li><strong>Submit as .docx or plain text</strong> â€” While PDF is acceptable for most modern ATS, .docx remains the safest format. Some older ATS systems still struggle with PDF parsing.</li>
-<li><strong>Use standard fonts</strong> â€” Arial, Calibri, Helvetica, or Georgia at 10-12pt. Avoid decorative fonts that may not render correctly.</li>
-<li><strong>No tables, columns, text boxes, graphics, or images</strong> â€” These confuse ATS parsers and can cause text to be read in the wrong order.</li>
-<li><strong>Include keywords from the job description</strong> â€” Identify 10-15 hard requirements from the job posting and ensure they appear naturally in your skills section and experience bullets.</li>
-<li><strong>Spell out abbreviations on first use</strong> â€” "Search Engine Optimization (SEO)" rather than just "SEO." Some systems match on full terms.</li>
-<li><strong>Use standard date formats</strong> â€” "May 2022 â€“ Present" rather than "05/22-Now." Consistency matters.</li>
-<li><strong>Avoid headers and footers</strong> â€” Some ATS systems cannot read text placed in document headers or footers.</li>
-<li><strong>Include a plain-text skills section</strong> â€” A comma-separated list of keywords at the end or in your core competencies section helps ATS matching.</li>
-<li><strong>Save your file with a clear name</strong> â€” Use "FirstName-LastName-Resume-2026.pdf" rather than "MyResume_final_v3(2).pdf."</li>
+<li><strong>Use standard section headings</strong> -- "Professional Experience," "Education," "Skills," "Summary." Avoid creative headings like "Where I've Worked" or "My Toolbox."</li>
+<li><strong>Submit as .docx or plain text</strong> -- While PDF is acceptable for most modern ATS, .docx remains the safest format. Some older ATS systems still struggle with PDF parsing.</li>
+<li><strong>Use standard fonts</strong> -- Arial, Calibri, Helvetica, or Georgia at 10-12pt. Avoid decorative fonts that may not render correctly.</li>
+<li><strong>No tables, columns, text boxes, graphics, or images</strong> -- These confuse ATS parsers and can cause text to be read in the wrong order.</li>
+<li><strong>Include keywords from the job description</strong> -- Identify 10-15 hard requirements from the job posting and ensure they appear naturally in your skills section and experience bullets.</li>
+<li><strong>Spell out abbreviations on first use</strong> -- "Search Engine Optimization (SEO)" rather than just "SEO." Some systems match on full terms.</li>
+<li><strong>Use standard date formats</strong> -- "May 2022 - Present" rather than "05/22-Now." Consistency matters.</li>
+<li><strong>Avoid headers and footers</strong> -- Some ATS systems cannot read text placed in document headers or footers.</li>
+<li><strong>Include a plain-text skills section</strong> -- A comma-separated list of keywords at the end or in your core competencies section helps ATS matching.</li>
+<li><strong>Save your file with a clear name</strong> -- Use "FirstName-LastName-Resume-2026.pdf" rather than "MyResume_final_v3(2).pdf."</li>
 </ol>
 
 <div class="cta-box">
 <h3>Get Your Resume ATS-Ready in Minutes</h3>
 <p>Our ATS Resume Checklist Bundle includes the exact checklist, formatting templates, and keyword optimization guide used by professional resume writers. Stop getting filtered out by robots.</p>
-<a href="https://dogeking0.gumroad.com/l/gkwuee" class="cta-btn" target="_blank" rel="noopener noreferrer">Get the ATS Resume Checklist Bundle â†’</a>
+<a href="https://dogeking0.gumroad.com/l/gkwuee" class="cta-btn" target="_blank" rel="noopener noreferrer">Get the ATS Resume Checklist Bundle -></a>
 </div>
 
 <h3>Keyword Optimization Strategy</h3>
 <p>Keyword optimization is the most critical ATS tactic. Here is a systematic approach:</p>
 
 <ol>
-<li><strong>Analyze the job description</strong> â€” Highlight every required skill, tool, certification, and qualification. Also note preferred qualifications â€” these are secondary keywords.</li>
-<li><strong>Categorize keywords</strong> â€” Group them into hard skills (technical), soft skills (interpersonal), tools/software, certifications, and industry terminology.</li>
-<li><strong>Map keywords to your resume sections</strong> â€” Place technical keywords in your skills section and experience bullets. Place soft skills in your professional summary and achievement descriptions.</li>
-<li><strong>Use exact phrasing when possible</strong> â€” If the job says "project management," use "project management" rather than "managed projects." ATS matching is literal.</li>
-<li><strong>Include industry-standard synonyms</strong> â€” Some ATS systems use synonym matching, but not all. Cover your bases by including both "customer service" and "client relations" if relevant.</li>
+<li><strong>Analyze the job description</strong> -- Highlight every required skill, tool, certification, and qualification. Also note preferred qualifications -- these are secondary keywords.</li>
+<li><strong>Categorize keywords</strong> -- Group them into hard skills (technical), soft skills (interpersonal), tools/software, certifications, and industry terminology.</li>
+<li><strong>Map keywords to your resume sections</strong> -- Place technical keywords in your skills section and experience bullets. Place soft skills in your professional summary and achievement descriptions.</li>
+<li><strong>Use exact phrasing when possible</strong> -- If the job says "project management," use "project management" rather than "managed projects." ATS matching is literal.</li>
+<li><strong>Include industry-standard synonyms</strong> -- Some ATS systems use synonym matching, but not all. Cover your bases by including both "customer service" and "client relations" if relevant.</li>
 </ol>
 
 <div class="warning-box">
@@ -293,16 +312,16 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 </div>
 
 <div class="tip-box">
-<strong>Recommended Resource:</strong> <em><a href="https://www.amazon.com/dp/0399171933?tag=dogeking03-20" target="_blank" rel="noopener noreferrer" class="affiliate-link">"The Resume Writing Guide: A Step-by-Step Workbook for Writing a Winning Resume"</a></em> â€” This top-rated workbook walks you through every section of your resume with fill-in-the-blank templates and ATS optimization checklists. Highly recommended for anyone serious about getting hired in 2026.
+<strong>Recommended Resource:</strong> <em><a href="https://www.amazon.com/dp/0399171933?tag=dogeking03-20" target="_blank" rel="noopener noreferrer" class="affiliate-link">"The Resume Writing Guide: A Step-by-Step Workbook for Writing a Winning Resume"</a></em> -- This top-rated workbook walks you through every section of your resume with fill-in-the-blank templates and ATS optimization checklists. Highly recommended for anyone serious about getting hired in 2026.
 </div>
 
 <h3>ATS Testing Tools</h3>
 <p>Before submitting, test your resume using these free tools recommended by <a href="https://resumeprotips.com/ats-resume-checker-guide.html" class="affiliate-link">our ATS checker guide</a>:</p>
 <ul>
-<li><strong>Jobscan</strong> â€” Compare your resume against specific job descriptions for keyword match rate</li>
-<li><strong>TopResume ATS Review</strong> â€” Free visual analysis of formatting issues</li>
-<li><strong>SkillSyncer</strong> â€” Detailed keyword gap analysis across multiple job descriptions</li>
-<li><strong>Manual copy-and-paste test</strong> â€” Paste your resume text into a plain text editor to see how it parses. If the order is wrong or text is missing, the ATS will have the same problem.</li>
+<li><strong>Jobscan</strong> -- Compare your resume against specific job descriptions for keyword match rate</li>
+<li><strong>TopResume ATS Review</strong> -- Free visual analysis of formatting issues</li>
+<li><strong>SkillSyncer</strong> -- Detailed keyword gap analysis across multiple job descriptions</li>
+<li><strong>Manual copy-and-paste test</strong> -- Paste your resume text into a plain text editor to see how it parses. If the order is wrong or text is missing, the ATS will have the same problem.</li>
 </ul>
 
 <h2 id="section5">5. Action Verbs That Recruiters Actually Look For</h2>
@@ -344,46 +363,46 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 
 <h3>Technology & SaaS</h3>
 <ul>
-<li><strong>Lead with technical skills</strong> â€” Your skills section should list programming languages, frameworks, and tools prominently</li>
-<li><strong>Quantify everything</strong> â€” "Reduced deployment time by 60%" matters more than "Improved deployment process"</li>
-<li><strong>Include GitHub/portfolio links</strong> â€” Technical roles expect proof of work</li>
-<li><strong>Mention Agile/Scrum methodologies</strong> â€” This is standard for most tech teams</li>
-<li><strong>List certifications</strong> â€” AWS, Azure, Google Cloud, Kubernetes, and security certs carry significant weight</li>
+<li><strong>Lead with technical skills</strong> -- Your skills section should list programming languages, frameworks, and tools prominently</li>
+<li><strong>Quantify everything</strong> -- "Reduced deployment time by 60%" matters more than "Improved deployment process"</li>
+<li><strong>Include GitHub/portfolio links</strong> -- Technical roles expect proof of work</li>
+<li><strong>Mention Agile/Scrum methodologies</strong> -- This is standard for most tech teams</li>
+<li><strong>List certifications</strong> -- AWS, Azure, Google Cloud, Kubernetes, and security certs carry significant weight</li>
 </ul>
 
 <h3>Healthcare & Nursing</h3>
 <ul>
-<li><strong>Use standard section headings</strong> â€” Healthcare ATS is notoriously strict about formatting</li>
-<li><strong>Include certifications prominently</strong> â€” RN, BSN, ACLS, BLS, PALS should be immediately visible</li>
-<li><strong>Lead with patient outcomes</strong> â€” "Improved patient satisfaction scores by 22%"</li>
-<li><strong>List EMR/EHR systems</strong> â€” Epic, Cerner, Meditech experience is a differentiator</li>
+<li><strong>Use standard section headings</strong> -- Healthcare ATS is notoriously strict about formatting</li>
+<li><strong>Include certifications prominently</strong> -- RN, BSN, ACLS, BLS, PALS should be immediately visible</li>
+<li><strong>Lead with patient outcomes</strong> -- "Improved patient satisfaction scores by 22%"</li>
+<li><strong>List EMR/EHR systems</strong> -- Epic, Cerner, Meditech experience is a differentiator</li>
 <li><strong>Keep it to one page</strong> unless you have 10+ years of experience</li>
 </ul>
 
 <h3>Finance & Banking</h3>
 <ul>
-<li><strong>Lead with licenses and designations</strong> â€” Series 7, 63, 66, CFA, CPA should appear in your summary or a prominent certification section</li>
-<li><strong>Use formal, conservative language</strong> â€” Avoid creative formatting or unconventional section names</li>
-<li><strong>Quantify financial impact</strong> â€” "Managed $50M portfolio with 14% YoY return"</li>
-<li><strong>Include regulatory compliance experience</strong> â€” SOX, SEC, FINRA familiarity is often required</li>
+<li><strong>Lead with licenses and designations</strong> -- Series 7, 63, 66, CFA, CPA should appear in your summary or a prominent certification section</li>
+<li><strong>Use formal, conservative language</strong> -- Avoid creative formatting or unconventional section names</li>
+<li><strong>Quantify financial impact</strong> -- "Managed $50M portfolio with 14% YoY return"</li>
+<li><strong>Include regulatory compliance experience</strong> -- SOX, SEC, FINRA familiarity is often required</li>
 <li><strong>One to two pages</strong> depending on seniority</li>
 </ul>
 
 <h3>Marketing & Creative</h3>
 <ul>
-<li><strong>Demonstrate ROI above all</strong> â€” "Generated $2.3M in attributed revenue through integrated campaign strategy"</li>
-<li><strong>List tools and platforms</strong> â€” HubSpot, Salesforce, Google Analytics, SEMrush, Canva, Figma</li>
-<li><strong>A portfolio link is essential</strong> â€” Reference it in your summary and contact section</li>
-<li><strong>Some creative formatting is acceptable</strong> â€” But ensure the ATS can still parse the text. A clean HTML-based online portfolio is safer than an elaborate PDF.</li>
-<li><strong>Show channel expertise</strong> â€” SEO, PPC, email marketing, social media, content marketing</li>
+<li><strong>Demonstrate ROI above all</strong> -- "Generated $2.3M in attributed revenue through integrated campaign strategy"</li>
+<li><strong>List tools and platforms</strong> -- HubSpot, Salesforce, Google Analytics, SEMrush, Canva, Figma</li>
+<li><strong>A portfolio link is essential</strong> -- Reference it in your summary and contact section</li>
+<li><strong>Some creative formatting is acceptable</strong> -- But ensure the ATS can still parse the text. A clean HTML-based online portfolio is safer than an elaborate PDF.</li>
+<li><strong>Show channel expertise</strong> -- SEO, PPC, email marketing, social media, content marketing</li>
 </ul>
 
 <h3>Remote & Hybrid Roles</h3>
 <ul>
-<li><strong>Include "Remote" in your location line</strong> â€” "Remote, United States" clarifies your availability</li>
-<li><strong>List remote collaboration tools</strong> â€” Slack, Zoom, Asana, Trello, Notion, Microsoft Teams</li>
-<li><strong>Show async communication skills</strong> â€” "Managed cross-time-zone team of 8 engineers across 4 time zones"</li>
-<li><strong>Highlight self-management</strong> â€” "Independently managed project roadmap with zero oversight"</li>
+<li><strong>Include "Remote" in your location line</strong> -- "Remote, United States" clarifies your availability</li>
+<li><strong>List remote collaboration tools</strong> -- Slack, Zoom, Asana, Trello, Notion, Microsoft Teams</li>
+<li><strong>Show async communication skills</strong> -- "Managed cross-time-zone team of 8 engineers across 4 time zones"</li>
+<li><strong>Highlight self-management</strong> -- "Independently managed project roadmap with zero oversight"</li>
 </ul>
 
 <h2 id="section7">7. Cover Letter Strategy That Complements Your Resume</h2>
@@ -396,23 +415,23 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 Open with enthusiasm for the role and company. Name-drop a specific project, product, or company value that genuinely excites you. Connect your professional identity to the company's mission.</p>
 
 <p><strong>Paragraph 2: The Value Proposition (5-7 sentences)</strong><br>
-This is your resume's executive summary â€” in narrative form. Pick 2-3 achievements that directly map to the job description's core requirements. Tell the story behind one significant accomplishment. Connect the dots between what you have done and what the employer needs.</p>
+This is your resume's executive summary -- in narrative form. Pick 2-3 achievements that directly map to the job description's core requirements. Tell the story behind one significant accomplishment. Connect the dots between what you have done and what the employer needs.</p>
 
 <p><strong>Paragraph 3: The Close (3-4 sentences)</strong><br>
 Reiterate your enthusiasm, mention that you have attached your resume (and any other materials), express interest in an interview, and thank them for their time.</p>
 
 <h3>Cover Letter Best Practices</h3>
 <ul>
-<li><strong>Customize every time</strong> â€” Generic cover letters are immediately obvious and counterproductive</li>
-<li><strong>Address a specific person</strong> â€” Use LinkedIn to find the hiring manager or recruiter</li>
-<li><strong>Match the company's tone</strong> â€” Formal for finance/law, conversational for startups/creative</li>
-<li><strong>No more than 350 words</strong> â€” Recruiters spend 20-30 seconds on cover letters</li>
-<li><strong>Include your resume's key achievements</strong> â€” But rephrase them for a narrative flow</li>
-<li><strong>Proofread three times</strong> â€” A typo in your cover letter is often a dealbreaker</li>
+<li><strong>Customize every time</strong> -- Generic cover letters are immediately obvious and counterproductive</li>
+<li><strong>Address a specific person</strong> -- Use LinkedIn to find the hiring manager or recruiter</li>
+<li><strong>Match the company's tone</strong> -- Formal for finance/law, conversational for startups/creative</li>
+<li><strong>No more than 350 words</strong> -- Recruiters spend 20-30 seconds on cover letters</li>
+<li><strong>Include your resume's key achievements</strong> -- But rephrase them for a narrative flow</li>
+<li><strong>Proofread three times</strong> -- A typo in your cover letter is often a dealbreaker</li>
 </ul>
 
 <div class="tip-box">
-<strong>Strategy:</strong> Write your cover letter before your resume summary. The cover letter forces you to articulate your narrative arc â€” which you can then distill into your 4-line professional summary.
+<strong>Strategy:</strong> Write your cover letter before your resume summary. The cover letter forces you to articulate your narrative arc -- which you can then distill into your 4-line professional summary.
 </div>
 
 <h2 id="section8">8. LinkedIn Alignment: Making Your Resume and Profile Work Together</h2>
@@ -421,22 +440,22 @@ Reiterate your enthusiasm, mention that you have attached your resume (and any o
 
 <h3>What Must Match Exactly</h3>
 <ul>
-<li><strong>Job titles</strong> â€” Should be identical across both documents</li>
-<li><strong>Employment dates</strong> â€” Month and year must match. Even a one-month discrepancy can raise questions</li>
-<li><strong>Company names</strong> â€” Use the same formatting (include or omit "Inc.", "LLC", etc. consistently)</li>
-<li><strong>Key achievements</strong> â€” Your top 3-5 accomplishments should appear on both</li>
+<li><strong>Job titles</strong> -- Should be identical across both documents</li>
+<li><strong>Employment dates</strong> -- Month and year must match. Even a one-month discrepancy can raise questions</li>
+<li><strong>Company names</strong> -- Use the same formatting (include or omit "Inc.", "LLC", etc. consistently)</li>
+<li><strong>Key achievements</strong> -- Your top 3-5 accomplishments should appear on both</li>
 </ul>
 
 <h3>What Can Differ (And Should)</h3>
 <ul>
-<li><strong>Your LinkedIn summary</strong> â€” Can be more conversational and narrative-driven than your resume summary</li>
-<li><strong>Skill endorsements</strong> â€” LinkedIn lists all skills; your resume should only list the most relevant 10-12</li>
-<li><strong>Recommendations</strong> â€” LinkedIn is the place for peer endorsements; your resume is for quantified achievements</li>
-<li><strong>Portfolio and media</strong> â€” LinkedIn can host rich media; your resume references a link</li>
+<li><strong>Your LinkedIn summary</strong> -- Can be more conversational and narrative-driven than your resume summary</li>
+<li><strong>Skill endorsements</strong> -- LinkedIn lists all skills; your resume should only list the most relevant 10-12</li>
+<li><strong>Recommendations</strong> -- LinkedIn is the place for peer endorsements; your resume is for quantified achievements</li>
+<li><strong>Portfolio and media</strong> -- LinkedIn can host rich media; your resume references a link</li>
 </ul>
 
 <div class="tip-box">
-<strong>Supercharge Your LinkedIn Presence:</strong> <a href="https://www.amazon.com/dp/1260456130?tag=dogeking03-20" target="_blank" rel="noopener noreferrer" class="affiliate-link"><em>"LinkedIn Profile Optimization For Dummies"</em></a> covers everything from headline strategy to content publishing. For advanced job seekers, <a href="https://www.linkedin.com/premium?trk=resumeprotips-guide-2026" target="_blank" rel="noopener noreferrer" class="affiliate-link"><strong>LinkedIn Premium</strong></a> gives you direct messaging to recruiters, salary insights, and unlimited profile views â€” a powerful complement to your resume strategy.
+<strong>Supercharge Your LinkedIn Presence:</strong> <a href="https://www.amazon.com/dp/1260456130?tag=dogeking03-20" target="_blank" rel="noopener noreferrer" class="affiliate-link"><em>"LinkedIn Profile Optimization For Dummies"</em></a> covers everything from headline strategy to content publishing. For advanced job seekers, <a href="https://www.linkedin.com/premium?trk=resumeprotips-guide-2026" target="_blank" rel="noopener noreferrer" class="affiliate-link"><strong>LinkedIn Premium</strong></a> gives you direct messaging to recruiters, salary insights, and unlimited profile views -- a powerful complement to your resume strategy.
 </div>
 
 <h3>LinkedIn Optimization Checklist</h3>
@@ -457,19 +476,19 @@ Reiterate your enthusiasm, mention that you have attached your resume (and any o
 
 <h3>The 40-30-20-10 Rule of Job Search Time Allocation</h3>
 <ul>
-<li><strong>40% â€” Networking</strong>: Informational interviews, LinkedIn engagement, industry events, alumni connections</li>
-<li><strong>30% â€” Applications</strong>: Tailoring resumes, writing cover letters, submitting applications</li>
-<li><strong>20% â€” Skill Building</strong>: Certifications, courses, portfolio projects, personal branding</li>
-<li><strong>10% â€” Interview Prep</strong>: Mock interviews, company research, STAR story preparation</li>
+<li><strong>40% -- Networking</strong>: Informational interviews, LinkedIn engagement, industry events, alumni connections</li>
+<li><strong>30% -- Applications</strong>: Tailoring resumes, writing cover letters, submitting applications</li>
+<li><strong>20% -- Skill Building</strong>: Certifications, courses, portfolio projects, personal branding</li>
+<li><strong>10% -- Interview Prep</strong>: Mock interviews, company research, STAR story preparation</li>
 </ul>
 
 <h3>Networking Strategies That Work in 2026</h3>
 <ul>
-<li><strong>Targeted LinkedIn outreach</strong> â€” Send 5-10 personalized connection requests per week to people in your target companies or roles</li>
-<li><strong>Informational interviews</strong> â€” Ask for 15-minute conversations, not jobs. Learn about their team, challenges, and culture</li>
-<li><strong>Industry events (virtual and in-person)</strong> â€” Conferences, webinars, meetups are prime networking territory</li>
-<li><strong>Alumni networks</strong> â€” Your university alumni network is an underutilized goldmine</li>
-<li><strong>Professional associations</strong> â€” Join 1-2 relevant organizations and participate actively</li>
+<li><strong>Targeted LinkedIn outreach</strong> -- Send 5-10 personalized connection requests per week to people in your target companies or roles</li>
+<li><strong>Informational interviews</strong> -- Ask for 15-minute conversations, not jobs. Learn about their team, challenges, and culture</li>
+<li><strong>Industry events (virtual and in-person)</strong> -- Conferences, webinars, meetups are prime networking territory</li>
+<li><strong>Alumni networks</strong> -- Your university alumni network is an underutilized goldmine</li>
+<li><strong>Professional associations</strong> -- Join 1-2 relevant organizations and participate actively</li>
 </ul>
 
 <h3>Application Strategy</h3>
@@ -491,16 +510,16 @@ Reiterate your enthusiasm, mention that you have attached your resume (and any o
 </div>
 
 <ol>
-<li><strong>Generic objective statements</strong> â€” "Seeking a challenging position where I can utilize my skills" wastes prime real estate. Use a professional summary instead.</li>
-<li><strong>Missing metrics</strong> â€” Every bullet point that can be quantified should be. "Improved sales" is forgettable. "Increased territory sales by 34% ($2.1M) in 12 months" gets interviews.</li>
-<li><strong>Inconsistent formatting</strong> â€” Different bullet styles, mixed date formats, inconsistent font sizes all signal lack of attention to detail.</li>
-<li><strong>Including irrelevant experience</strong> â€” Your high school summer job does not belong on a professional resume unless you are a student.</li>
-<li><strong>Using personal pronouns</strong> â€” "I managed a team" should be "Managed a team." Resumes are written in first-person implied.</li>
-<li><strong>Listing duties instead of achievements</strong> â€” "Responsible for managing social media accounts" tells nothing about your impact. "Grew Instagram following from 5K to 50K in 9 months through organic content strategy" demonstrates value.</li>
-<li><strong>Too long or too short</strong> â€” One page for early career, two pages for mid-career (5-15 years), two to three pages for executive roles (15+ years).</li>
-<li><strong>Typos and grammatical errors</strong> â€” The single most common dealbreaker. Read your resume aloud backward to catch errors.</li>
-<li><strong>Unprofessional email addresses</strong> â€” "partyguy87@email.com" will get your resume rejected before the first line is read.</li>
-<li><strong>Ignoring the ATS</strong> â€” If your resume cannot be parsed by an ATS, it does not exist to the recruiter.</li>
+<li><strong>Generic objective statements</strong> -- "Seeking a challenging position where I can utilize my skills" wastes prime real estate. Use a professional summary instead.</li>
+<li><strong>Missing metrics</strong> -- Every bullet point that can be quantified should be. "Improved sales" is forgettable. "Increased territory sales by 34% ($2.1M) in 12 months" gets interviews.</li>
+<li><strong>Inconsistent formatting</strong> -- Different bullet styles, mixed date formats, inconsistent font sizes all signal lack of attention to detail.</li>
+<li><strong>Including irrelevant experience</strong> -- Your high school summer job does not belong on a professional resume unless you are a student.</li>
+<li><strong>Using personal pronouns</strong> -- "I managed a team" should be "Managed a team." Resumes are written in first-person implied.</li>
+<li><strong>Listing duties instead of achievements</strong> -- "Responsible for managing social media accounts" tells nothing about your impact. "Grew Instagram following from 5K to 50K in 9 months through organic content strategy" demonstrates value.</li>
+<li><strong>Too long or too short</strong> -- One page for early career, two pages for mid-career (5-15 years), two to three pages for executive roles (15+ years).</li>
+<li><strong>Typos and grammatical errors</strong> -- The single most common dealbreaker. Read your resume aloud backward to catch errors.</li>
+<li><strong>Unprofessional email addresses</strong> -- "partyguy87@email.com" will get your resume rejected before the first line is read.</li>
+<li><strong>Ignoring the ATS</strong> -- If your resume cannot be parsed by an ATS, it does not exist to the recruiter.</li>
 </ol>
 
 <h2 id="section11">11. Final Checklist: Before You Hit Submit</h2>
@@ -524,23 +543,23 @@ Reiterate your enthusiasm, mention that you have attached your resume (and any o
 <div class="checklist-item">Cover letter is written, customized, and proofread</div>
 <div class="checklist-item">No typos, no grammatical errors, no inconsistent formatting</div>
 <div class="checklist-item">Resume length matches your experience level (1-2 pages)</div>
-<div class="checklist-item">Dates are consistent format (Month Year â€“ Month Year)</div>
+<div class="checklist-item">Dates are consistent format (Month Year - Month Year)</div>
 <div class="checklist-item">One final read-through aloud before hitting submit</div>
 
 <hr>
 
-<h3>Your Resume is Your Gateway â€” Make It Count</h3>
+<h3>Your Resume is Your Gateway -- Make It Count</h3>
 
-<p>Your resume does not just list your experience â€” it tells your professional story. In 2026, that story must be optimized for automated systems, compelling to human readers in seconds, and strategically aligned with your broader job search efforts.</p>
+<p>Your resume does not just list your experience -- it tells your professional story. In 2026, that story must be optimized for automated systems, compelling to human readers in seconds, and strategically aligned with your broader job search efforts.</p>
 
-<p>By following the framework in this guide â€” choosing the right format, structuring each section for impact, optimizing for ATS, using action verbs that demonstrate ownership, aligning your LinkedIn presence, and approaching your job search strategically â€” you dramatically increase your odds of getting noticed, getting shortlisted, and getting hired.</p>
+<p>By following the framework in this guide -- choosing the right format, structuring each section for impact, optimizing for ATS, using action verbs that demonstrate ownership, aligning your LinkedIn presence, and approaching your job search strategically -- you dramatically increase your odds of getting noticed, getting shortlisted, and getting hired.</p>
 
 <p>The job market is competitive, but it is also full of opportunity for candidates who take a strategic approach. Your resume is the key that opens the door. Make it impossible to ignore.</p>
 
 <div class="cta-box">
 <h3>Ready to Get Your Resume Past the ATS?</h3>
-<p>Download the ATS Resume Checklist Bundle â€” used by thousands of job seekers to transform their resumes into interview-winning documents. Includes formatting templates, keyword optimization guides, and the exact checklist professional recruiters use.</p>
-<a href="https://dogeking0.gumroad.com/l/gkwuee" class="cta-btn" target="_blank" rel="noopener noreferrer">Get the ATS Resume Checklist Bundle â†’</a>
+<p>Download the ATS Resume Checklist Bundle -- used by thousands of job seekers to transform their resumes into interview-winning documents. Includes formatting templates, keyword optimization guides, and the exact checklist professional recruiters use.</p>
+<a href="https://dogeking0.gumroad.com/l/gkwuee" class="cta-btn" target="_blank" rel="noopener noreferrer">Get the ATS Resume Checklist Bundle -></a>
 </div>
 
 <p style="font-size:0.85em;opacity:0.7;margin-top:10px;"><em>Disclosure: Some links on this page are affiliate links. If you make a purchase through these links, we may earn a small commission at no additional cost to you. We only recommend products and resources we have vetted and believe in. Your support helps us continue creating expert career content.</em></p>
@@ -564,17 +583,29 @@ Reiterate your enthusiasm, mention that you have attached your resume (and any o
 </div>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8CVE2X8R5L"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-8CVE2X8R5L");</script>
+
 
 <script src="/scripts/related-articles.js"></script>
 <!-- Amazon Affiliate Banner -->
 <div class="amazon-affiliate-banner" style="background:linear-gradient(135deg,#232f3e,#131921);color:white;padding:20px;margin:20px auto;max-width:800px;border-radius:10px;text-align:center;font-family:Arial,sans-serif;">
-  <p style="margin:0 0 10px;font-size:14px;opacity:0.9;">📦 <strong>Support Our Site — Shop on Amazon</strong></p>
+  <p style="margin:0 0 10px;font-size:14px;opacity:0.9;">?? <strong>Support Our Site ? Shop on Amazon</strong></p>
   <p style="margin:0 0 15px;font-size:13px;opacity:0.7;">We earn a small commission at no extra cost to you when you shop through our links.</p>
-  <a href="https://www.amazon.com/?tag=dogekingus20-20" target="_blank" rel="nofollow sponsored" style="display:inline-block;background:#ff9900;color:#232f3e;padding:12px 30px;border-radius:25px;font-weight:bold;font-size:15px;text-decoration:none;">🛒 Shop on Amazon →</a>
+  <a href="https://www.amazon.com/?tag=resumeprotips-20" target="_blank" rel="nofollow sponsored" style="display:inline-block;background:#ff9900;color:#232f3e;padding:12px 30px;border-radius:25px;font-weight:bold;font-size:15px;text-decoration:none;">?? Shop on Amazon ?</a>
   <p style="margin:10px 0 0;font-size:11px;opacity:0.5;">As an Amazon Associate we earn from qualifying purchases.</p>
 </div>
 <!-- Amazon Associates Tag -->
-<div style="display:none;"><img src="https://ir-na.amazon-adsystem.com/e/ir?t=dogekingus20-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" /></div>
+<div style="display:none;"><img src="https://ir-na.amazon-adsystem.com/e/ir?t=resumeprotips-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" /></div>
+
+
+<script>
+window.addEventListener('DOMContentLoaded',function(){
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-8CVE2X8R5L');
+document.addEventListener('click',function(e){
+var t=e.target.closest('a[href*="gumroad.com"],a[href*="kit.com/forms"]');if(!t)return;
+var label=t.href.includes('gumroad')?'Gumroad Product Click':'Kit Form Click';
+gtag('event','conversion',{send_to:'G-8CVE2X8R5L',event_category:'Outbound',event_label:label,value:1});});
+});
+</script>
 </body>
 </html>

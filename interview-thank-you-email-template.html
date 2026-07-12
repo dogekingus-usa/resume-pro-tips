@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="theme-resumeprotips" lang="en">
 <head>
 <meta charset="UTF-8">
@@ -26,8 +26,27 @@
 
 
   <link rel="stylesheet" href="/crown-design-system.css">
+<style>
+
+/* === A11Y: TOUCH TARGETS === */
+@media (max-width: 768px) {
+  .nav-links a { min-height: 44px; padding: 12px 16px; display: flex; align-items: center; }
+  .hamburger, button.hamburger { min-width: 44px; min-height: 44px; }
+}
+.buy-btn, .bundle-btn, .cta, .btn-primary, button {
+  min-height: 44px; padding: 12px 24px; display: inline-flex; align-items: center; justify-content: center;
+}
+footer a { display: inline-block; min-height: 44px; padding: 8px 0; line-height: 1.4; }
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid #818cf8; outline-offset: 2px; border-radius: 4px;
+}
+.skip-nav { position: absolute; top: -9999px; left: 0; z-index: 10000; padding: 12px 16px; background: #1e293b; color: #f1f5f9; font-size: 0.875rem; font-weight: 600; text-decoration: none; min-height: 44px; }
+.skip-nav:focus { top: 0; }
+
+</style>
 </head>
 <body>
+<a href="#main-content" class="skip-nav">Skip to main content</a>
 <nav>
   <a href="/" class="nav-logo">Resume Pro Tips</a>
   <button class="nav-hamburger" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('show')">
@@ -56,7 +75,7 @@
 <li><strong>2 to 4 hours post-interview (ideal):</strong> This window signals genuine enthusiasm and strong follow-through. The interviewer's memory of your conversation is still fresh, and your email reinforces the key points you discussed. Candidates who send within 4 hours are perceived as more organized and interested.</li>
 <li><strong>Same day (acceptable):</strong> Up to 11:59 PM the same day is still effective. The urgency decreases slightly but remains positive.</li>
 <li><strong>Next morning (late but okay):</strong> If you interviewed late in the day, sending before 10 AM the next day is still within reasonable bounds. Acknowledge the delay in your opening line.</li>
-<li><strong>After 24 hours (negative impact):</strong> Late follow-ups suggest disinterest or poor organizational skills. After 48 hours, do not send a thank-you at all â€” pivot to a follow-up email instead.</li>
+<li><strong>After 24 hours (negative impact):</strong> Late follow-ups suggest disinterest or poor organizational skills. After 48 hours, do not send a thank-you at all -- pivot to a follow-up email instead.</li>
 </ul>
 
 <p><strong>Pro tip:</strong> Type your thank you email draft during the 5 minutes after your interview ends. Use bullet points to capture specific conversation details while they are fresh. Then proofread and send within the 2-to-4-hour window. If you are in back-to-back meetings, schedule the email to send at the 3-hour mark.</p>
@@ -73,18 +92,18 @@
 <li><strong>Clean closing:</strong> Professional sign-off with your contact information. Include your LinkedIn profile and phone number in your email signature.</li>
 </ol>
 
-<p>Keep the entire email between 100 and 200 words. Anything longer risks not being read. Hiring managers are busy â€” respect their time even in your thank you.</p>
+<p>Keep the entire email between 100 and 200 words. Anything longer risks not being read. Hiring managers are busy -- respect their time even in your thank you.</p>
 
 <h2>Template 1: Standard Interview (Single Interviewer)</h2>
 
 <p>Use this template for one-on-one interviews with a hiring manager, recruiter, or team lead.</p>
 
 <div style="background:#f8f9fa;border-left:4px solid #2563eb;padding:1.25rem;margin:1rem 0;border-radius:4px;">
-<p><strong>Subject:</strong> Thank You â€” [Your Name] â€” [Job Title] Interview</p>
+<p><strong>Subject:</strong> Thank You -- [Your Name] -- [Job Title] Interview</p>
 
 <p>Dear [Interviewer Name],</p>
 
-<p>Thank you for taking the time to meet with me today. I truly enjoyed learning about [specific topic discussed â€” e.g., the team's approach to agile sprint planning] and hearing about [another specific detail â€” e.g., the upcoming product launch in Q3].</p>
+<p>Thank you for taking the time to meet with me today. I truly enjoyed learning about [specific topic discussed -- e.g., the team's approach to agile sprint planning] and hearing about [another specific detail -- e.g., the upcoming product launch in Q3].</p>
 
 <p>I was particularly energized by our discussion about [specific challenge or project]. Having led a similar initiative at [previous company], I see clear opportunities to contribute meaningfully from the start. My experience with [relevant skill] maps directly to what your team needs right now.</p>
 
@@ -103,13 +122,13 @@
 <p>Technical interviews require a different approach. You need to demonstrate that you absorbed the feedback and technical context from the session. If there was a coding challenge or system design exercise, reference it directly.</p>
 
 <div style="background:#f8f9fa;border-left:4px solid #059669;padding:1.25rem;margin:1rem 0;border-radius:4px;">
-<p><strong>Subject:</strong> Thank You â€” [Your Name] â€” [Job Title] Technical Interview</p>
+<p><strong>Subject:</strong> Thank You -- [Your Name] -- [Job Title] Technical Interview</p>
 
 <p>Dear [Interviewer Name],</p>
 
-<p>Thank you for the thorough technical discussion today. I really appreciated the depth of your questions on [specific technical topic â€” e.g., distributed systems and eventual consistency]. It gave me a clear picture of the engineering challenges your team tackles daily.</p>
+<p>Thank you for the thorough technical discussion today. I really appreciated the depth of your questions on [specific technical topic -- e.g., distributed systems and eventual consistency]. It gave me a clear picture of the engineering challenges your team tackles daily.</p>
 
-<p>Reflecting on our whiteboarding session around [specific problem], I realized an additional approach we could consider: [brief technical insight]. I have attached a rough sketch of what that might look like â€” feel free to use or ignore it. I simply wanted to show my thinking process.</p>
+<p>Reflecting on our whiteboarding session around [specific problem], I realized an additional approach we could consider: [brief technical insight]. I have attached a rough sketch of what that might look like -- feel free to use or ignore it. I simply wanted to show my thinking process.</p>
 
 <p>The technical problems you described are exactly the kind of work I thrive on. My background in [specific technical domain] has prepared me well for the challenges your team faces, and I am excited about the possibility of contributing to [specific project or system].</p>
 
@@ -128,11 +147,11 @@
 <p>Panel interviews present a unique challenge: you need to address multiple people without writing a novel. The best approach is to send individual emails to each panelist, each tailored to your specific conversation with that person.</p>
 
 <div style="background:#f8f9fa;border-left:4px solid #7c3aed;padding:1.25rem;margin:1rem 0;border-radius:4px;">
-<p><strong>Subject:</strong> Thank You â€” [Your Name] â€” [Job Title] Interview â€” [Panelist Name]</p>
+<p><strong>Subject:</strong> Thank You -- [Your Name] -- [Job Title] Interview -- [Panelist Name]</p>
 
 <p>Dear [Panelist Name],</p>
 
-<p>Thank you for the opportunity to discuss [specific topic you discussed with this panelist â€” e.g., the customer onboarding workflow] during today's panel. I found your perspective on [specific insight they shared] particularly valuable.</p>
+<p>Thank you for the opportunity to discuss [specific topic you discussed with this panelist -- e.g., the customer onboarding workflow] during today's panel. I found your perspective on [specific insight they shared] particularly valuable.</p>
 
 <p>I also appreciated learning how your team approaches [specific challenge]. The alignment between [Company Name]'s strategy and my experience with [relevant skill] gives me confidence that I could add value quickly.</p>
 
@@ -144,26 +163,26 @@
 [LinkedIn Profile URL]</p>
 </div>
 
-<p><strong>Key rule for panel interviews:</strong> Do not send a group email. Each panelist evaluated you from a different angle â€” your response must reflect that. Mention one unique detail from your conversation with each person. The emails should be 75% identical (your value prop, enthusiasm, closing) and 25% personalized to that specific interaction.</p>
+<p><strong>Key rule for panel interviews:</strong> Do not send a group email. Each panelist evaluated you from a different angle -- your response must reflect that. Mention one unique detail from your conversation with each person. The emails should be 75% identical (your value prop, enthusiasm, closing) and 25% personalized to that specific interaction.</p>
 
 <h2>Personalization Tips That Make Your Email Stand Out</h2>
 
 <p>The difference between a forgettable thank you email and one that moves you to the next round comes down to personalization. Here are specific strategies to make yours memorable:</p>
 
 <h3>1. Reference a Specific Challenge They Mentioned</h3>
-<p>During your interview, the interviewer likely mentioned a specific pain point or challenge. Reference it in your thank you email and briefly connect it to your experience. Example: "The challenges you described with cross-team data silos resonate deeply â€” I spent two years building a shared analytics pipeline at [Company] that reduced reporting time by 40%."</p>
+<p>During your interview, the interviewer likely mentioned a specific pain point or challenge. Reference it in your thank you email and briefly connect it to your experience. Example: "The challenges you described with cross-team data silos resonate deeply -- I spent two years building a shared analytics pipeline at [Company] that reduced reporting time by 40%."</p>
 
 <h3>2. Use Their Language and Terminology</h3>
 <p>Did they use company-specific acronyms or jargon? Mirror their language in your email. If they call their process "sprint cycles" or refer to their internal tool as "Hub," use those same terms. It signals cultural fit and attention to detail.</p>
 
 <h3>3. Mention a Shared Interest</h3>
-<p>If you discovered a common connection during the interview â€” same alma mater, shared interest in a hobby, mutual professional connection â€” reference it briefly. "I also enjoyed our quick discussion about data science meetups in Austin. I will definitely check out the one you recommended."</p>
+<p>If you discovered a common connection during the interview -- same alma mater, shared interest in a hobby, mutual professional connection -- reference it briefly. "I also enjoyed our quick discussion about data science meetups in Austin. I will definitely check out the one you recommended."</p>
 
 <h3>4. Connect Your Skills to Their Goals</h3>
-<p>Every team has quarterly goals or OKRs. If the interviewer mentioned specific targets â€” "We need to reduce customer churn by 15%" â€” connect your experience directly to that metric. "Reducing churn is exactly where I can help. At my last company, I led a retention initiative that improved customer retention by 22% within six months."</p>
+<p>Every team has quarterly goals or OKRs. If the interviewer mentioned specific targets -- "We need to reduce customer churn by 15%" -- connect your experience directly to that metric. "Reducing churn is exactly where I can help. At my last company, I led a retention initiative that improved customer retention by 22% within six months."</p>
 
 <h3>5. Show You Did Additional Research</h3>
-<p>If something came up in conversation that you did not know about â€” a recent product launch, a company blog post, a new initiative â€” mention that you looked it up after the interview and found it exciting. This demonstrates genuine curiosity and initiative.</p>
+<p>If something came up in conversation that you did not know about -- a recent product launch, a company blog post, a new initiative -- mention that you looked it up after the interview and found it exciting. This demonstrates genuine curiosity and initiative.</p>
 
 <h2>The Complete Follow-Up Sequence</h2>
 
@@ -173,7 +192,7 @@
 <p>Send your personalized thank you email using one of the templates above. This is non-negotiable.</p>
 
 <h3>Day 2-3: The "Additional Thought" Email (Optional)</h3>
-<p>If a brilliant idea or solution occurred to you after the interview, send a brief follow-up. "After our conversation, I kept thinking about the data pipeline challenge. I realized we could potentially use [approach] to speed things up. Just wanted to share in case it is helpful." This only works if you have a genuinely valuable insight â€” do not manufacture one.</p>
+<p>If a brilliant idea or solution occurred to you after the interview, send a brief follow-up. "After our conversation, I kept thinking about the data pipeline challenge. I realized we could potentially use [approach] to speed things up. Just wanted to share in case it is helpful." This only works if you have a genuinely valuable insight -- do not manufacture one.</p>
 
 <h3>Day 5-7: The Gentle Check-In</h3>
 <p>If the interviewer told you they would follow up within a week, wait until day 5 to send a brief status inquiry. "I hope you have had a good week. I wanted to check in on the timeline for next steps. Happy to provide any additional information that would be helpful."</p>
@@ -221,7 +240,7 @@
 </article>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8CVE2X8R5L"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-8CVE2X8R5L");</script>
+
 
 <footer>
   <div class="footer-links">
@@ -247,12 +266,24 @@
 <script src="/scripts/related-articles.js"></script>
 <!-- Amazon Affiliate Banner -->
 <div class="amazon-affiliate-banner" style="background:linear-gradient(135deg,#232f3e,#131921);color:white;padding:20px;margin:20px auto;max-width:800px;border-radius:10px;text-align:center;font-family:Arial,sans-serif;">
-  <p style="margin:0 0 10px;font-size:14px;opacity:0.9;">📦 <strong>Support Our Site — Shop on Amazon</strong></p>
+  <p style="margin:0 0 10px;font-size:14px;opacity:0.9;">?? <strong>Support Our Site ? Shop on Amazon</strong></p>
   <p style="margin:0 0 15px;font-size:13px;opacity:0.7;">We earn a small commission at no extra cost to you when you shop through our links.</p>
-  <a href="https://www.amazon.com/?tag=dogekingus20-20" target="_blank" rel="nofollow sponsored" style="display:inline-block;background:#ff9900;color:#232f3e;padding:12px 30px;border-radius:25px;font-weight:bold;font-size:15px;text-decoration:none;">🛒 Shop on Amazon →</a>
+  <a href="https://www.amazon.com/?tag=resumeprotips-20" target="_blank" rel="nofollow sponsored" style="display:inline-block;background:#ff9900;color:#232f3e;padding:12px 30px;border-radius:25px;font-weight:bold;font-size:15px;text-decoration:none;">?? Shop on Amazon ?</a>
   <p style="margin:10px 0 0;font-size:11px;opacity:0.5;">As an Amazon Associate we earn from qualifying purchases.</p>
 </div>
 <!-- Amazon Associates Tag -->
-<div style="display:none;"><img src="https://ir-na.amazon-adsystem.com/e/ir?t=dogekingus20-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" /></div>
+<div style="display:none;"><img src="https://ir-na.amazon-adsystem.com/e/ir?t=resumeprotips-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" /></div>
+
+
+<script>
+window.addEventListener('DOMContentLoaded',function(){
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-8CVE2X8R5L');
+document.addEventListener('click',function(e){
+var t=e.target.closest('a[href*="gumroad.com"],a[href*="kit.com/forms"]');if(!t)return;
+var label=t.href.includes('gumroad')?'Gumroad Product Click':'Kit Form Click';
+gtag('event','conversion',{send_to:'G-8CVE2X8R5L',event_category:'Outbound',event_label:label,value:1});});
+});
+</script>
 </body>
 </html>

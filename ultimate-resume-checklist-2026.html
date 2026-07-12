@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -65,13 +65,13 @@
     .nav-logo span { background: linear-gradient(135deg, var(--color-primary, #4f46e5), var(--color-primary-light, #6366f1)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .nav-logo .gold { background: none; -webkit-text-fill-color: var(--gold, #d4a017); }
     .nav-links { display: flex; align-items: center; gap: 1.5rem; }
-    .nav-links a { color: #94a3b8; font-size: 0.875rem; font-weight: 500; text-decoration: none; transition: color 0.3s; position: relative; }
+    .nav-links a { color: #cbd5e1; font-size: 0.875rem; font-weight: 500; text-decoration: none; transition: color 0.3s; position: relative; }
     .nav-links a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: linear-gradient(90deg, var(--color-primary, #4f46e5), var(--color-primary-light, #6366f1)); transition: width 0.3s; }
     .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
     .nav-links a:hover, .nav-links a.active { color: #e2e8f0; }
-    .hamburger { display: none; background: none; border: 1px solid rgba(255,255,255,0.15); color: #94a3b8; width: 36px; height: 36px; border-radius: 8px; cursor: pointer; flex-direction: column; align-items: center; justify-content: center; gap: 4px; transition: all 0.3s; }
+    .hamburger { display: none; background: none; border: 1px solid rgba(255,255,255,0.15); color: #cbd5e1; width: 36px; height: 36px; border-radius: 8px; cursor: pointer; flex-direction: column; align-items: center; justify-content: center; gap: 4px; transition: all 0.3s; }
     .hamburger:hover { border-color: var(--color-primary, #4f46e5); }
-    .hamburger span { display: block; width: 18px; height: 2px; background: #94a3b8; border-radius: 2px; transition: all 0.3s; }
+    .hamburger span { display: block; width: 18px; height: 2px; background: #cbd5e1; border-radius: 2px; transition: all 0.3s; }
 
     /* ===== FOOTER ===== */
     footer {
@@ -83,12 +83,12 @@
     .footer-brand h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--color-text, #f1f5f9); }
     .footer-brand h3 span { background: linear-gradient(135deg, var(--color-primary, #4f46e5), var(--color-primary-light, #6366f1)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .footer-brand .gold { background: none; -webkit-text-fill-color: var(--gold, #d4a017); }
-    .footer-brand p { font-size: 0.813rem; color: #64748b; line-height: 1.6; }
-    .footer-col h4 { font-size: 0.813rem; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; }
-    .footer-col a { display: block; font-size: 0.875rem; color: #64748b; margin-bottom: 0.5rem; transition: color 0.3s; text-decoration: none; }
+    .footer-brand p { font-size: 0.813rem; color: #94a3b8; line-height: 1.6; }
+    .footer-col h4 { font-size: 0.813rem; font-weight: 600; color: #cbd5e1; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; }
+    .footer-col a { display: block; font-size: 0.875rem; color: #94a3b8; margin-bottom: 0.5rem; transition: color 0.3s; text-decoration: none; }
     .footer-col a:hover { color: var(--color-primary-light, #6366f1); }
     .footer-bottom { border-top: 1px solid var(--footer-border); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-    .footer-bottom p { font-size: 0.75rem; color: #475569; }
+    .footer-bottom p { font-size: 0.75rem; color: #94a3b8; }
 
     /* ===== MOBILE NAV ===== */
     @media (max-width: 768px) {
@@ -109,8 +109,27 @@
     body { padding-top: var(--nav-height); }
 </style>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%231e3a5f%22/><text x=%2216%22 y=%2222%22 text-anchor=%22middle%22 fill=%22%23d4a017%22 font-family=%22Inter,sans-serif%22 font-weight=%22700%22 font-size=%2215%22>RP</text></svg>">
+<style>
+
+/* === A11Y: TOUCH TARGETS === */
+@media (max-width: 768px) {
+  .nav-links a { min-height: 44px; padding: 12px 16px; display: flex; align-items: center; }
+  .hamburger, button.hamburger { min-width: 44px; min-height: 44px; }
+}
+.buy-btn, .bundle-btn, .cta, .btn-primary, button {
+  min-height: 44px; padding: 12px 24px; display: inline-flex; align-items: center; justify-content: center;
+}
+footer a { display: inline-block; min-height: 44px; padding: 8px 0; line-height: 1.4; }
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid #818cf8; outline-offset: 2px; border-radius: 4px;
+}
+.skip-nav { position: absolute; top: -9999px; left: 0; z-index: 10000; padding: 12px 16px; background: #1e293b; color: #f1f5f9; font-size: 0.875rem; font-weight: 600; text-decoration: none; min-height: 44px; }
+.skip-nav:focus { top: 0; }
+
+</style>
 </head>
 <body>
+<a href="#main-content" class="skip-nav">Skip to main content</a>
 
   <!-- ===== NAVIGATION ===== -->
   <nav id="site-nav">
@@ -136,7 +155,7 @@
     <h1>The Ultimate Resume Checklist for 2026</h1>
     <div class="meta">Published: May 17, 2026 | Updated: May 17, 2026 | 10 min read</div>
 
-    <p>You've written your resume. But is it ready to send? In 2026's hyper-competitive job market, a single mistake can cost you the interview. ATS systems reject 75% of applications before a recruiter sees them. Hiring managers spend just 6ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ8 seconds scanning each resume. There is zero margin for error.</p>
+    <p>You've written your resume. But is it ready to send? In 2026's hyper-competitive job market, a single mistake can cost you the interview. ATS systems reject 75% of applications before a recruiter sees them. Hiring managers spend just 6ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬...âEURœ8 seconds scanning each resume. There is zero margin for error.</p>
 
     <p>This checklist is exhaustive. Every item here comes from analyzing hundreds of successful resumes and talking to recruiters across tech, finance, healthcare, and creative industries. Go through every single item before you click "submit."</p>
 
@@ -148,36 +167,36 @@
 
     <div class="checklist-section">
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>One page only</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Unless you have 15+ years of experience or are applying for an executive role, your resume fits on one page. Recruiters in 2026 will not scroll to a second page for mid-level roles.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>One page only</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Unless you have 15+ years of experience or are applying for an executive role, your resume fits on one page. Recruiters in 2026 will not scroll to a second page for mid-level roles.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Reverse-chronological format</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Most recent job first. This remains the gold standard in 2026. Functional resumes (skills-first) are heavily flagged by ATS systems.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Reverse-chronological format</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Most recent job first. This remains the gold standard in 2026. Functional resumes (skills-first) are heavily flagged by ATS systems.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Single-column layout</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â No columns, no tables, no sidebars. ATS systems parse single-column layouts perfectly. Multi-column layouts frequently scramble text.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Single-column layout</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  No columns, no tables, no sidebars. ATS systems parse single-column layouts perfectly. Multi-column layouts frequently scramble text.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Standard section headings</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Use "Professional Summary," "Work Experience," "Education," "Skills," "Certifications." ATS systems look for these exact labels.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Standard section headings</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Use "Professional Summary," "Work Experience," "Education," "Skills," "Certifications." ATS systems look for these exact labels.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Consistent font throughout</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Use one font (Arial, Calibri, Helvetica, or Georgia). Body text 10ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ12pt. Section headers 12ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ14pt. Name at top 16ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ20pt.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Consistent font throughout</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Use one font (Arial, Calibri, Helvetica, or Georgia). Body text 10ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬...âEURœ12pt. Section headers 12ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬...âEURœ14pt. Name at top 16ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬...âEURœ20pt.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>File format: .docx preferred</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ATS systems parse .docx more reliably than PDF. Only use PDF when explicitly requested, and ensure it's text-based (not a scanned image).</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>File format: .docx preferred</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  ATS systems parse .docx more reliably than PDF. Only use PDF when explicitly requested, and ensure it's text-based (not a scanned image).</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>File name includes your name</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â "John_Doe_Resume_2026.docx" not "resume_final_v3.docx". Recruiters appreciate clearly named files.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>File name includes your name</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  "John_Doe_Resume_2026.docx" not "resume_final_v3.docx". Recruiters appreciate clearly named files.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>No photos, graphics, or icons</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ATS systems cannot parse images. That headshot or rating-star graphic you spent an hour on? The ATS ignores it entirely, and it takes up valuable space.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>No photos, graphics, or icons</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  ATS systems cannot parse images. That headshot or rating-star graphic you spent an hour on? The ATS ignores it entirely, and it takes up valuable space.</p>
       </div>
     </div>
 
@@ -185,28 +204,28 @@
 
     <div class="checklist-section">
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Full name at the top</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Use your professional name. If you go by a middle name or nickname, list it consistently across all platforms (LinkedIn, resume, portfolio).</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Full name at the top</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Use your professional name. If you go by a middle name or nickname, list it consistently across all platforms (LinkedIn, resume, portfolio).</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Professional email address</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â firstname.lastname@gmail.com or similar. Nothing containing "partyanimal94," "xXx_slayer_xXx," or numbers that suggest you created the address in middle school.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Professional email address</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  firstname.lastname@gmail.com or similar. Nothing containing "partyanimal94," "xXx_slayer_xXx," or numbers that suggest you created the address in middle school.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Phone number with area code</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Double-check it. A single wrong digit means recruiters cannot reach you.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Phone number with area code</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Double-check it. A single wrong digit means recruiters cannot reach you.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>LinkedIn URL</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Customize it (linkedin.com/in/yourname). A generic URL with auto-generated numbers looks unprofessional.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>LinkedIn URL</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Customize it (linkedin.com/in/yourname). A generic URL with auto-generated numbers looks unprofessional.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Location (city, state)</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Full address is unnecessary and a privacy risk. City and state is sufficient.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Location (city, state)</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Full address is unnecessary and a privacy risk. City and state is sufficient.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Optional: Portfolio or GitHub link</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Highly recommended for designers, developers, and content creators. Ensure the link works and the page is updated.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Optional: Portfolio or GitHub link</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Highly recommended for designers, developers, and content creators. Ensure the link works and the page is updated.</p>
       </div>
     </div>
 
@@ -214,28 +233,28 @@
 
     <div class="checklist-section">
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>2ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ3 sentences only</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â The summary is not a biography. It's a hook. Three sentences max.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>2ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬...âEURœ3 sentences only</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  The summary is not a biography. It's a hook. Three sentences max.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Answers three questions</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Who are you? What do you do best? What are you looking for? Every sentence should serve one of these purposes.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Answers three questions</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Who are you? What do you do best? What are you looking for? Every sentence should serve one of these purposes.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Includes a quantifiable achievement</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â "Marketing manager who grew organic traffic 340% in 18 months" is infinitely stronger than "Experienced marketing professional."</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Includes a quantifiable achievement</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  "Marketing manager who grew organic traffic 340% in 18 months" is infinitely stronger than "Experienced marketing professional."</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Tailored to the target role</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Your summary should change for every application. Reference the specific industry, role type, or company mission.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Tailored to the target role</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Your summary should change for every application. Reference the specific industry, role type, or company mission.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Contains 3+ keywords from the job description</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ATS systems weight the summary more heavily. Include your primary role keywords here.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Contains 3+ keywords from the job description</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  ATS systems weight the summary more heavily. Include your primary role keywords here.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>No clichÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©s</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Banish "results-driven," "team player," "go-getter," "detail-oriented," and "synergy." These words add zero value.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>No clichƒÆ'*âEUR(TM)ƒâEURš' ©s</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Banish "results-driven," "team player," "go-getter," "detail-oriented," and "synergy." These words add zero value.</p>
       </div>
     </div>
 
@@ -243,36 +262,36 @@
 
     <div class="checklist-section">
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>CAR framework for every bullet</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Challenge ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ Action ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ Result. Every single bullet should tell a mini-story of what you did and what happened.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>CAR framework for every bullet</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Challenge ƒÆ'' ¢ƒ ¢¢âEURš ¬'  ƒ ¢¢âEURš ¬¢âEURž ¢ Action ƒÆ'' ¢ƒ ¢¢âEURš ¬'  ƒ ¢¢âEURš ¬¢âEURž ¢ Result. Every single bullet should tell a mini-story of what you did and what happened.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>4ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ6 bullets per role</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Too few looks light. Too many looks cluttered. 4ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ6 is the sweet spot for recent roles, 3ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ4 for older ones.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>4ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬...âEURœ6 bullets per role</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Too few looks light. Too many looks cluttered. 4ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬...âEURœ6 is the sweet spot for recent roles, 3ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬...âEURœ4 for older ones.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Numbers in every bullet</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Percentage improvements, dollar amounts, time saved, people managed, revenue generated. If a bullet has no number, rewrite it until it does.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Numbers in every bullet</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Percentage improvements, dollar amounts, time saved, people managed, revenue generated. If a bullet has no number, rewrite it until it does.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Strong action verbs to start</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Led, Developed, Launched, Optimized, Generated, Engineered, Spearheaded, Delivered, Transformed, Accelerated. Never "Helped with," "Was responsible for," or "Worked on."</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Strong action verbs to start</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Led, Developed, Launched, Optimized, Generated, Engineered, Spearheaded, Delivered, Transformed, Accelerated. Never "Helped with," "Was responsible for," or "Worked on."</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Results are bolded</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â "Optimized the customer onboarding flow, <strong>reducing drop-off by 34% and increasing activation by 22%</strong>." Bold the numbers and outcomes for skimmability.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Results are bolded</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  "Optimized the customer onboarding flow, <strong>reducing drop-off by 34% and increasing activation by 22%</strong>." Bold the numbers and outcomes for skimmability.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Current role uses present tense</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â "Manage a team of 5 engineers" not "Managed." Past roles use past tense.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Current role uses present tense</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  "Manage a team of 5 engineers" not "Managed." Past roles use past tense.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>No responsibilities</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â "Managed social media accounts" is a responsibility. "Grew Instagram from 5K to 50K followers in 12 months" is an achievement. Always choose the latter.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>No responsibilities</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  "Managed social media accounts" is a responsibility. "Grew Instagram from 5K to 50K followers in 12 months" is an achievement. Always choose the latter.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Bullets ordered by relevance</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â The most impressive and relevant achievement for THIS specific job goes first.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Bullets ordered by relevance</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  The most impressive and relevant achievement for THIS specific job goes first.</p>
       </div>
     </div>
 
@@ -280,24 +299,24 @@
 
     <div class="checklist-section">
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Core Competencies section with 15ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ20 keywords</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â A dedicated section at the top or bottom with your primary skills in a comma-separated list.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Core Competencies section with 15ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬...âEURœ20 keywords</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  A dedicated section at the top or bottom with your primary skills in a comma-separated list.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Every keyword from the job description is present</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â The job posting mentions 20 skills. Your resume needs to include at least 15 of them. This is the single most impactful ATS optimization.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Every keyword from the job description is present</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  The job posting mentions 20 skills. Your resume needs to include at least 15 of them. This is the single most impactful ATS optimization.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Keywords appear naturally in context</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Don't just dump keywords. Weave them into your summary, work experience bullets, and skills section.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Keywords appear naturally in context</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Don't just dump keywords. Weave them into your summary, work experience bullets, and skills section.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Soft skills are demonstrated, not stated</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Don't write "Excellent communicator." Instead, write "Presented quarterly results to C-suite stakeholders, securing $2M in additional budget."</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Soft skills are demonstrated, not stated</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Don't write "Excellent communicator." Instead, write "Presented quarterly results to C-suite stakeholders, securing $2M in additional budget."</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Technical skills list the tool, not the category</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â "Python, React, AWS, Docker" not "Programming languages, Frameworks, Cloud platforms." Be specific.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Technical skills list the tool, not the category</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  "Python, React, AWS, Docker" not "Programming languages, Frameworks, Cloud platforms." Be specific.</p>
       </div>
     </div>
 
@@ -305,20 +324,20 @@
 
     <div class="checklist-section">
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Degree, institution, and graduation year</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â List your highest degree first. GPA only if it's above 3.5 and you're a recent graduate.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Degree, institution, and graduation year</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  List your highest degree first. GPA only if it's above 3.5 and you're a recent graduate.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Relevant coursework (optional)</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Only include if you're a recent graduate or career changer and the coursework is directly relevant to the target role.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Relevant coursework (optional)</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Only include if you're a recent graduate or career changer and the coursework is directly relevant to the target role.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Certifications are current and listed with issuer</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â "AWS Solutions Architect (Amazon, 2025)" not just "AWS Certified." Include expiration dates if applicable.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Certifications are current and listed with issuer</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  "AWS Solutions Architect (Amazon, 2025)" not just "AWS Certified." Include expiration dates if applicable.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>No high school if you have college</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â List your highest level of education only. High school belongs on resumes only if you have no college degree.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>No high school if you have college</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  List your highest level of education only. High school belongs on resumes only if you have no college degree.</p>
       </div>
     </div>
 
@@ -326,24 +345,24 @@
 
     <div class="checklist-section">
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>No headers or footers</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ATS systems often miss text in headers/footers. Your name and contact info should be in the main body of the document.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>No headers or footers</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  ATS systems often miss text in headers/footers. Your name and contact info should be in the main body of the document.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>No text boxes or word art</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â These create parsing errors. Plain text formatting only.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>No text boxes or word art</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  These create parsing errors. Plain text formatting only.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Save a plain-text version</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Copy your resume content into Notepad and review it. If the plain text version reads well and preserves all information, the ATS will parse it correctly.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Save a plain-text version</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Copy your resume content into Notepad and review it. If the plain text version reads well and preserves all information, the ATS will parse it correctly.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Run through Jobscan or similar tool</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Before submitting, paste your resume and the job description into an ATS matching tool. Aim for 80%+ match rate.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Run through Jobscan or similar tool</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Before submitting, paste your resume and the job description into an ATS matching tool. Aim for 80%+ match rate.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Avoid uncommon abbreviations</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Spell out acronyms at least once. "Customer Relationship Management (CRM)" not just "CRM."</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Avoid uncommon abbreviations</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Spell out acronyms at least once. "Customer Relationship Management (CRM)" not just "CRM."</p>
       </div>
     </div>
 
@@ -351,44 +370,44 @@
 
     <div class="checklist-section">
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Zero typos</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Read it aloud. Use Grammarly. Have a friend proofread. One typo can eliminate you from consideration.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Zero typos</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Read it aloud. Use Grammarly. Have a friend proofread. One typo can eliminate you from consideration.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Consistent date formatting</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â "Jan 2022 ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ Mar 2025" not "January 2022 to 3/25." Pick one format and use it everywhere.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Consistent date formatting</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  "Jan 2022 ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬...âEURœ Mar 2025" not "January 2022 to 3/25." Pick one format and use it everywhere.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Consistent punctuation</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â If one bullet ends with a period, all bullets end with periods. If no period, no periods throughout.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Consistent punctuation</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  If one bullet ends with a period, all bullets end with periods. If no period, no periods throughout.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>No first-person pronouns</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â "I," "me," "my" have no place on a resume. Use implied first person ("Led a team of 5") rather than "I led a team."</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>No first-person pronouns</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  "I," "me," "my" have no place on a resume. Use implied first person ("Led a team of 5") rather than "I led a team."</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>White space is balanced</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Your resume should have enough white space to feel inviting, but not so much that it looks empty. 0.5ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ0.75 inch margins are standard.</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>White space is balanced</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Your resume should have enough white space to feel inviting, but not so much that it looks empty. 0.5ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬...âEURœ0.75 inch margins are standard.</p>
       </div>
       <div class="checklist-item">
-        <span class="check">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒâ€šÃ‚Â</span>
-        <p><strong>Saved as a new file</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Never overwrite your master resume. Save a tailored copy with the company name: "John_Doe_Acme_Corp_2026.docx."</p>
+        <span class="check">ƒÆ'' ¢ƒâEUR¹...âEURœƒâEURš' </span>
+        <p><strong>Saved as a new file</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Never overwrite your master resume. Save a tailored copy with the company name: "John_Doe_Acme_Corp_2026.docx."</p>
       </div>
     </div>
 
     <h2>Common Mistakes That Still Haunt Resumes in 2026</h2>
     <p>Despite all the advice available, these mistakes appear on resumes every single day:</p>
     <ul>
-      <li><strong>Including an objective statement</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â "Seeking a challenging position where I can grow my skills" tells the recruiter nothing. Replace with a professional summary.</li>
-      <li><strong>Listing references or "References available upon request"</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Everyone knows you have references. This wastes precious space.</li>
-      <li><strong>Including a headshot</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â In many jurisdictions, this opens companies to discrimination claims. They'll strip it out anyway.</li>
-      <li><strong>Including your full address</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â City and state is sufficient. Your street address is a privacy risk and irrelevant.</li>
-      <li><strong>Using a template with ATS-unfriendly design</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Those beautiful Canva templates with columns, icons, and graphics? ATS systems hate them.</li>
-      <li><strong>Overloading with buzzwords</strong> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â "Leveraged synergistic blockchain solutions to disrupt the paradigm" ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â stop. Use real words that describe real work.</li>
+      <li><strong>Including an objective statement</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  "Seeking a challenging position where I can grow my skills" tells the recruiter nothing. Replace with a professional summary.</li>
+      <li><strong>Listing references or "References available upon request"</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Everyone knows you have references. This wastes precious space.</li>
+      <li><strong>Including a headshot</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  In many jurisdictions, this opens companies to discrimination claims. They'll strip it out anyway.</li>
+      <li><strong>Including your full address</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  City and state is sufficient. Your street address is a privacy risk and irrelevant.</li>
+      <li><strong>Using a template with ATS-unfriendly design</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Those beautiful Canva templates with columns, icons, and graphics? ATS systems hate them.</li>
+      <li><strong>Overloading with buzzwords</strong> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  "Leveraged synergistic blockchain solutions to disrupt the paradigm" ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  stop. Use real words that describe real work.</li>
     </ul>
 
     <div class="highlight-box">
-      <p><strong>The Bottom Line:</strong> A resume in 2026 needs to pass two tests ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â the ATS machine scan and the 6-second human scan. Every item on this checklist serves one of those two tests. Go through it religiously before every application. It takes 15 minutes and can double your interview rate. Don't skip a single checkbox.</p>
+      <p><strong>The Bottom Line:</strong> A resume in 2026 needs to pass two tests ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  the ATS machine scan and the 6-second human scan. Every item on this checklist serves one of those two tests. Go through it religiously before every application. It takes 15 minutes and can double your interview rate. Don't skip a single checkbox.</p>
     <div class="highlight-box">
       <p><strong>Recommended Resources:</strong> Level up your job search with <a href="https://www.amazon.com/dp/1250075934?tag=samuelpason04-20" target="_blank" rel="nofollow sponsored">"The 2-Hour Job Search" by Steve Dalton</a> - a proven system for landing interviews faster. For ATS-optimized resume templates, pick up <a href="https://www.amazon.com/dp/1507204656?tag=samuelpason04-20" target="_blank" rel="nofollow sponsored">"Modernize Your Resume" by Wendy Enelow</a> with expert strategies for every career stage.</p>
     </div>
@@ -396,7 +415,7 @@
     </div>
 
     <div class="footer">
-      <p>&copy; 2026 <a href="https://resumeprotips.com">Resume Pro Tips</a> ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Expert career advice for professionals at every stage.</p>
+      <p>&copy; 2026 <a href="https://resumeprotips.com">Resume Pro Tips</a> ƒÆ'' ¢ƒ ¢¢â'¬Å¡' ¬ƒ ¢¢âEURš ¬'  Expert career advice for professionals at every stage.</p>
     </div>
   </div>
 <div style="margin-top:40px;padding:20px;background:linear-gradient(135deg,#667eea,#764ba2);border-radius:12px;text-align:center;color:white">
@@ -453,17 +472,17 @@
   });
   </script>
 
-<div class="cta-section" style="background:linear-gradient(135deg,#0f3460,#16213e);border-radius:12px;padding:30px;margin:40px 0;text-align:center;color:#fff;"><h3 style="font-size:1.5em;margin-bottom:10px;">Land More Interviews Faster</h3><p style="font-size:1.1em;margin-bottom:15px;color:#a8c8ff;">Get the complete ATS Resume Checklist and Career Strategy Guide</p><a href="https://dogeking0.gumroad.com/l/gkwuee" style="display:inline-block;background:#f59e0b;color:#fff;font-size:1.2em;font-weight:700;padding:14px 40px;border-radius:50px;text-decoration:none;">Get Your Copy Now -></a><p style="font-size:0.85em;margin-top:12px;color:#a8c8ff;">Instant PDF download</p></div><div class="affiliate-disclosure" style="border-top:1px solid #e2e8f0;margin-top:2.5rem;padding-top:1rem;font-size:0.85rem;color:#64748b;">
+<div class="cta-section" style="background:linear-gradient(135deg,#0f3460,#16213e);border-radius:12px;padding:30px;margin:40px 0;text-align:center;color:#fff;"><h3 style="font-size:1.5em;margin-bottom:10px;">Land More Interviews Faster</h3><p style="font-size:1.1em;margin-bottom:15px;color:#a8c8ff;">Get the complete ATS Resume Checklist and Career Strategy Guide</p><a href="https://dogeking0.gumroad.com/l/gkwuee" style="display:inline-block;background:#f59e0b;color:#fff;font-size:1.2em;font-weight:700;padding:14px 40px;border-radius:50px;text-decoration:none;">Get Your Copy Now -></a><p style="font-size:0.85em;margin-top:12px;color:#a8c8ff;">Instant PDF download</p></div><div class="affiliate-disclosure" style="border-top:1px solid #e2e8f0;margin-top:2.5rem;padding-top:1rem;font-size:0.85rem;color:#94a3b8;">
   <p><em>Disclosure: Some links in this article are affiliate links. We may earn a small commission at no extra cost to you if you make a purchase through them. We only recommend products and services we believe in.</em></p>
 </div>
 <div class="cta-section" style="background:linear-gradient(135deg,#1e293b,#334155);border-radius:12px;padding:30px;margin:30px 0 20px;text-align:center;color:#fff;">
   <h3 style="font-size:1.3em;margin-bottom:8px;color:#f1f5f9;">Get More Tips Like This</h3>
-  <p style="font-size:0.95em;margin-bottom:15px;color:#94a3b8;">Join our newsletter for exclusive content, updates, and resources delivered to your inbox.</p>
+  <p style="font-size:0.95em;margin-bottom:15px;color:#cbd5e1;">Join our newsletter for exclusive content, updates, and resources delivered to your inbox.</p>
   <form action="#" method="post" style="display:flex;gap:8px;max-width:400px;margin:0 auto;flex-wrap:wrap;justify-content:center;">
     <input type="email" placeholder="Your email address" required style="padding:10px 16px;border-radius:8px;border:none;font-size:0.9rem;flex:1;min-width:200px;background:#0f172a;color:#f1f5f9;">
     <button type="submit" style="padding:10px 24px;background:#3b82f6;color:#fff;border:none;border-radius:8px;font-weight:600;font-size:0.9rem;cursor:pointer;">Subscribe</button>
   </form>
-  <p style="font-size:0.75rem;margin-top:10px;color:#64748b;">No spam. Unsubscribe anytime.</p>
+  <p style="font-size:0.75rem;margin-top:10px;color:#94a3b8;">No spam. Unsubscribe anytime.</p>
 </div>
 </body>
 </html>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="theme-resumeprotips" lang="en">
 <head>
 <meta charset="UTF-8">
@@ -50,8 +50,27 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 .meta{text-align:center;color:var(--primary);opacity:0.8;font-size:0.9em;margin-bottom:30px}
 </style>
   <link rel="stylesheet" href="/crown-design-system.css">
+<style>
+
+/* === A11Y: TOUCH TARGETS === */
+@media (max-width: 768px) {
+  .nav-links a { min-height: 44px; padding: 12px 16px; display: flex; align-items: center; }
+  .hamburger, button.hamburger { min-width: 44px; min-height: 44px; }
+}
+.buy-btn, .bundle-btn, .cta, .btn-primary, button {
+  min-height: 44px; padding: 12px 24px; display: inline-flex; align-items: center; justify-content: center;
+}
+footer a { display: inline-block; min-height: 44px; padding: 8px 0; line-height: 1.4; }
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid #818cf8; outline-offset: 2px; border-radius: 4px;
+}
+.skip-nav { position: absolute; top: -9999px; left: 0; z-index: 10000; padding: 12px 16px; background: #1e293b; color: #f1f5f9; font-size: 0.875rem; font-weight: 600; text-decoration: none; min-height: 44px; }
+.skip-nav:focus { top: 0; }
+
+</style>
 </head>
 <body>
+<a href="#main-content" class="skip-nav">Skip to main content</a>
 <nav>
   <a href="/" class="nav-logo">Resume Pro Tips</a>
   <button class="nav-hamburger" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('show')">
@@ -75,12 +94,12 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 <h1>How to Build a Resume Portfolio for Creative and Design Roles in 2026</h1>
         <p class="meta">Published: May 21, 2026 | Category: Creative Resumes | Reading Time: 10 min</p>
 
-        <p>For creative professionals, a traditional text-only resume rarely tells the full story. Your work is visual, experiential, and often collaborative â€” things a bullet point list can't capture. That's where a resume portfolio comes in.</p>
+        <p>For creative professionals, a traditional text-only resume rarely tells the full story. Your work is visual, experiential, and often collaborative -- things a bullet point list can't capture. That's where a resume portfolio comes in.</p>
         <p>A resume portfolio combines a written resume with a curated collection of your work. In 2026, it's the gold standard for designers, writers, artists, videographers, UX researchers, and creative directors looking to stand out in competitive fields.</p>
         <p>This guide shows you exactly how to build a resume portfolio that gets you hired in creative industries.</p>
 
         <h2>What Is a Resume Portfolio (and When Do You Need One)?</h2>
-        <p>A resume portfolio is not a separate portfolio website â€” it's a unified application package where your resume and work samples are designed to be reviewed together. Think of it as your resume + portfolio working in concert.</p>
+        <p>A resume portfolio is not a separate portfolio website -- it's a unified application package where your resume and work samples are designed to be reviewed together. Think of it as your resume + portfolio working in concert.</p>
 
         <p><strong>You need a resume portfolio if:</strong></p>
         <ul>
@@ -92,13 +111,13 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
         </ul>
 
         <h2>Option 1: The Integrated PDF Portfolio</h2>
-        <p>This is the most common format for creative resumes. You create a single PDF document that starts with a traditional resume and includes 3â€“5 project case studies.</p>
+        <p>This is the most common format for creative resumes. You create a single PDF document that starts with a traditional resume and includes 3-5 project case studies.</p>
 
         <p><strong>Structure:</strong></p>
         <ol>
-            <li><strong>Page 1: Resume</strong> â€” Clean, text-based resume with your experience, skills, and education.</li>
-            <li><strong>Pages 2â€“6: Case Studies</strong> â€” 3â€“5 projects showing your best work, each with context, process, and results.</li>
-            <li><strong>Last page: Contact</strong> â€” Simple contact footer with links to your online portfolio, LinkedIn, and other relevant profiles.</li>
+            <li><strong>Page 1: Resume</strong> -- Clean, text-based resume with your experience, skills, and education.</li>
+            <li><strong>Pages 2-6: Case Studies</strong> -- 3-5 projects showing your best work, each with context, process, and results.</li>
+            <li><strong>Last page: Contact</strong> -- Simple contact footer with links to your online portfolio, LinkedIn, and other relevant profiles.</li>
         </ol>
 
         <p><strong>Pros:</strong> Easy to email, works for ATS (first page), complete package in one file.<br>
@@ -143,7 +162,7 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
         <p>As a creative professional, your portfolio's design is a reflection of your abilities. Follow these guidelines:</p>
 
         <h3>1. Less Is More</h3>
-        <p>Include only your best 3â€“5 projects. A common mistake is including everything you've ever done. Curate ruthlessly â€” one outstanding project is more impactful than five mediocre ones.</p>
+        <p>Include only your best 3-5 projects. A common mistake is including everything you've ever done. Curate ruthlessly -- one outstanding project is more impactful than five mediocre ones.</p>
 
         <h3>2. Show Process, Not Just Final Work</h3>
         <p>Recruiters and hiring managers want to see how you think. Include sketches, wireframes, iterations, and explanations of your decision-making. This demonstrates problem-solving ability, not just technical skill.</p>
@@ -168,31 +187,31 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
         <p>You don't need to be a web developer to create a stunning portfolio. Here are the best tools for 2026:</p>
 
         <ul>
-            <li><strong>Adobe Portfolio</strong> â€” Free with Creative Cloud subscription, integrates with Behance</li>
-            <li><strong>Squarespace</strong> â€” Beautiful templates, easy drag-and-drop builder</li>
-            <li><strong>Notion</strong> â€” Free, flexible, great for process-heavy portfolios</li>
-            <li><strong>Figma</strong> â€” Create a prototype-style portfolio that showcases your design thinking</li>
-            <li><strong>Readymag</strong> â€” Designed specifically for editorial-style creative portfolios</li>
-            <li><strong>Canva</strong> â€” Good for quick PDF portfolios with professional templates</li>
+            <li><strong>Adobe Portfolio</strong> -- Free with Creative Cloud subscription, integrates with Behance</li>
+            <li><strong>Squarespace</strong> -- Beautiful templates, easy drag-and-drop builder</li>
+            <li><strong>Notion</strong> -- Free, flexible, great for process-heavy portfolios</li>
+            <li><strong>Figma</strong> -- Create a prototype-style portfolio that showcases your design thinking</li>
+            <li><strong>Readymag</strong> -- Designed specifically for editorial-style creative portfolios</li>
+            <li><strong>Canva</strong> -- Good for quick PDF portfolios with professional templates</li>
         </ul>
 
         <h2>Common Mistakes Creative Candidates Make</h2>
         <ul>
-            <li><strong>Prioritizing style over substance</strong> â€” A beautiful portfolio with weak case studies won't get you hired.</li>
-            <li><strong>Forgetting the resume part</strong> â€” Your portfolio is a supplement, not a replacement for a clear, scannable resume.</li>
-            <li><strong>Not tailoring for the role</strong> â€” If you're applying for a UX role, don't lead with illustration work unless it's relevant.</li>
-            <li><strong>Hiding the boring stuff</strong> â€” Hiring managers want to see that you can handle real-world constraints, budgets, timelines, and cross-functional collaboration.</li>
-            <li><strong>No call to action</strong> â€” Make it easy for recruiters to contact you. Include your email, phone, and LinkedIn on every page.</li>
+            <li><strong>Prioritizing style over substance</strong> -- A beautiful portfolio with weak case studies won't get you hired.</li>
+            <li><strong>Forgetting the resume part</strong> -- Your portfolio is a supplement, not a replacement for a clear, scannable resume.</li>
+            <li><strong>Not tailoring for the role</strong> -- If you're applying for a UX role, don't lead with illustration work unless it's relevant.</li>
+            <li><strong>Hiding the boring stuff</strong> -- Hiring managers want to see that you can handle real-world constraints, budgets, timelines, and cross-functional collaboration.</li>
+            <li><strong>No call to action</strong> -- Make it easy for recruiters to contact you. Include your email, phone, and LinkedIn on every page.</li>
         </ul>
 
         <h2>Final Thoughts: Let Your Work Do the Talking</h2>
-        <p>In creative fields, your portfolio is often more important than your resume. But the two should work together as a cohesive package. Your resume provides the context, structure, and professional narrative â€” your portfolio provides the proof.</p>
+        <p>In creative fields, your portfolio is often more important than your resume. But the two should work together as a cohesive package. Your resume provides the context, structure, and professional narrative -- your portfolio provides the proof.</p>
         <p>In 2026, the most successful creative candidates are those who can demonstrate both strategic thinking and technical execution. Build a resume portfolio that shows both, and you'll stand out in any creative job market.</p>
 
 <div class="cta-box">
 <h3>Ready to Land Your Next Role?</h3>
 <p>Get expert-crafted templates and checklists to make your resume stand out.</p>
-<a href="https://dogeking0.gumroad.com/l/emvsb" class="cta-btn">Get it here â†’</a>
+<a href="https://dogeking0.gumroad.com/l/emvsb" class="cta-btn">Get it here -></a>
 </div>
 </article>
 <footer>
@@ -211,17 +230,29 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 </div>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8CVE2X8R5L"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-8CVE2X8R5L");</script>
+
 
 <script src="/scripts/related-articles.js"></script>
 <!-- Amazon Affiliate Banner -->
 <div class="amazon-affiliate-banner" style="background:linear-gradient(135deg,#232f3e,#131921);color:white;padding:20px;margin:20px auto;max-width:800px;border-radius:10px;text-align:center;font-family:Arial,sans-serif;">
-  <p style="margin:0 0 10px;font-size:14px;opacity:0.9;">📦 <strong>Support Our Site — Shop on Amazon</strong></p>
+  <p style="margin:0 0 10px;font-size:14px;opacity:0.9;">?? <strong>Support Our Site ? Shop on Amazon</strong></p>
   <p style="margin:0 0 15px;font-size:13px;opacity:0.7;">We earn a small commission at no extra cost to you when you shop through our links.</p>
-  <a href="https://www.amazon.com/?tag=dogekingus20-20" target="_blank" rel="nofollow sponsored" style="display:inline-block;background:#ff9900;color:#232f3e;padding:12px 30px;border-radius:25px;font-weight:bold;font-size:15px;text-decoration:none;">🛒 Shop on Amazon →</a>
+  <a href="https://www.amazon.com/?tag=resumeprotips-20" target="_blank" rel="nofollow sponsored" style="display:inline-block;background:#ff9900;color:#232f3e;padding:12px 30px;border-radius:25px;font-weight:bold;font-size:15px;text-decoration:none;">?? Shop on Amazon ?</a>
   <p style="margin:10px 0 0;font-size:11px;opacity:0.5;">As an Amazon Associate we earn from qualifying purchases.</p>
 </div>
 <!-- Amazon Associates Tag -->
-<div style="display:none;"><img src="https://ir-na.amazon-adsystem.com/e/ir?t=dogekingus20-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" /></div>
+<div style="display:none;"><img src="https://ir-na.amazon-adsystem.com/e/ir?t=resumeprotips-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" /></div>
+
+
+<script>
+window.addEventListener('DOMContentLoaded',function(){
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-8CVE2X8R5L');
+document.addEventListener('click',function(e){
+var t=e.target.closest('a[href*="gumroad.com"],a[href*="kit.com/forms"]');if(!t)return;
+var label=t.href.includes('gumroad')?'Gumroad Product Click':'Kit Form Click';
+gtag('event','conversion',{send_to:'G-8CVE2X8R5L',event_category:'Outbound',event_label:label,value:1});});
+});
+</script>
 </body>
 </html>

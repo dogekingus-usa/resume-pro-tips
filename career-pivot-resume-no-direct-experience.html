@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="theme-resumeprotips" lang="en">
 <head>
 <meta charset="UTF-8">
@@ -48,8 +48,27 @@ article a{color:var(--primary);text-decoration:underline}
 footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:1px solid #333;margin-top:40px}
 </style>
   <link rel="stylesheet" href="/crown-design-system.css">
+<style>
+
+/* === A11Y: TOUCH TARGETS === */
+@media (max-width: 768px) {
+  .nav-links a { min-height: 44px; padding: 12px 16px; display: flex; align-items: center; }
+  .hamburger, button.hamburger { min-width: 44px; min-height: 44px; }
+}
+.buy-btn, .bundle-btn, .cta, .btn-primary, button {
+  min-height: 44px; padding: 12px 24px; display: inline-flex; align-items: center; justify-content: center;
+}
+footer a { display: inline-block; min-height: 44px; padding: 8px 0; line-height: 1.4; }
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid #818cf8; outline-offset: 2px; border-radius: 4px;
+}
+.skip-nav { position: absolute; top: -9999px; left: 0; z-index: 10000; padding: 12px 16px; background: #1e293b; color: #f1f5f9; font-size: 0.875rem; font-weight: 600; text-decoration: none; min-height: 44px; }
+.skip-nav:focus { top: 0; }
+
+</style>
 </head>
 <body>
+<a href="#main-content" class="skip-nav">Skip to main content</a>
 <nav>
   <a href="/" class="nav-logo">Resume Pro Tips</a>
   <button class="nav-hamburger" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('show')">
@@ -70,29 +89,29 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 </header>
 <article>
 <h2>1. The Catch-22 of Career Pivoting</h2>
-<p>You want to switch industries. You have plenty of work experience â€” just not in <em>this</em> industry. Every job description requires 2-3 years of experience in the field. You don't have it. So you can't get the job. But you can't get the experience without the job.</p>
+<p>You want to switch industries. You have plenty of work experience âEUR" just not in <em>this</em> industry. Every job description requires 2-3 years of experience in the field. You don't have it. So you can't get the job. But you can't get the experience without the job.</p>
 <p>This is the career pivot paradox, and it stops most people from making the switch.</p>
 <p>But here's the truth that most job descriptions don't reveal: <strong>"2-3 years of experience" is often a wishlist, not a requirement.</strong> Hiring managers care about one thing above all else: <em>Can you do the job?</em></p>
-<p>The key is building a resume that answers that question convincingly â€” even when your job titles say "Accountant" but your target says "Product Manager."</p>
-<h2>2. The Three Resume Formats â€” Which Works for a Pivot?</h2>
+<p>The key is building a resume that answers that question convincingly âEUR" even when your job titles say "Accountant" but your target says "Product Manager."</p>
+<h2>2. The Three Resume Formats âEUR" Which Works for a Pivot?</h2>
 <table><thead><tr>
 <th>Format</th><th>Best For</th><th>Career Pivot?</th>
 </tr></thead><tbody>
-<tr><td><strong>Chronological</strong></td><td>Straight career path, recent relevant experience</td><td>âŒ Weak â€” highlights lack of direct experience</td></tr>
+<tr><td><strong>Chronological</strong></td><td>Straight career path, recent relevant experience</td><td>âŒ Weak âEUR" highlights lack of direct experience</td></tr>
 <tr><td><strong>Functional</strong></td><td>Hiding gaps or lack of experience</td><td>âš ï¸ ATS-unfriendly, recruiters distrust it</td></tr>
-<tr><td><strong>Hybrid (Combination)</strong></td><td>Career pivoters, multi-career professionals</td><td>âœ… Best choice</td></tr>
+<tr><td><strong>Hybrid (Combination)</strong></td><td>Career pivoters, multi-career professionals</td><td>âœ... Best choice</td></tr>
 </tbody></table>
-<p><strong>The hybrid format</strong> is your secret weapon. It leads with your skills and qualifications â€” not your job titles â€” so a recruiter sees your value before they see you've never held the title.</p>
+<p><strong>The hybrid format</strong> is your secret weapon. It leads with your skills and qualifications âEUR" not your job titles âEUR" so a recruiter sees your value before they see you've never held the title.</p>
 <h3>The Hybrid Resume Structure</h3>
 <pre><code>1. Professional Summary (3-4 lines)
 2. Core Competencies / Skills Section (6-10 skills in 2 columns)
 3. Relevant Experience (projects, volunteer work, side work)
-4. Professional Experience (your actual job history â€” condensed)
+4. Professional Experience (your actual job history âEUR" condensed)
 5. Education &amp; Certifications
 6. Additional (languages, awards, interests)</code></pre>
-<h2>3. The Skills Bridge â€” Connecting What You've Done to What You'll Do</h2>
+<h2>3. The Skills Bridge âEUR" Connecting What You've Done to What You'll Do</h2>
 <p>This is the most important section of your pivot resume. For every skill from your previous career, find the equivalent in your target career.</p>
-<p><strong>Example: Accountant â†’ Product Manager</strong></p>
+<p><strong>Example: Accountant â*' Product Manager</strong></p>
 <table><thead><tr>
 <th>Your Current Skill</th><th>Product Management Equivalent</th>
 </tr></thead><tbody>
@@ -103,7 +122,7 @@ footer{text-align:center;padding:30px 0;opacity:0.6;font-size:0.85em;border-top:
 <tr><td>Audit compliance</td><td>Quality assurance & testing</td></tr>
 <tr><td>Vendor negotiation</td><td>Vendor & partnership management</td></tr>
 </tbody></table>
-<p><strong>Example: Teacher â†’ UX Designer</strong></p>
+<p><strong>Example: Teacher â*' UX Designer</strong></p>
 <table><thead><tr>
 <th>Your Current Skill</th><th>UX Design Equivalent</th>
 </tr></thead><tbody>
@@ -122,7 +141,7 @@ Data Analysis        | Roadmap Planning
 Stakeholder Mgmt     | Agile Methodologies
 User Research        | A/B Testing &amp; Experimentation
 Technical Writing    | OKR &amp; KPI Tracking</code></pre>
-<h2>4. The "Relevant Experience" Section â€” Your Secret Weapon</h2>
+<h2>4. The "Relevant Experience" Section âEUR" Your Secret Weapon</h2>
 <p>This is where you prove you can do the job without having held the title. Include:</p>
 <p><strong>Project work:</strong></p>
 <ul>
@@ -145,11 +164,11 @@ Technical Writing    | OKR &amp; KPI Tracking</code></pre>
 <p>> "Led cross-functional reporting process across 3 departments, gathering requirements from stakeholders and delivering data-driven insights to leadership"</p>
 <p>See what happened? The <em>work</em> is the same. The <em>framing</em> is completely different.</p>
 <h2>5. The Professional Summary That Opens Doors</h2>
-<p>Your summary is the first thing a recruiter reads. Make it clear you're pivoting â€” and make it sound intentional, not desperate.</p>
+<p>Your summary is the first thing a recruiter reads. Make it clear you're pivoting âEUR" and make it sound intentional, not desperate.</p>
 <p><strong>Bad summary:</strong></p>
 <p>> "Experienced accountant looking to switch careers into product management. I don't have direct experience but I'm a fast learner."</p>
 <p><strong>Good summary:</strong></p>
-<p>> "Data-driven professional with 6 years of cross-functional experience in financial planning, stakeholder management, and strategic analysis. Seeking to apply analytical rigor and collaborative leadership to product management â€” bringing a unique blend of business acumen and user-focused thinking."</p>
+<p>> "Data-driven professional with 6 years of cross-functional experience in financial planning, stakeholder management, and strategic analysis. Seeking to apply analytical rigor and collaborative leadership to product management âEUR" bringing a unique blend of business acumen and user-focused thinking."</p>
 <p>The good version never mentions "switching" or "no experience." It frames the pivot as a <em>unique combination of strengths</em>.</p>
 <h2>6. Bridge-Building Activities (Before You Apply)</h2>
 <p>If you have zero relevant experience, build some before you submit your resume:</p>
@@ -174,11 +193,11 @@ Technical Writing    | OKR &amp; KPI Tracking</code></pre>
 <li><strong>The close (1 sentence):</strong> Express enthusiasm and ask for an interview.</li>
 </ul>
 <h2>8. Common Career Pivot Resume Mistakes</h2>
-<p><strong>âŒ Apologizing for your background</strong> â€” Never say "I don't have experience in X." Frame what you <em>do</em> have.</p>
-<p><strong>âŒ Using old-industry jargon</strong> â€” Every industry has its own language. If your resume says "ledger reconciliation" when applying for a sales role, you look like you're from a different planet.</p>
-<p><strong>âŒ Writing a novel</strong> â€” Career pivot resumes tend to be longer because you're explaining more. Fight this instinct. Every word must earn its place.</p>
-<p><strong>âŒ Ignoring ATS keywords</strong> â€” Applicant tracking systems scan for keywords from the job description. If the JD says "agile," your resume better say "agile." Use tools like Jobscan to match your resume.</p>
-<p><strong>âŒ Not networking</strong> â€” A perfect pivot resume will still struggle if it's only submitted through online portals. Reach out to hiring managers, attend industry events, and ask for informational interviews.</p>
+<p><strong>âŒ Apologizing for your background</strong> âEUR" Never say "I don't have experience in X." Frame what you <em>do</em> have.</p>
+<p><strong>âŒ Using old-industry jargon</strong> âEUR" Every industry has its own language. If your resume says "ledger reconciliation" when applying for a sales role, you look like you're from a different planet.</p>
+<p><strong>âŒ Writing a novel</strong> âEUR" Career pivot resumes tend to be longer because you're explaining more. Fight this instinct. Every word must earn its place.</p>
+<p><strong>âŒ Ignoring ATS keywords</strong> âEUR" Applicant tracking systems scan for keywords from the job description. If the JD says "agile," your resume better say "agile." Use tools like Jobscan to match your resume.</p>
+<p><strong>âŒ Not networking</strong> âEUR" A perfect pivot resume will still struggle if it's only submitted through online portals. Reach out to hiring managers, attend industry events, and ask for informational interviews.</p>
 <h2>9. The Career Pivot Resume Checklist</h2>
 <p>Before you send your resume, verify:</p>
 <ul>
@@ -192,14 +211,14 @@ Technical Writing    | OKR &amp; KPI Tracking</code></pre>
 <li>[ ] Did I network with someone at the company before applying?</li>
 </ul>
 <h2>10. Real Career Pivot Success Stories</h2>
-<p><strong>Teacher â†’ UX Designer:</strong> Spent 3 months on Google's UX Certificate, redesigned her school's parent portal as a portfolio project, landed a junior UX role at an edtech startup.</p>
-<p><strong>Accountant â†’ Product Manager:</strong> Took a 6-week product management course, volunteered as a PM for a local non-profit's website rebuild, and framed financial forecasting as "strategic planning" in her resume. Interviewed at 4 companies in 3 weeks.</p>
-<p><strong>Bartender â†’ Sales Representative:</strong> Highlighted upselling skills, relationship building, and high-pressure communication. Framed drink recommendations as "needs assessment and solution matching." Hired in 2 weeks.</p>
+<p><strong>Teacher â*' UX Designer:</strong> Spent 3 months on Google's UX Certificate, redesigned her school's parent portal as a portfolio project, landed a junior UX role at an edtech startup.</p>
+<p><strong>Accountant â*' Product Manager:</strong> Took a 6-week product management course, volunteered as a PM for a local non-profit's website rebuild, and framed financial forecasting as "strategic planning" in her resume. Interviewed at 4 companies in 3 weeks.</p>
+<p><strong>Bartender â*' Sales Representative:</strong> Highlighted upselling skills, relationship building, and high-pressure communication. Framed drink recommendations as "needs assessment and solution matching." Hired in 2 weeks.</p>
 <h2>Conclusion</h2>
 <p>A career pivot resume doesn't pretend you have experience you don't have. It reframes your existing experience so hiring managers see its relevance to the new role.</p>
 <p>You're not "starting over." You're bringing a unique perspective that pure insiders can't offer. Your resume just needs to tell that story clearly.</p>
 <p><strong>Stop apologizing for your background. Start reframing it.</strong></p>
-<p><em>Related reading on Resume Pro Tips:</em> <a href="/r.html-sum-writing-for-career-changers.html">RÃ©sumÃ© Writing For Career Changers</a> | <a href="/how-to-write-a-r-sum-with-no-experience.html">How To Write A RÃ©sumÃ© With No Experience</a> | <a href="/career-change-resume.html">Career Change Resume</a></p>
+<p><em>Related reading on Resume Pro Tips:</em> <a href="/r.html-sum-writing-for-career-changers.html">Resume Writing For Career Changers</a> | <a href="/how-to-write-a-r-sum-with-no-experience.html">How To Write A Resume With No Experience</a> | <a href="/career-change-resume.html">Career Change Resume</a></p>
 
 <div class="cta-box">
 <h3>Land More Interviews</h3>
@@ -223,17 +242,29 @@ Technical Writing    | OKR &amp; KPI Tracking</code></pre>
 </div>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8CVE2X8R5L"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-8CVE2X8R5L");</script>
+
 
 <script src="/scripts/related-articles.js"></script>
 <!-- Amazon Affiliate Banner -->
 <div class="amazon-affiliate-banner" style="background:linear-gradient(135deg,#232f3e,#131921);color:white;padding:20px;margin:20px auto;max-width:800px;border-radius:10px;text-align:center;font-family:Arial,sans-serif;">
-  <p style="margin:0 0 10px;font-size:14px;opacity:0.9;">📦 <strong>Support Our Site — Shop on Amazon</strong></p>
+  <p style="margin:0 0 10px;font-size:14px;opacity:0.9;">?? <strong>Support Our Site ï¿½ Shop on Amazon</strong></p>
   <p style="margin:0 0 15px;font-size:13px;opacity:0.7;">We earn a small commission at no extra cost to you when you shop through our links.</p>
-  <a href="https://www.amazon.com/?tag=dogekingus20-20" target="_blank" rel="nofollow sponsored" style="display:inline-block;background:#ff9900;color:#232f3e;padding:12px 30px;border-radius:25px;font-weight:bold;font-size:15px;text-decoration:none;">🛒 Shop on Amazon →</a>
+  <a href="https://www.amazon.com/?tag=resumeprotips-20" target="_blank" rel="nofollow sponsored" style="display:inline-block;background:#ff9900;color:#232f3e;padding:12px 30px;border-radius:25px;font-weight:bold;font-size:15px;text-decoration:none;">?? Shop on Amazon ?</a>
   <p style="margin:10px 0 0;font-size:11px;opacity:0.5;">As an Amazon Associate we earn from qualifying purchases.</p>
 </div>
 <!-- Amazon Associates Tag -->
-<div style="display:none;"><img src="https://ir-na.amazon-adsystem.com/e/ir?t=dogekingus20-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" /></div>
+<div style="display:none;"><img src="https://ir-na.amazon-adsystem.com/e/ir?t=resumeprotips-20&l=ur2&o=1" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" /></div>
+
+
+<script>
+window.addEventListener('DOMContentLoaded',function(){
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-8CVE2X8R5L');
+document.addEventListener('click',function(e){
+var t=e.target.closest('a[href*="gumroad.com"],a[href*="kit.com/forms"]');if(!t)return;
+var label=t.href.includes('gumroad')?'Gumroad Product Click':'Kit Form Click';
+gtag('event','conversion',{send_to:'G-8CVE2X8R5L',event_category:'Outbound',event_label:label,value:1});});
+});
+</script>
 </body>
 </html>
