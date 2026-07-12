@@ -1,0 +1,8 @@
+/* resumeprotips.com — Theme Override for crown-design-system.css */
+:root {
+  --color-primary: #2563EB;    /* Professional blue */
+  --color-secondary: #1E40AF;
+  --color-accent: #10B981;     /* Success green */
+  --color-dark: #1e293b;
+  --color-light: #f1f5f9;
+}
