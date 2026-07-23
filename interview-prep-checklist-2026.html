@@ -16,48 +16,27 @@
 <meta name="twitter:title" content="Interview Prep Checklist 2026: Land Your Dream Job">
 <meta name="twitter:description" content="Complete 2026 interview preparation checklist. Company research, STAR method stories, technical prep, mock interviews, questions to ask, follow-up strategy, and a week-by-week timeline.">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Interview Prep Checklist 2026: Land Your Dream Job","description":"Complete 2026 interview preparation checklist. Company research, STAR method stories, technical prep, mock interviews, questions to ask, follow-up strategy, and a week-by-week timeline.","author":{"@type":"Organization","name":"ResumeProTips"},"datePublished":"2026-05-19","dateModified":"2026-05-19"}</script>
-<style>
-body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.8;color:#e2e8f0;background:#0f0f23;max-width:820px;margin:2rem auto;padding:0 1.5rem}
-h1{font-family:'Playfair Display',serif;color:#f1f5f9;font-size:2.2rem;border-bottom:3px solid #d4a017;padding-bottom:0.75rem;margin-bottom:1.5rem}
-h2{font-family:'Playfair Display',serif;color:#d4a017;font-size:1.6rem;margin-top:2.5rem;border-bottom:1px solid rgba(212,160,23,0.3);padding-bottom:0.4rem}
-h3{color:#e94560;font-size:1.2rem;margin-top:1.8rem}
-p{margin:1rem 0}
-ul{padding-left:1.5rem}
-li{margin:0.6rem 0}
-strong{color:#f1f5f9}
-.timeline-box{background:#1a1a3e;border-left:4px solid #d4a017;padding:1.2rem;margin:1.5rem 0;border-radius:0 8px 8px 0}
-.timeline-box h3{color:#d4a017;margin-top:0}
-.star-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
-@media(max-width:640px){.star-grid{grid-template-columns:1fr}}
-.star-card{background:#1a1a3e;border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:1rem}
-.star-card h4{color:#e94560;margin:0 0 0.5rem 0;font-size:0.95rem}
-.related{margin:1rem 0;padding:0.75rem;background:#1a1a3e;border-radius:8px;border:1px solid rgba(212,160,23,0.15)}
-.related a{color:#d4a017;text-decoration:underline}
-.cta{text-align:center;margin:2rem 0;padding:1.5rem;background:linear-gradient(135deg,#1e3a5f,#2c5282);border-radius:12px}
-.cta a{color:#f1f5f9;font-weight:600;text-decoration:none;font-size:1.1rem}
-.cta a:hover{color:#d4a017}
-</style>
+
+            param($m)
+            $css = $m.Groups[2].Value
+            $css = $css -replace '/\*.*?\*/', ''
+            $css = $css -replace '\s+', ' '
+            $css = $css -replace '\s*([{}:;,])\s*', '<style>'
+            $css = $css -replace ';\}', '}'
+            $m.Groups[1].Value + $css + $m.Groups[3].Value
+        
 
 
   <link rel="stylesheet" href="/crown-design-system.css">
-<style>
 
-/* === A11Y: TOUCH TARGETS === */
-@media (max-width: 768px) {
-  .nav-links a { min-height: 44px; padding: 12px 16px; display: flex; align-items: center; }
-  .hamburger, button.hamburger { min-width: 44px; min-height: 44px; }
-}
-.buy-btn, .bundle-btn, .cta, .btn-primary, button {
-  min-height: 44px; padding: 12px 24px; display: inline-flex; align-items: center; justify-content: center;
-}
-footer a { display: inline-block; min-height: 44px; padding: 8px 0; line-height: 1.4; }
-a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
-  outline: 2px solid #818cf8; outline-offset: 2px; border-radius: 4px;
-}
-.skip-nav { position: absolute; top: -9999px; left: 0; z-index: 10000; padding: 12px 16px; background: #1e293b; color: #f1f5f9; font-size: 0.875rem; font-weight: 600; text-decoration: none; min-height: 44px; }
-.skip-nav:focus { top: 0; }
-
-</style>
+            param($m)
+            $css = $m.Groups[2].Value
+            $css = $css -replace '/\*.*?\*/', ''
+            $css = $css -replace '\s+', ' '
+            $css = $css -replace '\s*([{}:;,])\s*', '<style>'
+            $css = $css -replace ';\}', '}'
+            $m.Groups[1].Value + $css + $m.Groups[3].Value
+        
 </head>
 <body>
 <a href="#main-content" class="skip-nav">Skip to main content</a>

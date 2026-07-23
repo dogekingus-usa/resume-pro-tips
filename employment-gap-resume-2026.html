@@ -34,70 +34,25 @@
     ]
   }
   </script>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0f0f1a; color: #e0e4f0; line-height: 1.7; }
-    header { background: linear-gradient(135deg, #0d1a2e 0%, #1e3a5f 50%, #152a45 100%); padding: 2rem 1rem; text-align: center; border-bottom: 3px solid #C8A951; }
-    header h1 { font-size: 2.5rem; color: #f0d68a; text-shadow: 0 0 20px rgba(200,169,81,0.3); }
-    header p { font-size: 1.1rem; color: #b8c9e0; margin-top: 0.5rem; }
-    nav { background: #0d1a2e; padding: 1rem; text-align: center; border-bottom: 1px solid #1a2e4e; }
-    nav a { color: #C8A951; text-decoration: none; margin: 0 1rem; font-weight: 600; transition: color 0.3s; }
-    nav a:hover { color: #f0d68a; text-decoration: underline; }
-    main { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
-    .breadcrumb { background: #0d1528; padding: 0.6rem 1.5rem; font-size: 0.85rem; border-bottom: 1px solid #1a2e4e; max-width: 800px; margin: 0 auto; }
-    .breadcrumb a { color: #C8A951; text-decoration: none; }
-    .breadcrumb a:hover { color: #f0d68a; text-decoration: underline; }
-    .breadcrumb span { color: #555; margin: 0 0.3rem; }
-    .breadcrumb .current { color: #b8c9e0; }
-    h2 { font-size: 1.8rem; color: #C8A951; margin: 2rem 0 1rem; border-bottom: 2px solid #1a2e4e; padding-bottom: 0.5rem; }
-    h3 { font-size: 1.3rem; color: #f0d68a; margin: 1.5rem 0 0.8rem; }
-    p { margin-bottom: 1rem; color: #c8d0e8; }
-    a { color: #C8A951; text-decoration: none; transition: color 0.3s; }
-    a:hover { color: #f0d68a; text-decoration: underline; }
-    ul, ol { padding-left: 1.5rem; margin-bottom: 1rem; }
-    ul li, ol li { padding: 0.3rem 0; color: #c8d0e8; }
-    .cta-button { display: inline-block; background: linear-gradient(135deg, #1e3a5f, #2a5080); color: #f0d68a; padding: 0.8rem 2rem; border-radius: 50px; font-weight: 700; text-decoration: none; transition: transform 0.3s, box-shadow 0.3s; border: 1px solid #C8A951; }
-    .cta-button:hover { transform: scale(1.05); box-shadow: 0 5px 20px rgba(200,169,81,0.3); text-decoration: none; color: #f0d68a; }
-    .cta-center { text-align: center; margin: 2rem 0; }
-    .article-meta { color: #666; font-size: 0.9rem; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid #1a2e4e; }
-    .tip-box { background: #0d1528; border-left: 4px solid #C8A951; padding: 1.2rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; }
-    .tip-box h4 { color: #f0d68a; margin-bottom: 0.5rem; }
-    .table-wrap { overflow-x: auto; margin: 1.5rem 0; }
-    table { width: 100%; border-collapse: collapse; background: #0d1528; border-radius: 8px; overflow: hidden; }
-    th { background: #1e3a5f; color: #f0d68a; padding: 0.8rem; text-align: left; font-weight: 700; }
-    td { padding: 0.7rem 0.8rem; border-bottom: 1px solid #1a2e4e; color: #c8d0e8; }
-    tr:last-child td { border-bottom: none; }
-    .example-box { background: #0d1528; border: 1px solid #2a5080; border-radius: 12px; padding: 1.2rem; margin: 1rem 0; }
-    .example-box h4 { color: #f0d68a; margin-bottom: 0.5rem; }
-    .example-box .bad { color: #f87171; }
-    .example-box .good { color: #86efac; }
-    .related-links { background: #0d1528; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; border: 1px solid #1a2e4e; }
-    .related-links h3 { margin-top: 0; }
-    .related-links a { display: block; color: #C8A951; padding: 0.4rem 0; text-decoration: none; transition: color 0.3s; }
-    .related-links a:hover { color: #f0d68a; padding-left: 0.5rem; }
-    footer { text-align: center; padding: 2rem; background: #0d1528; border-top: 1px solid #1a2e4e; color: #666; font-size: 0.9rem; margin-top: 3rem; }
-    footer a { color: #C8A951; text-decoration: none; }
-    @media (max-width: 768px) { header h1 { font-size: 1.8rem; } nav a { display: inline-block; margin: 0.3rem 0.5rem; } }
-  </style>
+  
+            param($m)
+            $css = $m.Groups[2].Value
+            $css = $css -replace '/\*.*?\*/', ''
+            $css = $css -replace '\s+', ' '
+            $css = $css -replace '\s*([{}:;,])\s*', '<style>'
+            $css = $css -replace ';\}', '}'
+            $m.Groups[1].Value + $css + $m.Groups[3].Value
+        
   <link rel="stylesheet" href="crown-design-system.css">
-<style>
 
-/* === A11Y: TOUCH TARGETS === */
-@media (max-width: 768px) {
-  .nav-links a { min-height: 44px; padding: 12px 16px; display: flex; align-items: center; }
-  .hamburger, button.hamburger { min-width: 44px; min-height: 44px; }
-}
-.buy-btn, .bundle-btn, .cta, .btn-primary, button {
-  min-height: 44px; padding: 12px 24px; display: inline-flex; align-items: center; justify-content: center;
-}
-footer a { display: inline-block; min-height: 44px; padding: 8px 0; line-height: 1.4; }
-a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
-  outline: 2px solid #818cf8; outline-offset: 2px; border-radius: 4px;
-}
-.skip-nav { position: absolute; top: -9999px; left: 0; z-index: 10000; padding: 12px 16px; background: #1e293b; color: #f1f5f9; font-size: 0.875rem; font-weight: 600; text-decoration: none; min-height: 44px; }
-.skip-nav:focus { top: 0; }
-
-</style>
+            param($m)
+            $css = $m.Groups[2].Value
+            $css = $css -replace '/\*.*?\*/', ''
+            $css = $css -replace '\s+', ' '
+            $css = $css -replace '\s*([{}:;,])\s*', '<style>'
+            $css = $css -replace ';\}', '}'
+            $m.Groups[1].Value + $css + $m.Groups[3].Value
+        
 </head>
 <body>
 <a href="#main-content" class="skip-nav">Skip to main content</a>
