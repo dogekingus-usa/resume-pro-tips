@@ -172,7 +172,7 @@ Compliance**
    - **Valuation Models**, **Business Development**
 
 ## Conclusion
-In today’s data-driven job market, incorporating the right keywords can sig
+In today's data-driven job market, incorporating the right keywords can sig
 significantly enhance your resume and increase your chances of getting noti
 noticed by potential employers. By tailoring your resume to highlight speci
 specific industry jargon and relevant experiences, you can effectively comm
@@ -212,7 +212,7 @@ searches related to your field.
 
 ### Q: Can I use keywords that are not relevant to my experience but seem i
 important?
-A: It’s best to avoid overstuffing your resume with irrelevant keywords. Fo
+A: It's best to avoid overstuffing your resume with irrelevant keywords. Fo
 Focus on incorporating genuine and meaningful keywords that accurately refl
 reflect your skills and experiences. This ensures authenticity while increa
 increasing the chances of passing ATS filters.
