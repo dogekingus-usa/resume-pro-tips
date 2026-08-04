@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+import body from '../bodies/the-ultimate-guide-to-skills-based-resumes-for-non-traditional-paths.html?raw';
+
+const title = "The Ultimate Guide to Skills-Based Resumes for Non-Traditional Paths | resumeprotips.com";
+const description = "The traditional resume format may not fully capture the skills and experiences of candidates with non-traditional career paths. A skills-based resume offers a";
+const canonical = "https://resumeprotips.com/the-ultimate-guide-to-skills-based-resumes-for-non-traditional-paths";
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  publisher: { '@type': 'Organization', name: 'ResumeProTips' },
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+    <div class="mt-12 text-center">
+      <CTA href="/all-articles" text="Browse More Articles" variant="secondary" />
+    </div>
+  </article>
+</BaseLayout>

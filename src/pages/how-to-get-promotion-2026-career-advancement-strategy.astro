@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+import body from '../bodies/how-to-get-promotion-2026-career-advancement-strategy.html?raw';
+
+const title = "How to Get a Promotion in 2026: Complete Career Advancement Strategy Guide | Resume Pro Tips";
+const description = "Learn exactly how to get a promotion in 2026. Complete career advancement guide with proven strategies, promotion timeline templates, negotiation scripts, and insider tips from HR leaders to accelerate your career growth.";
+const canonical = "https://resumeprotips.com/how-to-get-promotion-2026-career-advancement-strategy";
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  publisher: { '@type': 'Organization', name: 'ResumeProTips' },
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+    <div class="mt-12 text-center">
+      <CTA href="/all-articles" text="Browse More Articles" variant="secondary" />
+    </div>
+  </article>
+</BaseLayout>

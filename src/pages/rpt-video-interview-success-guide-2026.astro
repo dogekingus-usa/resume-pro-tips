@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+import body from '../bodies/rpt-video-interview-success-guide-2026.html?raw';
+
+const title = "Video Interview Success Guide 2026: Setup, Body Language, and Answers That Land the Job in a Remote Hiring World âEUR\" Resume Pro Tips";
+const description = "Complete video interview guide for 2026. Expert camera setup, lighting, body language, Zoom/Teams/HireVue platform tips, and proven answers to land the job.";
+const canonical = "https://resumeprotips.com/rpt-video-interview-success-guide-2026";
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  publisher: { '@type': 'Organization', name: 'ResumeProTips' },
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+    <div class="mt-12 text-center">
+      <CTA href="/all-articles" text="Browse More Articles" variant="secondary" />
+    </div>
+  </article>
+</BaseLayout>

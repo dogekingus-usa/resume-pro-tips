@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+import body from '../bodies/ultimate-career-change-resume-guide-switch-industries-without-starting-over-2026.html?raw';
+
+const title = "The Ultimate Career Change Resume Guide: Switch Industries Without Starting Over in 2026 | ResumeProTips.com";
+const description = "Learn how to switch industries without starting over in 2026. This career change resume guide reveals how to leverage transferable skills, bridge your experience, and land senior roles in a new field.";
+const canonical = "https://resumeprotips.com/ultimate-career-change-resume-guide-switch-industries-without-starting-over-2026";
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  publisher: { '@type': 'Organization', name: 'ResumeProTips' },
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+    <div class="mt-12 text-center">
+      <CTA href="/all-articles" text="Browse More Articles" variant="secondary" />
+    </div>
+  </article>
+</BaseLayout>

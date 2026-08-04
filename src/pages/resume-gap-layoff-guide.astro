@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+import body from '../bodies/resume-gap-layoff-guide.html?raw';
+
+const title = "How to Handle Resume Gaps \u0026 Layoffs -- Gap Duration Templates, Resume Formats \u0026 Interview Scripts | ResumeProTips";
+const description = "Complete guide to handling resume gaps and layoffs. Specific strategies for 1-month to 2-year gaps, gap activities (education, freelance, caregiving, health), functional vs chronological resumes, and interview scripts with templates for every scenario.";
+const canonical = "https://resumeprotips.com/resume-gap-layoff-guide";
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  publisher: { '@type': 'Organization', name: 'ResumeProTips' },
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+    <div class="mt-12 text-center">
+      <CTA href="/all-articles" text="Browse More Articles" variant="secondary" />
+    </div>
+  </article>
+</BaseLayout>

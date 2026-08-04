@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+import body from '../bodies/how-to-list-freelance-work-on-a-resume-with-examples.html?raw';
+
+const title = "How to List Freelance Work on a Resume (With Examples) | resumeprotips.com";
+const description = "Introduction to Listing Freelance Work on Your Resume Freelancing is more than just a job--it\u0027s an opportunity to showcase your versatility and expertise in vari";
+const canonical = "https://resumeprotips.com/how-to-list-freelance-work-on-a-resume-with-examples";
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  publisher: { '@type': 'Organization', name: 'ResumeProTips' },
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+    <div class="mt-12 text-center">
+      <CTA href="/all-articles" text="Browse More Articles" variant="secondary" />
+    </div>
+  </article>
+</BaseLayout>

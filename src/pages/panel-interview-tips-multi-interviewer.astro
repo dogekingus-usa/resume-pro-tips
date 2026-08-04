@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+import body from '../bodies/panel-interview-tips-multi-interviewer.html?raw';
+
+const title = "How to Ace a Panel Interview: Strategies for Multi-Interviewer Settings | Resume Pro Tips";
+const description = "Master the panel interview with proven strategies for multi-interviewer settings. Learn how to engage multiple interviewers, read the room, and leave every person impressed.";
+const canonical = "https://resumeprotips.com/panel-interview-tips-multi-interviewer";
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  publisher: { '@type': 'Organization', name: 'ResumeProTips' },
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+    <div class="mt-12 text-center">
+      <CTA href="/all-articles" text="Browse More Articles" variant="secondary" />
+    </div>
+  </article>
+</BaseLayout>
