@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+import body from '../bodies/explain-termination-job-search.html?raw';
+
+const title = "How to Explain a Termination on Job Applications and Interviews";
+const description = "Honest strategies for explaining termination in interviews and on job applications. Resume strategies, reference management, legal considerations, and 3 sample scripts for layoff, performance, and misconduct terminations.";
+const canonical = "https://resumeprotips.com/explain-termination-job-search";
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  publisher: { '@type': 'Organization', name: 'ResumeProTips' },
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+    <div class="mt-12 text-center">
+      <CTA href="/all-articles" text="Browse More Articles" variant="secondary" />
+    </div>
+  </article>
+</BaseLayout>

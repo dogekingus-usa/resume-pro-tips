@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+import body from '../bodies/2026-tech-resume-blueprint-7-changes-got-engineers-interviews-google-stripe-amazon.html?raw';
+
+const title = "The 2026 Tech Resume Blueprint: 7 Changes That Got Engineers Interviews at Google, Stripe \u0026 Amazon | ResumeProTips.com";
+const description = "7 resume changes that landed real engineers interviews at Google, Stripe, and Amazon in 2026. Data-backed tech resume blueprint with before/after examples from actual FAANG hiring cycles.";
+const canonical = "https://resumeprotips.com/2026-tech-resume-blueprint-7-changes-got-engineers-interviews-google-stripe-amazon";
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  publisher: { '@type': 'Organization', name: 'ResumeProTips' },
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+    <div class="mt-12 text-center">
+      <CTA href="/all-articles" text="Browse More Articles" variant="secondary" />
+    </div>
+  </article>
+</BaseLayout>

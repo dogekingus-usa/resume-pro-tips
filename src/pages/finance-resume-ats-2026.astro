@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+import body from '../bodies/finance-resume-ats-2026.html?raw';
+
+const title = "Finance Resume Secrets: How Investment Banking, Accounting \u0026 Fintech Candidates Beat the ATS in 2026 | ResumeProTips.com";
+const description = "Master the finance resume playbook for investment banking, accounting, and fintech roles. Learn ATS keyword strategies, metrics-driven achievement formulas, and the exact frameworks that get finance candidates shortlisted by Goldman Sachs, JPMorgan, Deloitte, and top fintechs in 2026.";
+const canonical = "https://resumeprotips.com/finance-resume-ats-2026";
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  publisher: { '@type': 'Organization', name: 'ResumeProTips' },
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+    <div class="mt-12 text-center">
+      <CTA href="/all-articles" text="Browse More Articles" variant="secondary" />
+    </div>
+  </article>
+</BaseLayout>

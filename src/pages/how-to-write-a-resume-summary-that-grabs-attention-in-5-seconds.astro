@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+import body from '../bodies/how-to-write-a-resume-summary-that-grabs-attention-in-5-seconds.html?raw';
+
+const title = "How to Write a Resume Summary That Grabs Attention in 5 Seconds | resumeprotips.com";
+const description = "In today\u0027s competitive job market, standing out in just 5 seconds can be the difference between landing an interview or having your resume discarded. The f";
+const canonical = "https://resumeprotips.com/how-to-write-a-resume-summary-that-grabs-attention-in-5-seconds";
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  publisher: { '@type': 'Organization', name: 'ResumeProTips' },
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+    <div class="mt-12 text-center">
+      <CTA href="/all-articles" text="Browse More Articles" variant="secondary" />
+    </div>
+  </article>
+</BaseLayout>

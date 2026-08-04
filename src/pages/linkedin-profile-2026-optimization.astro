@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+import body from '../bodies/linkedin-profile-2026-optimization.html?raw';
+
+const title = "LinkedIn Profile Optimization 2026: The Complete Guide to Getting Noticed by Recruiters âEUR\" resumeprotips.com";
+const description = "Optimize your LinkedIn profile to attract recruiters in 2026. Proven strategies for headlines, summaries, and content that works.";
+const canonical = "https://resumeprotips.com/linkedin-profile-2026-optimization";
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  publisher: { '@type': 'Organization', name: 'ResumeProTips' },
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+    <div class="mt-12 text-center">
+      <CTA href="/all-articles" text="Browse More Articles" variant="secondary" />
+    </div>
+  </article>
+</BaseLayout>

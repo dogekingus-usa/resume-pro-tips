@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+import body from '../bodies/why-need-resume-kit-2026-buyers-guide.html?raw';
+
+const title = "Why Every Job Seeker Needs a Resume Kit in 2026: A Complete Buyer\u0027s Guide | ResumeProTips.com";
+const description = "The job market has changed. Here\u0027s why every serious job seeker needs a professional resume kit in 2026, plus a complete buyer\u0027s guide to choosing the right one.";
+const canonical = "https://resumeprotips.com/why-need-resume-kit-2026-buyers-guide";
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  publisher: { '@type': 'Organization', name: 'ResumeProTips' },
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+    <div class="mt-12 text-center">
+      <CTA href="/all-articles" text="Browse More Articles" variant="secondary" />
+    </div>
+  </article>
+</BaseLayout>

@@ -5,5 +5,5 @@ export default defineConfig({
   site: 'https://resumeprotips.com',
   output: 'static',
   integrations: [tailwind()],
-  build: { format: 'directory' },
+  build: { format: 'file' },
 });

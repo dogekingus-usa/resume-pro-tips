@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+import body from '../bodies/complete-guide-resume-gets-hired-2026.html?raw';
+
+const title = "The Complete Guide to Writing a Resume That Gets You Hired in 2026: Format, Content, ATS Optimization, and Career Strategy";
+const description = "The definitive 2026 resume writing guide covering format selection, ATS optimization, section breakdowns, action verbs, cover letter strategy, LinkedIn alignment, and job search strategy. Get hired faster with expert-backed techniques.";
+const canonical = "https://resumeprotips.com/complete-guide-resume-gets-hired-2026";
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  publisher: { '@type': 'Organization', name: 'ResumeProTips' },
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+    <div class="mt-12 text-center">
+      <CTA href="/all-articles" text="Browse More Articles" variant="secondary" />
+    </div>
+  </article>
+</BaseLayout>

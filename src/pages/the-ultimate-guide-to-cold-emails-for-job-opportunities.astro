@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+import body from '../bodies/the-ultimate-guide-to-cold-emails-for-job-opportunities.html?raw';
+
+const title = "The Ultimate Guide to Cold Emails for Job Opportunities | resumeprotips.com";
+const description = "Are you looking to land your dream job but unsure about how to approach potential employers? Cold emails can be an effective strategy, especially if done right";
+const canonical = "https://resumeprotips.com/the-ultimate-guide-to-cold-emails-for-job-opportunities";
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  publisher: { '@type': 'Organization', name: 'ResumeProTips' },
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+    <div class="mt-12 text-center">
+      <CTA href="/all-articles" text="Browse More Articles" variant="secondary" />
+    </div>
+  </article>
+</BaseLayout>

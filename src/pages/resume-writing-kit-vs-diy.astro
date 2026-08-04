@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+import body from '../bodies/resume-writing-kit-vs-diy.html?raw';
+
+const title = "Resume Writing Kits vs DIY: Why a Professional Bundle Is Worth the Investment | ResumeProTips.com";
+const description = "Should you use a resume writing kit or go DIY? Compare costs, results, and ROI. Discover why a professional resume bundle delivers the best value for serious job seekers.";
+const canonical = "https://resumeprotips.com/resume-writing-kit-vs-diy";
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  publisher: { '@type': 'Organization', name: 'ResumeProTips' },
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+    <div class="mt-12 text-center">
+      <CTA href="/all-articles" text="Browse More Articles" variant="secondary" />
+    </div>
+  </article>
+</BaseLayout>

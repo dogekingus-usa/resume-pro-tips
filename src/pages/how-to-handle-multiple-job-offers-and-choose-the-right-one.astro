@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+import body from '../bodies/how-to-handle-multiple-job-offers-and-choose-the-right-one.html?raw';
+
+const title = "How to Handle Multiple Job Offers and Choose the Right One | resumeprotips.com";
+const description = "How to Handle Multiple Job Offers and Choose the Right One In today\u0027s competitive job market, receiving multiple job offers can be an exc";
+const canonical = "https://resumeprotips.com/how-to-handle-multiple-job-offers-and-choose-the-right-one";
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  publisher: { '@type': 'Organization', name: 'ResumeProTips' },
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+    <div class="mt-12 text-center">
+      <CTA href="/all-articles" text="Browse More Articles" variant="secondary" />
+    </div>
+  </article>
+</BaseLayout>

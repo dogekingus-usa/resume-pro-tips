@@ -1,28 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import body from '../bodies/index.html?raw';
+
+const title = "Resume Pro Tips — Land Your Dream Job";
+const description = "Land Your Dream Job — curated guides, tools, and systems to help you level up.";
+const canonical = "https://resumeprotips.com";
 ---
 
-<BaseLayout title="ResumeProTips — Resume & Career Advice" description="Expert resume advice, career guides, and job-winning strategies. Land your dream job in 2026.">
-  <section class="mx-auto max-w-6xl px-4 py-12">
-    <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-5xl font-bold text-brand-500 mb-4">ResumeProTips</h1>
-      <p class="text-xl text-gray-300 max-w-2xl mx-auto">
-        Expert resume advice and career strategies to land your dream job.
-      </p>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <a href="/resume/" class="block rounded-xl border border-gray-600 bg-dark-700/50 p-6 hover:border-brand-500/50 hover:bg-dark-700 transition-all">
-        <h2 class="text-lg font-semibold text-brand-500 mb-2">Resumes</h2>
-        <p class="text-sm text-gray-400">Build resumes that get interviews.</p>
-      </a>
-      <a href="/career/" class="block rounded-xl border border-gray-600 bg-dark-700/50 p-6 hover:border-brand-500/50 hover:bg-dark-700 transition-all">
-        <h2 class="text-lg font-semibold text-brand-500 mb-2">Career</h2>
-        <p class="text-sm text-gray-400">Advance your career with proven strategies.</p>
-      </a>
-      <a href="/bitcoin/" class="block rounded-xl border border-gray-600 bg-dark-700/50 p-6 hover:border-brand-500/50 hover:bg-dark-700 transition-all">
-        <h2 class="text-lg font-semibold text-brand-500 mb-2">Crypto Careers</h2>
-        <p class="text-sm text-gray-400">Careers in blockchain and crypto.</p>
-      </a>
-    </div>
-  </section>
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <div class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+  </div>
 </BaseLayout>

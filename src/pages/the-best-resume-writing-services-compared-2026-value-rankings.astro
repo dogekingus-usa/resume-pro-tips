@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+import body from '../bodies/the-best-resume-writing-services-compared-2026-value-rankings.html?raw';
+
+const title = "The Best Resume Writing Services Compared 2026 Value Rankings | resumeprotips.com";
+const description = "In 2026, job markets continue to evolve rapidly, making it essential for professionals to stand out with a polished resume. This guide aims to help you navigat";
+const canonical = "https://resumeprotips.com/the-best-resume-writing-services-compared-2026-value-rankings";
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  publisher: { '@type': 'Organization', name: 'ResumeProTips' },
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+    <div class="mt-12 text-center">
+      <CTA href="/all-articles" text="Browse More Articles" variant="secondary" />
+    </div>
+  </article>
+</BaseLayout>

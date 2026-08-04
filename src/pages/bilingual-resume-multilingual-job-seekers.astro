@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CTA from '../components/CTA.astro';
+import body from '../bodies/bilingual-resume-multilingual-job-seekers.html?raw';
+
+const title = "How to Write a Bilingual Resume: Tips for Multilingual Job Seekers in 2026 | Resume Pro Tips";
+const description = "Complete guide to writing a bilingual resume. Learn how to present language skills, format multilingual resumes for ATS, and leverage bilingualism as a competitive advantage in 2026.";
+const canonical = "https://resumeprotips.com/bilingual-resume-multilingual-job-seekers";
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  url: canonical,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  publisher: { '@type': 'Organization', name: 'ResumeProTips' },
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <Fragment set:html={body} />
+    <div class="mt-12 text-center">
+      <CTA href="/all-articles" text="Browse More Articles" variant="secondary" />
+    </div>
+  </article>
+</BaseLayout>
