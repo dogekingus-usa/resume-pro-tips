@@ -1,0 +1,18 @@
+{
+  "site": "resumeprotips.com",
+  "theme": "light",
+  "pairs": [
+    { "fg": "#ffffff", "bg": "#2563EB", "minRatio": 4.5, "ratio": 5.17, "usage": "CTA button, primary fills" },
+    { "fg": "#2563EB", "bg": "#ffffff", "minRatio": 4.5, "ratio": 5.17, "usage": "links, text accents" },
+    { "fg": "#ffffff", "bg": "#047857", "minRatio": 4.5, "ratio": 5.48, "usage": "emerald fills (deep, decorative)" }
+  ],
+  "forbidden": [
+    { "fg": "#ffffff", "bg": "#10B981", "reason": "white on emerald 2.54:1 FAIL - decorative-only, use deep #047857" }
+  ],
+  "nonText": [
+    { "fg": "#2563EB", "bg": "#ffffff", "minRatio": 3.0, "usage": "focus ring / borders / icons on white" }
+  ],
+  "generated": "2026-08-08",
+  "by": "tailwind-specialist",
+  "source": "DESIGN-SYSTEM-SPEC-v2.md ┬º4.2 (brand-designer script-verified, re-verified 08-08)"
+}

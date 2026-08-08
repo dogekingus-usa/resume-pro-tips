@@ -1,0 +1,25 @@
+{
+    "pages":  [
+                  {
+                      "name":  "home",
+                      "path":  "index.html"
+                  },
+                  {
+                      "name":  "article",
+                      "path":  "10-mistakes-that-make-your-resume-look-dated-2026-edition.html"
+                  },
+                  {
+                      "name":  "product",
+                      "path":  "products.html"
+                  },
+                  {
+                      "name":  "404",
+                      "path":  "404.html"
+                  },
+                  {
+                      "name":  "thank-you",
+                      "path":  "thank-you.html"
+                  }
+              ],
+    "note":  "Per A11Y-QA-GATE-SPEC.md key page set. RPT has no category page. thank-you.html exists - scannable."
+}
